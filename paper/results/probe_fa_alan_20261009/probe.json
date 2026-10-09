@@ -1,0 +1,611 @@
+{
+  "date": "2026-10-09",
+  "probes": [
+    {
+      "group": "default",
+      "q": "fiziksel aktivite",
+      "purpose": "Varsayılan arama: iki sözcük, tırnaksız",
+      "total": 3060,
+      "sample": [
+        {
+          "id": "1336873",
+          "year": 2024,
+          "title": "Psychosocial Predictors of Physical Activity Levels in Medical Students"
+        },
+        {
+          "id": "59588",
+          "year": 2006,
+          "title": "Üniversite öğrencilerinin fiziksel aktivite düzeyleri"
+        },
+        {
+          "id": "328369",
+          "year": 2019,
+          "title": "AN INVESTIGATION OF RELATIONSHIP BETWEEN SMOKING AND PHYSICAL ACTIVITY IN HEALTH CARE PROFESSIONALS"
+        },
+        {
+          "id": "1313930",
+          "year": 2025,
+          "title": "Perspectives of Women with Overweight and Obesity on Physical Activity:  A Qualitative Study"
+        },
+        {
+          "id": "492609",
+          "year": 2020,
+          "title": "Investigation of Motivation for Participation in Physical Activity and Barriers in Young Adults"
+        },
+        {
+          "id": "1357216",
+          "year": 2024,
+          "title": "Adaptaton of REGICOR Short Physcal Actvty Questonnare nto Turksh: a Valdty and Relablty Study"
+        },
+        {
+          "id": "1222715",
+          "year": 2022,
+          "title": "Effect Of Home-Based Physical Activity on Older Adults’ Well-Being In COVID-19 Pandemic"
+        },
+        {
+          "id": "257579",
+          "year": 2017,
+          "title": "Sağlıklı Yaşlanma ve Fiziksel Aktivite: Bireysel, Psikososyal ve Çevresel Özelliklerin Buna Katkısı"
+        },
+        {
+          "id": "304465",
+          "year": 2018,
+          "title": "Gebelik Sürecinde Fiziksel Aktivite Değişimlerinin İncelenmesi"
+        },
+        {
+          "id": "434018",
+          "year": 2020,
+          "title": "Ankara’daki Suriyeli Mülteci Kadınların Fiziksel Aktivite Deneyimlerinin SosyoEkolojik Model ve Toplumsal Cinsiyet Perspektifiyle Analizi"
+        }
+      ],
+      "error": null
+    },
+    {
+      "group": "default",
+      "q": "gamify",
+      "purpose": "Varsayılan arama: bulanık eşleşme örneği (family?)",
+      "total": 26698,
+      "sample": [
+        {
+          "id": "461920",
+          "year": 2021,
+          "title": "Psychiatric Correlates of Internet Gaming Disorderin Children"
+        },
+        {
+          "id": "220765",
+          "year": 2016,
+          "title": "Proposed Gaming Addiction Behavioral Treatment Method"
+        },
+        {
+          "id": "296485",
+          "year": 2018,
+          "title": "The complementary geometric transmuted-G family of distributions: model, properties and application"
+        },
+        {
+          "id": "377517",
+          "year": 2019,
+          "title": "THE EXTENDED ODD WEIBULL-G FAMILY: PROPERTIES AND APPLICATIONS"
+        },
+        {
+          "id": "1181235",
+          "year": 2023,
+          "title": "ÖĞRENCİLERDE İNTERNET OYUN BAĞIMLILIĞI RİSK ETMENLERİ: FİZİKSEL İNAKTİVİTE VE UYGUNSUZ AİLE ORTAMI"
+        },
+        {
+          "id": "419563",
+          "year": 2020,
+          "title": "Çocukların Dijital Oyun Bağımlılığına Göre Aile Profillerinin Belirlenmesi"
+        },
+        {
+          "id": "1353145",
+          "year": 2025,
+          "title": "EBEVEYNLERİN PROBLEMLİ VİDEO OYUNU OYNAMAYA YÖNELİK BİLGİ VE FARKINDALIĞININ İNCELENMESİ"
+        },
+        {
+          "id": "278145",
+          "year": 2016,
+          "title": "MO YAN’İN KURBAĞA ROMANINDA ÖNE ÇIKAN ŞAHIS KADROSU"
+        },
+        {
+          "id": "176396",
+          "year": 2014,
+          "title": "Tip 2 diyabetli hastaların aile hekimiyle iletişimi ile ilgili görüş ve deneyimleri: Kalitatif çalışma"
+        },
+        {
+          "id": "1202361",
+          "year": 2023,
+          "title": "DİJİTAL OYUNLARDA ANNELİK -BABALIK TEMSİLLERİ VE TOPLUMSAL CİNSİYET MESELESİ: MOTHER SIMULATOR: FAMILY LIFE ÖRNEĞİ"
+        }
+      ],
+      "error": null
+    },
+    {
+      "group": "table3",
+      "q": "(title : ( \"fiziksel aktivite\" ))",
+      "purpose": "Tablo 3: başlıkta TR ifade",
+      "total": 518,
+      "sample": [
+        {
+          "id": "527521",
+          "year": 2020,
+          "title": "The Relationship between Physical Activity \rLevel and Physical Activity Awareness among \rUniversity Students"
+        },
+        {
+          "id": "89740",
+          "year": 2008,
+          "title": "Yaşlılık ve fiziksel aktivite"
+        },
+        {
+          "id": "1364359",
+          "year": 2025,
+          "title": "Okul Temelli Fiziksel Aktivite Programına Katılan İlkokul Öğrencilerinin Düzenli Fiziksel Aktivite Deneyimleri"
+        },
+        {
+          "id": "142810",
+          "year": 2011,
+          "title": "Fiziksel aktivite ve epilepsi"
+        },
+        {
+          "id": "1111451",
+          "year": 2022,
+          "title": "Otizmli çocuklarda fiziksel aktivite"
+        },
+        {
+          "id": "299801",
+          "year": 2018,
+          "title": "FİZİKSEL AKTİVİTE: BİLİNENİN ÇOK ÖTESİ"
+        },
+        {
+          "id": "222409",
+          "year": 2016,
+          "title": "Fiziksel Aktivite ve Koruyucu Etkileri:Derleme"
+        },
+        {
+          "id": "198176",
+          "year": 2015,
+          "title": "Demansta Fiziksel Aktivite ve Egzersiz"
+        },
+        {
+          "id": "136105",
+          "year": 2011,
+          "title": "Kanserli çocuklar ve fiziksel aktivite"
+        },
+        {
+          "id": "106320",
+          "year": 2010,
+          "title": "Diabetes mellitus ve fiziksel aktivite"
+        }
+      ],
+      "error": null
+    },
+    {
+      "group": "table3",
+      "q": "(title : ( \"physical activity\" ))",
+      "purpose": "Tablo 3: başlıkta EN ifade",
+      "total": 838,
+      "sample": [
+        {
+          "id": "1252722",
+          "year": 2023,
+          "title": "An Investigation of Physical Activity in Women and Barriers to Physical Activity"
+        },
+        {
+          "id": "142810",
+          "year": 2011,
+          "title": "Fiziksel aktivite ve epilepsi"
+        },
+        {
+          "id": "527521",
+          "year": 2020,
+          "title": "The Relationship between Physical Activity \rLevel and Physical Activity Awareness among \rUniversity Students"
+        },
+        {
+          "id": "89740",
+          "year": 2008,
+          "title": "Yaşlılık ve fiziksel aktivite"
+        },
+        {
+          "id": "106320",
+          "year": 2010,
+          "title": "Diabetes mellitus ve fiziksel aktivite"
+        },
+        {
+          "id": "205451",
+          "year": 2014,
+          "title": "GÜNCEL BAKIŞ AÇISI İLE FİZİKSEL AKTİVİTE"
+        },
+        {
+          "id": "146905",
+          "year": 2012,
+          "title": "Okul temelli fiziksel etkinlik programının çocukların fiziksel etkinlik bilgi ve davranışlarına etkisi"
+        },
+        {
+          "id": "285631",
+          "year": 2018,
+          "title": "Üniversite Öğrencilerinin Fiziksel Aktivite Yapma Durumu ve Fiziksel Aktivitenin Kalp Sağlığına Etkisini Bilme Durumu"
+        },
+        {
+          "id": "523831",
+          "year": 2021,
+          "title": "Physical Activity Involvement and\rPerception of Sufficient Physical\rActivity Among University Students\rAccording to Personality Traits"
+        },
+        {
+          "id": "1403212",
+          "year": 2026,
+          "title": "Perspectives of Office Workers on Physical Activity and Interventions to Increase Physical Activity: A Case Study"
+        }
+      ],
+      "error": null
+    },
+    {
+      "group": "table3",
+      "q": "(title : ( \"fiziksel aktivite\" OR \"physical activity\" ))",
+      "purpose": "Tablo 3: başlıkta iki ifadenin VEYA'sı",
+      "total": 862,
+      "sample": [
+        {
+          "id": "527521",
+          "year": 2020,
+          "title": "The Relationship between Physical Activity \rLevel and Physical Activity Awareness among \rUniversity Students"
+        },
+        {
+          "id": "193439",
+          "year": 2015,
+          "title": "Yardımcı Üreme Teknikleri ve Fiziksel Aktivite"
+        },
+        {
+          "id": "1344397",
+          "year": 2025,
+          "title": "PHYSICAL THERAPY INTERVENTIONS IN CHILDREN WITH CANCER"
+        },
+        {
+          "id": "142810",
+          "year": 2011,
+          "title": "Fiziksel aktivite ve epilepsi"
+        },
+        {
+          "id": "89740",
+          "year": 2008,
+          "title": "Yaşlılık ve fiziksel aktivite"
+        },
+        {
+          "id": "1364359",
+          "year": 2025,
+          "title": "Okul Temelli Fiziksel Aktivite Programına Katılan İlkokul Öğrencilerinin Düzenli Fiziksel Aktivite Deneyimleri"
+        },
+        {
+          "id": "1111451",
+          "year": 2022,
+          "title": "Otizmli çocuklarda fiziksel aktivite"
+        },
+        {
+          "id": "106320",
+          "year": 2010,
+          "title": "Diabetes mellitus ve fiziksel aktivite"
+        },
+        {
+          "id": "230284",
+          "year": 2015,
+          "title": "ÜNİVERSİTE ÖĞRENCİLERİNDE FİZİKSEL AKTİVİTE İLE DEPRESYON İLİŞKİSİ"
+        },
+        {
+          "id": "222409",
+          "year": 2016,
+          "title": "Fiziksel Aktivite ve Koruyucu Etkileri:Derleme"
+        }
+      ],
+      "error": null
+    },
+    {
+      "group": "table3",
+      "q": "(title : ( (\"fiziksel aktivite\") OR (\"physical activity\") ))",
+      "purpose": "Tablo 3: aynı VEYA, iç parantezli",
+      "total": 862,
+      "sample": [
+        {
+          "id": "527521",
+          "year": 2020,
+          "title": "The Relationship between Physical Activity \rLevel and Physical Activity Awareness among \rUniversity Students"
+        },
+        {
+          "id": "193439",
+          "year": 2015,
+          "title": "Yardımcı Üreme Teknikleri ve Fiziksel Aktivite"
+        },
+        {
+          "id": "1344397",
+          "year": 2025,
+          "title": "PHYSICAL THERAPY INTERVENTIONS IN CHILDREN WITH CANCER"
+        },
+        {
+          "id": "142810",
+          "year": 2011,
+          "title": "Fiziksel aktivite ve epilepsi"
+        },
+        {
+          "id": "89740",
+          "year": 2008,
+          "title": "Yaşlılık ve fiziksel aktivite"
+        },
+        {
+          "id": "1364359",
+          "year": 2025,
+          "title": "Okul Temelli Fiziksel Aktivite Programına Katılan İlkokul Öğrencilerinin Düzenli Fiziksel Aktivite Deneyimleri"
+        },
+        {
+          "id": "1111451",
+          "year": 2022,
+          "title": "Otizmli çocuklarda fiziksel aktivite"
+        },
+        {
+          "id": "106320",
+          "year": 2010,
+          "title": "Diabetes mellitus ve fiziksel aktivite"
+        },
+        {
+          "id": "230284",
+          "year": 2015,
+          "title": "ÜNİVERSİTE ÖĞRENCİLERİNDE FİZİKSEL AKTİVİTE İLE DEPRESYON İLİŞKİSİ"
+        },
+        {
+          "id": "222409",
+          "year": 2016,
+          "title": "Fiziksel Aktivite ve Koruyucu Etkileri:Derleme"
+        }
+      ],
+      "error": null
+    },
+    {
+      "group": "table3",
+      "q": "(title : ( \"fiziksel\" OR \"physical\" ))",
+      "purpose": "Tablo 3: tek sözcüklerin VEYA'sı",
+      "total": 4562,
+      "sample": [
+        {
+          "id": "600515",
+          "year": 1900,
+          "title": "Fiziksel oşinografi"
+        },
+        {
+          "id": "181874",
+          "year": 2013,
+          "title": "Competencies of Physical Educators Toward Inclusive Physical Education"
+        },
+        {
+          "id": "3727",
+          "year": 2004,
+          "title": "\"Fiziksel Realite\" Meselesi (III): Fiziksel Realitenin Batını Vechesi"
+        },
+        {
+          "id": "352600",
+          "year": 2002,
+          "title": "\"Fiziksel Realite\" Meselesine Giriş"
+        },
+        {
+          "id": "611958",
+          "year": 2012,
+          "title": "Fiziksel gelişim, üretim, finansman"
+        },
+        {
+          "id": "23817",
+          "year": 1991,
+          "title": "Mobilya fabrikasında fiziksel planlama"
+        },
+        {
+          "id": "85653",
+          "year": 2008,
+          "title": "Yaşlıların fiziksel performans test skoruna göre fiziksel uygunluk düzeylerinin belirlenmesi"
+        },
+        {
+          "id": "48603",
+          "year": 2005,
+          "title": "Depremin fiziksel mekanizması"
+        },
+        {
+          "id": "55725",
+          "year": 2004,
+          "title": "Fiziksel benlik algısının cinsiyete ve fiziksel aktivite düzeyine göre karşılaştırılması"
+        },
+        {
+          "id": "527521",
+          "year": 2020,
+          "title": "The Relationship between Physical Activity \rLevel and Physical Activity Awareness among \rUniversity Students"
+        }
+      ],
+      "error": null
+    },
+    {
+      "group": "table3",
+      "q": "(keyword : ( \"fiziksel aktivite\" ))",
+      "purpose": "Tablo 3: anahtar kelimede TR ifade",
+      "total": 325,
+      "sample": [
+        {
+          "id": "1218305",
+          "year": 2023,
+          "title": "Yaşlı Bireylerin Fiziksel Aktivite Engellerinin İncelenmesi"
+        },
+        {
+          "id": "1453331",
+          "year": 2026,
+          "title": "ÜNİVERSİTE ÖĞRENCİLERİNİN FİZİKSEL AKTİVİTEYE KATILIM MOTİVASYONU İLE KATILIM ENGELLERİNİN İNCELENMESİ"
+        },
+        {
+          "id": "1364359",
+          "year": 2025,
+          "title": "Okul Temelli Fiziksel Aktivite Programına Katılan İlkokul Öğrencilerinin Düzenli Fiziksel Aktivite Deneyimleri"
+        },
+        {
+          "id": "1297543",
+          "year": 2024,
+          "title": "UYARLANMIŞ FİZİKSEL AKTİVİTELERİN OTİZM SPEKTRUM BOZUKLUĞU OLAN BİREYLERİN PROBLEM DAVRANIŞLARI ÜZERİNDEKİ ÖNEMİ: GELENEKSEL DERLEME"
+        },
+        {
+          "id": "442015",
+          "year": 2019,
+          "title": "Kamu ve Özel Sektör Çalışanlarının Fiziksel Aktiviteye Katılmaya Yönelik Tutumlarının İncelenmesi"
+        },
+        {
+          "id": "1440041",
+          "year": 2026,
+          "title": "Assessment of Physical Activity and Anxiety Levels According to Gestational Periods in Pregnant Women"
+        },
+        {
+          "id": "1425388",
+          "year": 2026,
+          "title": "Osteoartritte Fiziksel Aktivitenin Yeri ve Önemi: Geleneksel Derleme"
+        },
+        {
+          "id": "1210662",
+          "year": 2023,
+          "title": "Judocuların Serum Beyin-Kaynaklı Nörotrofik Faktör (BDNF) Seviyelerinin İncelenmesi"
+        },
+        {
+          "id": "439389",
+          "year": 2021,
+          "title": "15-49 Yaş Aralığındaki Kadınlarda Bel Ağrısı Sıklığı, Etkileyen Faktörler ve Bel Ağrısının Fiziksel Aktivite Düzeyi ile İlişkisinin Belirlenmesi"
+        },
+        {
+          "id": "1344397",
+          "year": 2025,
+          "title": "PHYSICAL THERAPY INTERVENTIONS IN CHILDREN WITH CANCER"
+        }
+      ],
+      "error": null
+    },
+    {
+      "group": "exact",
+      "q": "(title : ( \"fiziksel aktivitenin\" ))",
+      "purpose": "Ekli biçim tek başına",
+      "total": 49,
+      "sample": [
+        {
+          "id": "198162",
+          "year": 2015,
+          "title": "Çocuklarda Fiziksel Aktivitenin Biyopsikososyal Yararları"
+        },
+        {
+          "id": "1290334",
+          "year": 2025,
+          "title": "Role of Physical Activity in Positive Psychology Perspective"
+        },
+        {
+          "id": "329364",
+          "year": 2018,
+          "title": "Hemodiyaliz Hastalarında Fiziksel Aktivitenin Pedometre ile Değerlendirilmesi"
+        },
+        {
+          "id": "150895",
+          "year": 2013,
+          "title": "Assessment of physical activity in patients with chronic low back or neck pain"
+        },
+        {
+          "id": "534633",
+          "year": 2022,
+          "title": "The effects of physical activity on anger expression style in \rhealthcare professionals"
+        },
+        {
+          "id": "461079",
+          "year": 2021,
+          "title": "Social insulation during COVID-19: The importance of physical activity"
+        },
+        {
+          "id": "210962",
+          "year": 2016,
+          "title": "The Effect of Physical Activity on Bone Density in Military Personnel"
+        },
+        {
+          "id": "1425388",
+          "year": 2026,
+          "title": "Osteoartritte Fiziksel Aktivitenin Yeri ve Önemi: Geleneksel Derleme"
+        },
+        {
+          "id": "1268766",
+          "year": 2024,
+          "title": "Beslenme ve fiziksel aktivitenin bağırsak mikrobiyotası ile ilişkisi"
+        },
+        {
+          "id": "334908",
+          "year": 2019,
+          "title": "Objective and Subjective Assessment of Physical Activity in Adults with Muscle Diseases"
+        }
+      ],
+      "error": null
+    },
+    {
+      "group": "exact",
+      "q": "(title : ( \"fiziksel aktivite\" OR \"fiziksel aktivitenin\" ))",
+      "purpose": "Temel ve ekli biçimin VEYA'sı",
+      "total": 566,
+      "sample": [
+        {
+          "id": "285631",
+          "year": 2018,
+          "title": "Üniversite Öğrencilerinin Fiziksel Aktivite Yapma Durumu ve Fiziksel Aktivitenin Kalp Sağlığına Etkisini Bilme Durumu"
+        },
+        {
+          "id": "198162",
+          "year": 2015,
+          "title": "Çocuklarda Fiziksel Aktivitenin Biyopsikososyal Yararları"
+        },
+        {
+          "id": "1290334",
+          "year": 2025,
+          "title": "Role of Physical Activity in Positive Psychology Perspective"
+        },
+        {
+          "id": "527521",
+          "year": 2020,
+          "title": "The Relationship between Physical Activity \rLevel and Physical Activity Awareness among \rUniversity Students"
+        },
+        {
+          "id": "329364",
+          "year": 2018,
+          "title": "Hemodiyaliz Hastalarında Fiziksel Aktivitenin Pedometre ile Değerlendirilmesi"
+        },
+        {
+          "id": "89740",
+          "year": 2008,
+          "title": "Yaşlılık ve fiziksel aktivite"
+        },
+        {
+          "id": "1364359",
+          "year": 2025,
+          "title": "Okul Temelli Fiziksel Aktivite Programına Katılan İlkokul Öğrencilerinin Düzenli Fiziksel Aktivite Deneyimleri"
+        },
+        {
+          "id": "150895",
+          "year": 2013,
+          "title": "Assessment of physical activity in patients with chronic low back or neck pain"
+        },
+        {
+          "id": "142810",
+          "year": 2011,
+          "title": "Fiziksel aktivite ve epilepsi"
+        },
+        {
+          "id": "1111451",
+          "year": 2022,
+          "title": "Otizmli çocuklarda fiziksel aktivite"
+        }
+      ],
+      "error": null
+    },
+    {
+      "group": "fields",
+      "q": "(title : ( \"fiziksel aktivite\" )) | (keyword : ( \"fiziksel aktivite\" ))",
+      "purpose": "İki alan cümlesi '|' ile",
+      "total": 0,
+      "sample": [],
+      "error": null
+    },
+    {
+      "group": "fields",
+      "q": "(title : ( \"fiziksel aktivite\" )) OR (keyword : ( \"fiziksel aktivite\" ))",
+      "purpose": "İki alan cümlesi 'OR' ile",
+      "total": 0,
+      "sample": [],
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "BiblioTR: an open-source toolkit for harvesting, validating and exporting records from Türkiye's national citation index"
+abstract: >-
+  A Python toolkit and web interface that harvests publication records from TR Dizin,
+  Türkiye's national citation index, stores them in SQLite, runs bibliometric analyses
+  and exports them to Web of Science plain text, RIS, BibTeX and VOSviewer formats for use
+  with Bibliometrix/Biblioshiny, VOSviewer and reference managers.
+type: software
+authors:
+  - family-names: "Yüksel"
+    given-names: "Yılmaz"
+    affiliation: "Karabük University, Hasan Doğan Faculty of Sports Sciences"
+    orcid: "https://orcid.org/0000-0003-1816-2916"
+repository-code: "https://github.com/yilmaz-yuksel/BiblioTR"
+license: MIT
+version: 1.0.0
+keywords:
+  - bibliometrics
+  - scientometrics
+  - TR Dizin
+  - national citation index
+  - Türkiye
+  - VOSviewer
+  - bibliometrix

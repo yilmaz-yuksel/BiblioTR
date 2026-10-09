@@ -1,0 +1,367 @@
+label	replace by
+activity of daily living	activities of daily living
+günlük yaşam etkinlikleri	activities of daily living
+gunluk yasam etkinlikleri	activities of daily living
+aktivite	activity
+bağımlılık	addiction
+bagimlilik	addiction
+adolesan	adolescent
+ergen	adolescent
+ergenler	adolescent
+adolescents	adolescent
+erişkin	adult
+eriskin	adult
+antropometrik ölçümler	anthropometric measurements
+antropometrik olcumler	anthropometric measurements
+anksiyete	anxiety
+attitudes	attitude
+tutum	attitude
+tutumlar	attitude
+otizm	autism
+barrier	barriers
+bibliometrics	bibliyometri
+vücut farkındalığı	body awareness
+vucut farkindaligi	body awareness
+vücut farkındalığı.	body awareness
+vucut farkindaligi.	body awareness
+vücut kompozisyonu	body composition
+vucut kompozisyonu	body composition
+bmi	body mass index
+vücut kitle indeksi	body mass index
+vucut kitle indeksi	body mass index
+vücut kitle indeksi.	body mass index
+vucut kitle indeksi.	body mass index
+vücut kütle indeksi	body mass index
+vucut kutle indeksi	body mass index
+beden kütle indeksi	body mass index
+beden kutle indeksi	body mass index
+body-mass index	body mass index
+kemik yoğunluğu	bone density
+kemik yogunlugu	bone density
+covid 19	covid-19
+covid- 19	covid-19
+kardiyovasküler hastalık	cardiovascular disease
+kardiyovaskuler hastalik	cardiovascular disease
+cardiovascular diseases	cardiovascular disease
+kardiyovasküler hastalıklar	cardiovascular disease
+kardiyovaskuler hastaliklar	cardiovascular disease
+serebral palsi	cerebral palsy
+children	child
+çocuk	child
+cocuk	child
+çocuklar	child
+cocuklar	child
+kolesterol	cholesterol
+kronik hastalık	chronic disease
+kronik hastalik	chronic disease
+konstipasyon	constipation
+: counseling	counseling
+danışmanlık	counseling
+danismanlik	counseling
+depremler	deprem
+depresyon	depression
+diyabet	diabetes
+diyet	diet
+dijital oyun	digital games
+dijital oyunlar	digital games
+uzaktan eğitim	distance education
+uzaktan egitim	distance education
+earthquakes	earthquake
+enerji metabolizması	energy metabolism
+enerji metabolizmasi	energy metabolism
+ergonomi	ergonomics
+ergonomik	ergonomics
+esport	espor
+esports	espor
+egzersiz	exercise
+egzersizler	exercise
+exercises	exercise
+yorgunluk	fatigue
+fibromiyalji	fibromyalgia
+geriatri	geriatrics
+geriatrikler	geriatrics
+alışkanlıklar	habits
+aliskanliklar	habits
+halluks valgus	hallux valgus
+mutlluluk	happiness
+mutluluk	happiness
+sağlık	health
+saglik	health
+health beliefs model	health belief model
+sağlıklı yaşlanma	healthy aging
+saglikli yaslanma	healthy aging
+sağlıklı beslenme	healthy nutrition
+saglikli beslenme	healthy nutrition
+hormone	hormon
+at	horses
+hipertansiyon	hypertension
+serbest zaman.	leisure time
+serbest zaman	leisure time
+leisure-time	leisure time
+boş zaman aktiviteleri	leisure activities
+bos zaman aktiviteleri	leisure activities
+lymphedema	lenfödem
+lifestyle	life style
+bel ağrısı	low back pain
+bel agrisi	low back pain
+akdeniz diyeti	mediterranean diet
+meslekler.	meslekler
+metabolik sendrom	metabolic syndrome
+mobil uygulamalar	mobil uygulama
+mobile applications	mobile application
+motivasyon	motivation
+motivation.	motivation
+motor aktivite	motor activity
+motor skills	motor skill
+hemşirelik	nursing
+hemsirelik	nursing
+nursing.	nursing
+beslenme	nutrition
+beslenme davranışı	nutritional behavior
+beslenme davranisi	nutritional behavior
+beslenme davranışları	nutritional behavior
+beslenme davranislari	nutritional behavior
+nutritional behaviors	nutritional behavior
+nutrition habits	nutritional habits
+beslenme alışkanlık- ları	nutritional habits
+beslenme aliskanlik- lari	nutritional habits
+beslenme alışkanlıkları	nutritional habits
+beslenme aliskanliklari	nutritional habits
+aged	older adults
+elderly	older adults
+yaşlı	older adults
+yasli	older adults
+yaşlılar	older adults
+yaslilar	older adults
+ağrı	pain
+agri	pain
+pandemi	pandemic
+pandemics	pandemic
+pandemik	pandemic
+performans	performance
+fobi	phobia
+physical activity questionnaire (ipaq)	physical activity questionnaire
+physical activity questionnaire.	physical activity questionnaire
+beden eğitimi	physical education
+beden egitimi	physical education
+fiziksel aktivite engelleri	physical activity barriers
+physical education and sports	physical education and sport
+plantar fasciitis	plantar fasiit
+postmenopoz	postmenopause
+post menopause	postmenopause
+postmenopo	postmenopause
+postür	posture
+postur	posture
+premenstrüel sendrom	premenstrual syndrome
+premenstruel sendrom	premenstrual syndrome
+anket	questionnaires
+anketler	questionnaires
+questionnaire	questionnaires
+recreatio	recreation
+güvenilirlik	reliability
+guvenilirlik	reliability
+güvenirlik	reliability
+guvenirlik	reliability
+solunum	respiration
+ruh sağlığı.	ruh sağlığı
+ruh sagligi.	ruh sagligi
+sedanter davranış	sedentary behavior
+sedanter davranis	sedentary behavior
+sedater yaşam.	sedentary lifestyle
+sedater yasam.	sedentary lifestyle
+sedanter yaşam	sedentary lifestyle
+sedanter yasam	sedentary lifestyle
+sedentary life	sedentary lifestyle
+akıllı telefon	smartphone
+akilli telefon	smartphone
+akıllı telefon bağımlılığı	smartphone addiction
+akilli telefon bagimliligi	smartphone addiction
+sigara	smoking
+spor bilimleri	sport sciences
+sports sciences	sport sciences
+sports science	sport sciences
+spor	sports
+sport	sports
+step counts	step count
+stres	stress
+student.	student
+students	student
+öğrenci	student
+ogrenci	student
+öğrenci.	student
+ogrenci.	student
+öğrenciler	student
+ogrenciler	student
+tip-2 diyabet	type 2 diabetes
+type-2 diabetes	type 2 diabetes
+tip 2 diyabet	type 2 diabetes
+university student.	university students
+university student	university students
+university students.	university students
+üniversite öğrenci.	university students
+universite ogrenci.	university students
+üniversite öğrencileri	university students
+universite ogrencileri	university students
+üniversite öğrencisi	university students
+universite ogrencisi	university students
+urban parks	urban park
+geçerlik	validity
+gecerlik	validity
+geçerlilik	validity
+gecerlilik	validity
+venöz yetmezlik	venous insufficiency
+venoz yetmezlik	venous insufficiency
+genç yetişkin	young adult
+genc yetiskin	young adult
+genç yetişkinler	young adult
+genc yetiskinler	young adult
+young adults	young adult
+genç erişkin	young adult
+genc eriskin	young adult
+uyarlanmış fiziksel aktivite	adapted physical activity
+uyarlanmis fiziksel aktivite	adapted physical activity
+alanine aminotransferase	alanin aminotransferaz
+antropometri	anthropometry
+artrit	arthritis
+aspartate aminotransferase	aspartat aminotransferaz
+otizm spektrum bozukluğu	autism spectrum disorder
+otizm spektrum bozuklugu	autism spectrum disorder
+denge	balance
+bakım veren	caregiver
+bakim veren	caregiver
+bakım verenler	caregiver
+bakim verenler	caregiver
+caregivers	caregiver
+bilişsel fonksiyon	cognitive function
+bilissel fonksiyon	cognitive function
+bilişsel fonksiyonlar	cognitive function
+bilissel fonksiyonlar	cognitive function
+cognitive functions	cognitive function
+covid-19 korkusu	covid-19 korku
+cross sectional studies	cross-sectional study
+cross-sectional studies	cross-sectional study
+kesitsel çalışmalar	cross-sectional study
+kesitsel calismalar	cross-sectional study
+kesitsel çalışma	cross-sectional study
+kesitsel calisma	cross-sectional study
+eating behaviors	eating behavior
+yeme davranışı	eating behavior
+yeme davranisi	eating behavior
+yeme davranışları	eating behavior
+yeme davranislari	eating behavior
+duygusal yeme	emotional eating
+korku	fear
+düşme korkusu	fear of falling
+dusme korkusu	fear of falling
+gebe kadınlar	gebe kadın.
+gebe kadinlar	gebe kadin.
+gestasyonel diabetes mellitus	gestational diabetes mellitus
+hand grip strenght	handgrip strength
+sağlık okuryazarlığı	health literacy
+saglik okuryazarligi	health literacy
+health care workers	healthcare workers
+healthy lifestyle behaviours	healthy lifestyle behavior
+healthy lifestyle behaviors	healthy lifestyle behavior
+huzur evi	huzurevi
+hareketsizlik	inactivity
+kinezyofobi	kinesiophobia
+life satisfaction.	life satisfaction
+medical student	medical students
+menstrual semptomlar	menstrual symptoms
+kas-iskelet ağrısı	musculoskeletal pain
+kas-iskelet agrisi	musculoskeletal pain
+kas iskelet ağrısı	musculoskeletal pain
+kas iskelet agrisi	musculoskeletal pain
+boyun ağrısı	neck pain
+boyun agrisi	neck pain
+nursing homes	nursing home
+beslenme durumu	nutritional status
+nutritional state	nutritional status
+obezite	obesity
+office worker	office workers
+ofis çalışanları	office workers
+ofis calisanlari	office workers
+ofis çalışanı	office workers
+ofis calisani	office workers
+parents	parent
+algılanan stres	perceived stress
+algilanan stres	perceived stress
+physcial activity	physical activity
+physical activity.	physical activity
+physical acrivity	physical activity
+fizik aktivite	physical activity
+fiziksel aktivite	physical activity
+fiziksel aktivite.	physical activity
+fiziksel aktiviteler	physical activity
+fizksel aktivite	physical activity
+physical activities	physical activity
+fiziksel aktivite danışmanlığı	physical activity counseling
+fiziksel aktivite danismanligi	physical activity counseling
+physicalactivitycounseling	physical activity counseling
+fiziksel aktivite düzeyi	physical activity level
+fiziksel aktivite duzeyi	physical activity level
+fiziksel aktivite düzeyi.	physical activity level
+fiziksel aktivite duzeyi.	physical activity level
+physical activity level.	physical activity level
+physical activity levels	physical activity level
+beden eğitimi ve spor öğrencileri	physical education and sports students
+beden egitimi ve spor ogrencileri	physical education and sports students
+physical exercises	physical exercise
+fiziksel uygunluk	physical fitness
+fiziksel performans	physical performance
+postüral kontrol	postural control
+postural kontrol	postural control
+prediabetes	prediyabet
+gebelik.	pregnancy
+pregnancy.	pregnancy
+gebelik	pregnancy
+pregnant women.	pregnant women
+okul öncesi eğitim	preschool education
+okul oncesi egitim	preschool education
+propriosepsiyon	proprioception
+propriyosepsiyon	proprioception
+psychometrics.	psychometrics
+halk sağlılğı	public health
+halk saglilgi	public health
+halk sağlığı	public health
+halk sagligi	public health
+life quality	quality of life
+life qualşty	quality of life
+life qualsty	quality of life
+quaity of life	quality of life
+quality of life.	quality of life
+yaşam kalitesi	quality of life
+yasam kalitesi	quality of life
+yaşam kalitesi.	quality of life
+yasam kalitesi.	quality of life
+rehabilitasyon.	rehabilitation
+rehabilitation.	rehabilitation
+rehabilitasyon	rehabilitation
+self efficacy	self-efficacy
+self-efficiacy	self-efficacy
+uyku	sleep
+uyku kalitesi	sleep quality
+sosyal destek	social support
+spor aktiviteleri	sports activities
+tobacco.	tobacco
+tütün.	tütün
+tutun.	tutun
+universities	university
+üniversi- te	university
+universi- te	university
+üniversiteler	university
+universiteler	university
+üniversite	university
+universite	university
+kadın	women
+kadin	women
+kadınlar	women
+kadinlar	women
+woman	women
+yaşam doyumu.	yaşam doyumu
+yasam doyumu.	yasam doyumu
+öz yeterlilik	özyeterlilik
+oz yeterlilik	ozyeterlilik
+internet bağımlılığı.	i̇nternet bağımlılığı
+internet bagimliligi.	internet bagimliligi
+islamic feminism	i̇slami feminizm

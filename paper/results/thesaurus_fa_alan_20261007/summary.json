@@ -1,0 +1,12 @@
+{
+  "pairs": {
+    "Benzer yazılış: 0": 12,
+    "Benzer yazılış: 1": 53,
+    "Benzer yazılış: boş": 1,
+    "Türkçe-İngilizce: 1": 116,
+    "Yazım farkı: 0": 2,
+    "Yazım farkı: 1": 99
+  },
+  "keyword_entries": 270,
+  "db_out": "paper/data/fa_alan_thesaurus.db"
+}

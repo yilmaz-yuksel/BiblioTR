@@ -1,0 +1,1153 @@
+{
+  "format": "trdizin-thesaurus",
+  "version": 1,
+  "entries": {
+    "keyword": [
+      {
+        "variant": "Activity of daily living",
+        "target": "Activities of Daily Living"
+      },
+      {
+        "variant": "Günlük yaşam etkinlikleri",
+        "target": "Activities of Daily Living"
+      },
+      {
+        "variant": "Aktivite",
+        "target": "Activity"
+      },
+      {
+        "variant": "Bağımlılık",
+        "target": "Addiction"
+      },
+      {
+        "variant": "Adolesan",
+        "target": "Adolescent"
+      },
+      {
+        "variant": "Ergen",
+        "target": "Adolescent"
+      },
+      {
+        "variant": "Ergenler",
+        "target": "Adolescent"
+      },
+      {
+        "variant": "adolescents",
+        "target": "Adolescent"
+      },
+      {
+        "variant": "Erişkin",
+        "target": "Adult"
+      },
+      {
+        "variant": "Antropometrik ölçümler",
+        "target": "Anthropometric measurements"
+      },
+      {
+        "variant": "Anksiyete",
+        "target": "Anxiety"
+      },
+      {
+        "variant": "Attitudes",
+        "target": "Attitude"
+      },
+      {
+        "variant": "Tutum",
+        "target": "Attitude"
+      },
+      {
+        "variant": "Tutumlar",
+        "target": "Attitude"
+      },
+      {
+        "variant": "Otizm",
+        "target": "Autism"
+      },
+      {
+        "variant": "Barrier",
+        "target": "Barriers"
+      },
+      {
+        "variant": "Bibliometrics",
+        "target": "Bibliyometri"
+      },
+      {
+        "variant": "Vücut Farkındalığı",
+        "target": "Body Awareness"
+      },
+      {
+        "variant": "vücut farkındalığı.",
+        "target": "Body Awareness"
+      },
+      {
+        "variant": "Vücut kompozisyonu",
+        "target": "Body composition"
+      },
+      {
+        "variant": "BMI",
+        "target": "Body mass index"
+      },
+      {
+        "variant": "Vücut kitle indeksi",
+        "target": "Body mass index"
+      },
+      {
+        "variant": "Vücut kitle indeksi.",
+        "target": "Body mass index"
+      },
+      {
+        "variant": "Vücut kütle indeksi",
+        "target": "Body mass index"
+      },
+      {
+        "variant": "beden kütle indeksi",
+        "target": "Body mass index"
+      },
+      {
+        "variant": "body-mass index",
+        "target": "Body mass index"
+      },
+      {
+        "variant": "Kemik yoğunluğu",
+        "target": "Bone Density"
+      },
+      {
+        "variant": "COVID 19",
+        "target": "COVID-19"
+      },
+      {
+        "variant": "COVID- 19",
+        "target": "COVID-19"
+      },
+      {
+        "variant": "Kardiyovasküler hastalık",
+        "target": "Cardiovascular disease"
+      },
+      {
+        "variant": "cardiovascular diseases",
+        "target": "Cardiovascular disease"
+      },
+      {
+        "variant": "kardiyovasküler hastalıklar",
+        "target": "Cardiovascular disease"
+      },
+      {
+        "variant": "Serebral palsi",
+        "target": "Cerebral palsy"
+      },
+      {
+        "variant": "children",
+        "target": "Child"
+      },
+      {
+        "variant": "Çocuk",
+        "target": "Child"
+      },
+      {
+        "variant": "çocuklar",
+        "target": "Child"
+      },
+      {
+        "variant": "Kolesterol",
+        "target": "Cholesterol"
+      },
+      {
+        "variant": "kronik hastalık",
+        "target": "Chronic disease"
+      },
+      {
+        "variant": "Konstipasyon",
+        "target": "Constipation"
+      },
+      {
+        "variant": ": Counseling",
+        "target": "Counseling"
+      },
+      {
+        "variant": "Danışmanlık",
+        "target": "Counseling"
+      },
+      {
+        "variant": "Depremler",
+        "target": "Deprem"
+      },
+      {
+        "variant": "Depresyon",
+        "target": "Depression"
+      },
+      {
+        "variant": "Diyabet",
+        "target": "Diabetes"
+      },
+      {
+        "variant": "Diyet",
+        "target": "Diet"
+      },
+      {
+        "variant": "Dijital Oyun",
+        "target": "Digital Games"
+      },
+      {
+        "variant": "Dijital Oyunlar",
+        "target": "Digital Games"
+      },
+      {
+        "variant": "uzaktan eğitim",
+        "target": "Distance education"
+      },
+      {
+        "variant": "Earthquakes",
+        "target": "Earthquake"
+      },
+      {
+        "variant": "Enerji metabolizması",
+        "target": "Energy Metabolism"
+      },
+      {
+        "variant": "Ergonomi",
+        "target": "Ergonomics"
+      },
+      {
+        "variant": "Ergonomik",
+        "target": "Ergonomics"
+      },
+      {
+        "variant": "Esport",
+        "target": "Espor"
+      },
+      {
+        "variant": "Esports",
+        "target": "Espor"
+      },
+      {
+        "variant": "Egzersiz",
+        "target": "Exercise"
+      },
+      {
+        "variant": "egzersizler",
+        "target": "Exercise"
+      },
+      {
+        "variant": "exercises",
+        "target": "Exercise"
+      },
+      {
+        "variant": "Yorgunluk",
+        "target": "Fatigue"
+      },
+      {
+        "variant": "Fibromiyalji",
+        "target": "Fibromyalgia"
+      },
+      {
+        "variant": "geriatri",
+        "target": "Geriatrics"
+      },
+      {
+        "variant": "geriatrikler",
+        "target": "Geriatrics"
+      },
+      {
+        "variant": "Alışkanlıklar",
+        "target": "Habits"
+      },
+      {
+        "variant": "Halluks valgus",
+        "target": "Hallux valgus"
+      },
+      {
+        "variant": "Mutlluluk",
+        "target": "Happiness"
+      },
+      {
+        "variant": "Mutluluk",
+        "target": "Happiness"
+      },
+      {
+        "variant": "Sağlık",
+        "target": "Health"
+      },
+      {
+        "variant": "health beliefs model",
+        "target": "Health belief model"
+      },
+      {
+        "variant": "sağlıklı yaşlanma",
+        "target": "Healthy aging"
+      },
+      {
+        "variant": "sağlıklı beslenme",
+        "target": "Healthy nutrition"
+      },
+      {
+        "variant": "Hormone",
+        "target": "Hormon"
+      },
+      {
+        "variant": "at",
+        "target": "Horses"
+      },
+      {
+        "variant": "Hipertansiyon",
+        "target": "Hypertension"
+      },
+      {
+        "variant": "Serbest Zaman.",
+        "target": "Leisure Time"
+      },
+      {
+        "variant": "Serbest zaman",
+        "target": "Leisure Time"
+      },
+      {
+        "variant": "leisure-time",
+        "target": "Leisure Time"
+      },
+      {
+        "variant": "Boş zaman aktiviteleri",
+        "target": "Leisure activities"
+      },
+      {
+        "variant": "lymphedema",
+        "target": "Lenfödem"
+      },
+      {
+        "variant": "lifestyle",
+        "target": "Life Style"
+      },
+      {
+        "variant": "Bel Ağrısı",
+        "target": "Low Back Pain"
+      },
+      {
+        "variant": "Akdeniz diyeti",
+        "target": "Mediterranean diet"
+      },
+      {
+        "variant": "Meslekler.",
+        "target": "Meslekler"
+      },
+      {
+        "variant": "Metabolik Sendrom",
+        "target": "Metabolic Syndrome"
+      },
+      {
+        "variant": "mobil uygulamalar",
+        "target": "Mobil uygulama"
+      },
+      {
+        "variant": "Mobile applications",
+        "target": "Mobile application"
+      },
+      {
+        "variant": "Motivasyon",
+        "target": "Motivation"
+      },
+      {
+        "variant": "Motivation.",
+        "target": "Motivation"
+      },
+      {
+        "variant": "Motor aktivite",
+        "target": "Motor Activity"
+      },
+      {
+        "variant": "Motor skills",
+        "target": "Motor skill"
+      },
+      {
+        "variant": "hemşirelik",
+        "target": "Nursing"
+      },
+      {
+        "variant": "nursing.",
+        "target": "Nursing"
+      },
+      {
+        "variant": "Beslenme",
+        "target": "Nutrition"
+      },
+      {
+        "variant": "Beslenme davranışı",
+        "target": "Nutritional behavior"
+      },
+      {
+        "variant": "beslenme davranışları",
+        "target": "Nutritional behavior"
+      },
+      {
+        "variant": "nutritional behaviors",
+        "target": "Nutritional behavior"
+      },
+      {
+        "variant": "Nutrition habits",
+        "target": "Nutritional habits"
+      },
+      {
+        "variant": "beslenme alışkanlık- ları",
+        "target": "Nutritional habits"
+      },
+      {
+        "variant": "beslenme alışkanlıkları",
+        "target": "Nutritional habits"
+      },
+      {
+        "variant": "Aged",
+        "target": "Older adults"
+      },
+      {
+        "variant": "Elderly",
+        "target": "Older adults"
+      },
+      {
+        "variant": "Yaşlı",
+        "target": "Older adults"
+      },
+      {
+        "variant": "yaşlılar",
+        "target": "Older adults"
+      },
+      {
+        "variant": "Ağrı",
+        "target": "Pain"
+      },
+      {
+        "variant": "Pandemi",
+        "target": "Pandemic"
+      },
+      {
+        "variant": "Pandemics",
+        "target": "Pandemic"
+      },
+      {
+        "variant": "pandemik",
+        "target": "Pandemic"
+      },
+      {
+        "variant": "performans",
+        "target": "Performance"
+      },
+      {
+        "variant": "Fobi",
+        "target": "Phobia"
+      },
+      {
+        "variant": "Physical Activity Questionnaire (IPAQ)",
+        "target": "Physical Activity Questionnaire"
+      },
+      {
+        "variant": "physical activity questionnaire.",
+        "target": "Physical Activity Questionnaire"
+      },
+      {
+        "variant": "Beden Eğitimi",
+        "target": "Physical Education"
+      },
+      {
+        "variant": "Fiziksel aktivite engelleri",
+        "target": "Physical activity barriers"
+      },
+      {
+        "variant": "Physical education and sports",
+        "target": "Physical education and sport"
+      },
+      {
+        "variant": "Plantar fasciitis",
+        "target": "Plantar fasiit"
+      },
+      {
+        "variant": "Postmenopoz",
+        "target": "Postmenopause"
+      },
+      {
+        "variant": "post menopause",
+        "target": "Postmenopause"
+      },
+      {
+        "variant": "postmenopo",
+        "target": "Postmenopause"
+      },
+      {
+        "variant": "Postür",
+        "target": "Posture"
+      },
+      {
+        "variant": "Premenstrüel sendrom",
+        "target": "Premenstrual syndrome"
+      },
+      {
+        "variant": "Anket",
+        "target": "Questionnaires"
+      },
+      {
+        "variant": "Anketler",
+        "target": "Questionnaires"
+      },
+      {
+        "variant": "questionnaire",
+        "target": "Questionnaires"
+      },
+      {
+        "variant": "recreatio",
+        "target": "Recreation"
+      },
+      {
+        "variant": "Güvenilirlik",
+        "target": "Reliability"
+      },
+      {
+        "variant": "Güvenirlik",
+        "target": "Reliability"
+      },
+      {
+        "variant": "Solunum",
+        "target": "Respiration"
+      },
+      {
+        "variant": "ruh sağlığı.",
+        "target": "Ruh sağlığı"
+      },
+      {
+        "variant": "Sedanter davranış",
+        "target": "Sedentary behavior"
+      },
+      {
+        "variant": "Sedater Yaşam.",
+        "target": "Sedentary lifestyle"
+      },
+      {
+        "variant": "sedanter yaşam",
+        "target": "Sedentary lifestyle"
+      },
+      {
+        "variant": "sedentary life",
+        "target": "Sedentary lifestyle"
+      },
+      {
+        "variant": "Akıllı telefon",
+        "target": "Smartphone"
+      },
+      {
+        "variant": "Akıllı Telefon Bağımlılığı",
+        "target": "Smartphone Addiction"
+      },
+      {
+        "variant": "Sigara",
+        "target": "Smoking"
+      },
+      {
+        "variant": "Spor Bilimleri",
+        "target": "Sport Sciences"
+      },
+      {
+        "variant": "Sports Sciences",
+        "target": "Sport Sciences"
+      },
+      {
+        "variant": "Sports science",
+        "target": "Sport Sciences"
+      },
+      {
+        "variant": "Spor",
+        "target": "Sports"
+      },
+      {
+        "variant": "Sport",
+        "target": "Sports"
+      },
+      {
+        "variant": "Step counts",
+        "target": "Step Count"
+      },
+      {
+        "variant": "Stres",
+        "target": "Stress"
+      },
+      {
+        "variant": "Student.",
+        "target": "Student"
+      },
+      {
+        "variant": "Students",
+        "target": "Student"
+      },
+      {
+        "variant": "Öğrenci",
+        "target": "Student"
+      },
+      {
+        "variant": "Öğrenci.",
+        "target": "Student"
+      },
+      {
+        "variant": "Öğrenciler",
+        "target": "Student"
+      },
+      {
+        "variant": "Tip-2 diyabet",
+        "target": "Type 2 diabetes"
+      },
+      {
+        "variant": "Type-2 diabetes",
+        "target": "Type 2 diabetes"
+      },
+      {
+        "variant": "tip 2 diyabet",
+        "target": "Type 2 diabetes"
+      },
+      {
+        "variant": "University student.",
+        "target": "University students"
+      },
+      {
+        "variant": "university student",
+        "target": "University students"
+      },
+      {
+        "variant": "university students.",
+        "target": "University students"
+      },
+      {
+        "variant": "Üniversite Öğrenci.",
+        "target": "University students"
+      },
+      {
+        "variant": "Üniversite öğrencileri",
+        "target": "University students"
+      },
+      {
+        "variant": "Üniversite öğrencisi",
+        "target": "University students"
+      },
+      {
+        "variant": "Urban parks",
+        "target": "Urban Park"
+      },
+      {
+        "variant": "Geçerlik",
+        "target": "Validity"
+      },
+      {
+        "variant": "Geçerlilik",
+        "target": "Validity"
+      },
+      {
+        "variant": "Venöz yetmezlik",
+        "target": "Venous insufficiency"
+      },
+      {
+        "variant": "Genç Yetişkin",
+        "target": "Young Adult"
+      },
+      {
+        "variant": "Genç yetişkinler",
+        "target": "Young Adult"
+      },
+      {
+        "variant": "Young adults",
+        "target": "Young Adult"
+      },
+      {
+        "variant": "genç erişkin",
+        "target": "Young Adult"
+      },
+      {
+        "variant": "uyarlanmış fiziksel aktivite",
+        "target": "adapted physical activity"
+      },
+      {
+        "variant": "alanine aminotransferase",
+        "target": "alanin aminotransferaz"
+      },
+      {
+        "variant": "antropometri",
+        "target": "anthropometry"
+      },
+      {
+        "variant": "artrit",
+        "target": "arthritis"
+      },
+      {
+        "variant": "aspartate aminotransferase",
+        "target": "aspartat aminotransferaz"
+      },
+      {
+        "variant": "otizm spektrum bozukluğu",
+        "target": "autism spectrum disorder"
+      },
+      {
+        "variant": "denge",
+        "target": "balance"
+      },
+      {
+        "variant": "bakım veren",
+        "target": "caregiver"
+      },
+      {
+        "variant": "bakım verenler",
+        "target": "caregiver"
+      },
+      {
+        "variant": "caregivers",
+        "target": "caregiver"
+      },
+      {
+        "variant": "Bilişsel Fonksiyon",
+        "target": "cognitive function"
+      },
+      {
+        "variant": "bilişsel fonksiyonlar",
+        "target": "cognitive function"
+      },
+      {
+        "variant": "cognitive functions",
+        "target": "cognitive function"
+      },
+      {
+        "variant": "Covid-19 korkusu",
+        "target": "covid-19 korku"
+      },
+      {
+        "variant": "Cross Sectional Studies",
+        "target": "cross-sectional study"
+      },
+      {
+        "variant": "Cross-Sectional Studies",
+        "target": "cross-sectional study"
+      },
+      {
+        "variant": "Kesitsel çalışmalar",
+        "target": "cross-sectional study"
+      },
+      {
+        "variant": "kesitsel çalışma",
+        "target": "cross-sectional study"
+      },
+      {
+        "variant": "Eating behaviors",
+        "target": "eating behavior"
+      },
+      {
+        "variant": "Yeme Davranışı",
+        "target": "eating behavior"
+      },
+      {
+        "variant": "Yeme davranışları",
+        "target": "eating behavior"
+      },
+      {
+        "variant": "duygusal yeme",
+        "target": "emotional eating"
+      },
+      {
+        "variant": "korku",
+        "target": "fear"
+      },
+      {
+        "variant": "Düşme Korkusu",
+        "target": "fear of falling"
+      },
+      {
+        "variant": "gebe kadınlar",
+        "target": "gebe kadın."
+      },
+      {
+        "variant": "gestasyonel diabetes mellitus",
+        "target": "gestational diabetes mellitus"
+      },
+      {
+        "variant": "hand grip strenght",
+        "target": "handgrip strength"
+      },
+      {
+        "variant": "sağlık okuryazarlığı",
+        "target": "health literacy"
+      },
+      {
+        "variant": "health care workers",
+        "target": "healthcare workers"
+      },
+      {
+        "variant": "Healthy Lifestyle Behaviours",
+        "target": "healthy lifestyle behavior"
+      },
+      {
+        "variant": "healthy lifestyle behaviors",
+        "target": "healthy lifestyle behavior"
+      },
+      {
+        "variant": "Huzur evi",
+        "target": "huzurevi"
+      },
+      {
+        "variant": "Hareketsizlik",
+        "target": "inactivity"
+      },
+      {
+        "variant": "Kinezyofobi",
+        "target": "kinesiophobia"
+      },
+      {
+        "variant": "Life satisfaction.",
+        "target": "life satisfaction"
+      },
+      {
+        "variant": "Medical student",
+        "target": "medical students"
+      },
+      {
+        "variant": "menstrual semptomlar",
+        "target": "menstrual symptoms"
+      },
+      {
+        "variant": "Kas-iskelet ağrısı",
+        "target": "musculoskeletal pain"
+      },
+      {
+        "variant": "kas iskelet ağrısı",
+        "target": "musculoskeletal pain"
+      },
+      {
+        "variant": "boyun ağrısı",
+        "target": "neck pain"
+      },
+      {
+        "variant": "Nursing Homes",
+        "target": "nursing home"
+      },
+      {
+        "variant": "beslenme durumu",
+        "target": "nutritional status"
+      },
+      {
+        "variant": "nutritional state",
+        "target": "nutritional status"
+      },
+      {
+        "variant": "obezite",
+        "target": "obesity"
+      },
+      {
+        "variant": "Office worker",
+        "target": "office workers"
+      },
+      {
+        "variant": "Ofis çalışanları",
+        "target": "office workers"
+      },
+      {
+        "variant": "Ofis çalışanı",
+        "target": "office workers"
+      },
+      {
+        "variant": "parents",
+        "target": "parent"
+      },
+      {
+        "variant": "Algılanan stres",
+        "target": "perceived stress"
+      },
+      {
+        "variant": "Physcial Activity",
+        "target": "physical activity"
+      },
+      {
+        "variant": "Physical Activity.",
+        "target": "physical activity"
+      },
+      {
+        "variant": "Physical acrivity",
+        "target": "physical activity"
+      },
+      {
+        "variant": "fizik aktivite",
+        "target": "physical activity"
+      },
+      {
+        "variant": "fiziksel aktivite",
+        "target": "physical activity"
+      },
+      {
+        "variant": "fiziksel aktivite.",
+        "target": "physical activity"
+      },
+      {
+        "variant": "fiziksel aktiviteler",
+        "target": "physical activity"
+      },
+      {
+        "variant": "fizksel aktivite",
+        "target": "physical activity"
+      },
+      {
+        "variant": "physical activities",
+        "target": "physical activity"
+      },
+      {
+        "variant": "Fiziksel aktivite danışmanlığı",
+        "target": "physical activity counseling"
+      },
+      {
+        "variant": "physicalactivitycounseling",
+        "target": "physical activity counseling"
+      },
+      {
+        "variant": "fiziksel aktivite düzeyi",
+        "target": "physical activity level"
+      },
+      {
+        "variant": "fiziksel aktivite düzeyi.",
+        "target": "physical activity level"
+      },
+      {
+        "variant": "physical activity level.",
+        "target": "physical activity level"
+      },
+      {
+        "variant": "physical activity levels",
+        "target": "physical activity level"
+      },
+      {
+        "variant": "beden eğitimi ve spor öğrencileri",
+        "target": "physical education and sports students"
+      },
+      {
+        "variant": "physical exercises",
+        "target": "physical exercise"
+      },
+      {
+        "variant": "Fiziksel uygunluk",
+        "target": "physical fitness"
+      },
+      {
+        "variant": "fiziksel performans",
+        "target": "physical performance"
+      },
+      {
+        "variant": "postüral kontrol",
+        "target": "postural control"
+      },
+      {
+        "variant": "prediabetes",
+        "target": "prediyabet"
+      },
+      {
+        "variant": "Gebelik.",
+        "target": "pregnancy"
+      },
+      {
+        "variant": "Pregnancy.",
+        "target": "pregnancy"
+      },
+      {
+        "variant": "gebelik",
+        "target": "pregnancy"
+      },
+      {
+        "variant": "pregnant women.",
+        "target": "pregnant women"
+      },
+      {
+        "variant": "Okul öncesi eğitim",
+        "target": "preschool education"
+      },
+      {
+        "variant": "Propriosepsiyon",
+        "target": "proprioception"
+      },
+      {
+        "variant": "propriyosepsiyon",
+        "target": "proprioception"
+      },
+      {
+        "variant": "psychometrics.",
+        "target": "psychometrics"
+      },
+      {
+        "variant": "halk sağlılğı",
+        "target": "public health"
+      },
+      {
+        "variant": "halk sağlığı",
+        "target": "public health"
+      },
+      {
+        "variant": "Life quality",
+        "target": "quality of life"
+      },
+      {
+        "variant": "life qualşty",
+        "target": "quality of life"
+      },
+      {
+        "variant": "Quaity of Life",
+        "target": "quality of life"
+      },
+      {
+        "variant": "quality of life.",
+        "target": "quality of life"
+      },
+      {
+        "variant": "yaşam kalitesi",
+        "target": "quality of life"
+      },
+      {
+        "variant": "yaşam kalitesi.",
+        "target": "quality of life"
+      },
+      {
+        "variant": "Rehabilitasyon.",
+        "target": "rehabilitation"
+      },
+      {
+        "variant": "Rehabilitation.",
+        "target": "rehabilitation"
+      },
+      {
+        "variant": "rehabilitasyon",
+        "target": "rehabilitation"
+      },
+      {
+        "variant": "self efficacy",
+        "target": "self-efficacy"
+      },
+      {
+        "variant": "self-efficiacy",
+        "target": "self-efficacy"
+      },
+      {
+        "variant": "Uyku",
+        "target": "sleep"
+      },
+      {
+        "variant": "Uyku kalitesi",
+        "target": "sleep quality"
+      },
+      {
+        "variant": "sosyal destek",
+        "target": "social support"
+      },
+      {
+        "variant": "spor aktiviteleri",
+        "target": "sports activities"
+      },
+      {
+        "variant": "Tobacco.",
+        "target": "tobacco"
+      },
+      {
+        "variant": "Tütün.",
+        "target": "tütün"
+      },
+      {
+        "variant": "Universities",
+        "target": "university"
+      },
+      {
+        "variant": "Üniversi- te",
+        "target": "university"
+      },
+      {
+        "variant": "Üniversiteler",
+        "target": "university"
+      },
+      {
+        "variant": "üniversite",
+        "target": "university"
+      },
+      {
+        "variant": "Kadın",
+        "target": "women"
+      },
+      {
+        "variant": "Kadınlar",
+        "target": "women"
+      },
+      {
+        "variant": "Woman",
+        "target": "women"
+      },
+      {
+        "variant": "Yaşam doyumu.",
+        "target": "yaşam doyumu"
+      },
+      {
+        "variant": "Öz yeterlilik",
+        "target": "özyeterlilik"
+      },
+      {
+        "variant": "Internet bağımlılığı.",
+        "target": "İnternet bağımlılığı"
+      },
+      {
+        "variant": "Islamic feminism",
+        "target": "İslami Feminizm"
+      }
+    ],
+    "institution": [],
+    "author": []
+  },
+  "author_names": {},
+  "keep_separate": {
+    "keyword": [
+      [
+        "beden egitimi ve spor ogrencileri",
+        "beden egitimi ve spor ogretmenleri"
+      ],
+      [
+        "health",
+        "healthy"
+      ],
+      [
+        "fiziksel aktivite aliskanligi",
+        "fiziksel aktivite danismanligi"
+      ],
+      [
+        "psychological distress",
+        "psychological stress"
+      ],
+      [
+        "saglik algisi",
+        "saglik bilgisi"
+      ],
+      [
+        "fiziksel aktivite aliskanligi",
+        "fiziksel aktivite sikligi"
+      ],
+      [
+        "fiziksel aktivite",
+        "fiziksel inaktivite"
+      ],
+      [
+        "saglikli yasam",
+        "saglikli yaslanma"
+      ],
+      [
+        "psikolojik saglamlik",
+        "psikolojik saglik"
+      ],
+      [
+        "physical activity regime",
+        "physical activity reminder"
+      ],
+      [
+        "guvenirlik",
+        "guvenlik"
+      ],
+      [
+        "fizyoterapi",
+        "fizyoterapistler"
+      ],
+      [
+        "physical activity",
+        "physical inactivity"
+      ],
+      [
+        "physical therapists",
+        "physical therapy"
+      ]
+    ],
+    "institution": [],
+    "author": []
+  }
+}

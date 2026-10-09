@@ -1,0 +1,13 @@
+﻿group,query,purpose,total
+default,fiziksel aktivite,"Varsayılan arama: iki sözcük, tırnaksız",3060
+default,gamify,Varsayılan arama: bulanık eşleşme örneği (family?),26698
+table3,"(title : ( ""fiziksel aktivite"" ))",Tablo 3: başlıkta TR ifade,518
+table3,"(title : ( ""physical activity"" ))",Tablo 3: başlıkta EN ifade,838
+table3,"(title : ( ""fiziksel aktivite"" OR ""physical activity"" ))",Tablo 3: başlıkta iki ifadenin VEYA'sı,862
+table3,"(title : ( (""fiziksel aktivite"") OR (""physical activity"") ))","Tablo 3: aynı VEYA, iç parantezli",862
+table3,"(title : ( ""fiziksel"" OR ""physical"" ))",Tablo 3: tek sözcüklerin VEYA'sı,4562
+table3,"(keyword : ( ""fiziksel aktivite"" ))",Tablo 3: anahtar kelimede TR ifade,325
+exact,"(title : ( ""fiziksel aktivitenin"" ))",Ekli biçim tek başına,49
+exact,"(title : ( ""fiziksel aktivite"" OR ""fiziksel aktivitenin"" ))",Temel ve ekli biçimin VEYA'sı,566
+fields,"(title : ( ""fiziksel aktivite"" )) | (keyword : ( ""fiziksel aktivite"" ))",İki alan cümlesi '|' ile,0
+fields,"(title : ( ""fiziksel aktivite"" )) OR (keyword : ( ""fiziksel aktivite"" ))",İki alan cümlesi 'OR' ile,0

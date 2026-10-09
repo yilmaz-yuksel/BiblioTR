@@ -1,0 +1,52 @@
+{
+  "comparisons": 96,
+  "coded": 96,
+  "same_person": 94,
+  "different_person": 1,
+  "na": 1,
+  "split_share": 0.9895,
+  "ci95": [
+    0.9428,
+    0.9981
+  ],
+  "groups": 94,
+  "groups_all_same": 92,
+  "rule_vs_coding": {
+    "institution": {
+      "n": 64,
+      "rule_correct": 64,
+      "coded_same": 64
+    },
+    "none": {
+      "n": 16,
+      "rule_correct": 1,
+      "coded_same": 16
+    },
+    "orcid": {
+      "n": 15,
+      "rule_correct": 2,
+      "coded_same": 14
+    }
+  },
+  "bcubed": {
+    "full_name": {
+      "n": 188,
+      "precision": 0.9947,
+      "recall": 1.0,
+      "f1": 0.9973
+    },
+    "trdizin_id": {
+      "n": 188,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667
+    },
+    "id_rule": {
+      "n": 188,
+      "precision": 1.0,
+      "recall": 0.8511,
+      "f1": 0.9195
+    }
+  },
+  "bcubed_note": "Kısa ad bu örneklemde tam adla aynı kümeleri verir (aynı tam ad aynı kısa adı taşır); kısa adın ek birleştirmeleri kodlanmadığı için ayrıca puanlanmaz."
+}

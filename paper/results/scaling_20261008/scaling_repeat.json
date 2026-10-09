@@ -1,0 +1,79 @@
+{
+  "run_at_utc": "2026-10-08T18:21:32+00:00",
+  "db": "fa_alan_frozen_20261002.db",
+  "dataset": "fa_alan",
+  "base_records": 967,
+  "environment": {
+    "python": "3.13.15",
+    "platform": "Linux-6.18.44-fc-v80-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "cpu_count": 2,
+    "pandas": "3.0.6",
+    "networkx": "3.7"
+  },
+  "results": [
+    {
+      "records": 1000,
+      "publications_loaded": 1000,
+      "authors": 2635,
+      "references": 36084,
+      "steps_seconds": {
+        "index_raw_json": 2.915,
+        "load": 1.61,
+        "summary": 0.018,
+        "per_year": 0.017,
+        "author_metrics": 0.046,
+        "lotka": 0.014,
+        "bradford": 0.007,
+        "top_references": 5.645,
+        "local_citations": 0.039,
+        "citation_network": 0.081,
+        "coauthor_network_top100": 0.021,
+        "keyword_network_top100": 0.034,
+        "coupling_network_top100": 0.942,
+        "wos_export": 8.033,
+        "reindex": 3.039
+      },
+      "total_seconds": 22.46,
+      "peak_rss_mb": 303.0,
+      "rss_after_imports_mb": 273.2,
+      "db_mb": 34.7,
+      "wos_mb": 5.9,
+      "wos_sha256": "3aa033f28c26d7c82e9d0889d63f1490a3f702fa5e7104c2ce79cf09253732c1",
+      "identical_wos_across_repeats": true,
+      "repeats": 3
+    },
+    {
+      "records": 5000,
+      "publications_loaded": 5000,
+      "authors": 13190,
+      "references": 180055,
+      "steps_seconds": {
+        "index_raw_json": 14.128,
+        "load": 7.894,
+        "summary": 0.101,
+        "per_year": 0.023,
+        "author_metrics": 0.266,
+        "lotka": 0.025,
+        "bradford": 0.033,
+        "top_references": 28.159,
+        "local_citations": 0.191,
+        "citation_network": 0.392,
+        "coauthor_network_top100": 0.117,
+        "keyword_network_top100": 0.158,
+        "coupling_network_top100": 4.685,
+        "wos_export": 40.634,
+        "reindex": 15.048
+      },
+      "total_seconds": 111.85,
+      "peak_rss_mb": 792.2,
+      "rss_after_imports_mb": 273.2,
+      "db_mb": 174.2,
+      "wos_mb": 29.6,
+      "wos_sha256": "534ed53adf68193d892483779b0e8e1c658c075e6cc03a74398b13d612c960fa",
+      "identical_wos_across_repeats": true,
+      "repeats": 3
+    }
+  ]
+}

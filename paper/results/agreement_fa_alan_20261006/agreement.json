@@ -1,0 +1,158 @@
+{
+  "computed_at_utc": "2026-10-05T23:12:07+00:00",
+  "n_sample": 967,
+  "coded_k1": 967,
+  "coded_k2": 967,
+  "agreement": {
+    "n": 967,
+    "observed_agreement": 0.999,
+    "expected_agreement": 0.9197,
+    "kappa": 0.9871
+  },
+  "precision_k1": {
+    "n": 967,
+    "relevant": 927,
+    "precision": 0.9586,
+    "ci95": [
+      0.9442,
+      0.9695
+    ]
+  },
+  "precision_k2": {
+    "n": 967,
+    "relevant": 926,
+    "precision": 0.9576,
+    "ci95": [
+      0.943,
+      0.9686
+    ]
+  },
+  "disagreements": 1,
+  "unresolved": 1,
+  "d1_source": "kodlama_D1.xlsx",
+  "n_d1": 150,
+  "d1": [
+    {
+      "field": "Başlık",
+      "correct": 150,
+      "incorrect": 0,
+      "na": 0,
+      "n": 150,
+      "accuracy": 1.0,
+      "ci95_low": 0.975,
+      "ci95_high": 1.0
+    },
+    {
+      "field": "Yazarlar",
+      "correct": 150,
+      "incorrect": 0,
+      "na": 0,
+      "n": 150,
+      "accuracy": 1.0,
+      "ci95_low": 0.975,
+      "ci95_high": 1.0
+    },
+    {
+      "field": "Yazar sırası",
+      "correct": 150,
+      "incorrect": 0,
+      "na": 0,
+      "n": 150,
+      "accuracy": 1.0,
+      "ci95_low": 0.975,
+      "ci95_high": 1.0
+    },
+    {
+      "field": "Yıl",
+      "correct": 150,
+      "incorrect": 0,
+      "na": 0,
+      "n": 150,
+      "accuracy": 1.0,
+      "ci95_low": 0.975,
+      "ci95_high": 1.0
+    },
+    {
+      "field": "Dergi",
+      "correct": 150,
+      "incorrect": 0,
+      "na": 0,
+      "n": 150,
+      "accuracy": 1.0,
+      "ci95_low": 0.975,
+      "ci95_high": 1.0
+    },
+    {
+      "field": "Kurum",
+      "correct": 143,
+      "incorrect": 7,
+      "na": 0,
+      "n": 150,
+      "accuracy": 0.9533,
+      "ci95_low": 0.9068,
+      "ci95_high": 0.9772
+    },
+    {
+      "field": "DOI",
+      "correct": 115,
+      "incorrect": 0,
+      "na": 35,
+      "n": 115,
+      "accuracy": 1.0,
+      "ci95_low": 0.9677,
+      "ci95_high": 1.0
+    }
+  ],
+  "author_identity": {
+    "comparisons": 96,
+    "coded": 96,
+    "same_person": 94,
+    "different_person": 1,
+    "na": 1,
+    "split_share": 0.9895,
+    "ci95": [
+      0.9428,
+      0.9981
+    ],
+    "groups": 94,
+    "groups_all_same": 92,
+    "rule_vs_coding": {
+      "institution": {
+        "n": 64,
+        "rule_correct": 64,
+        "coded_same": 64
+      },
+      "none": {
+        "n": 16,
+        "rule_correct": 1,
+        "coded_same": 16
+      },
+      "orcid": {
+        "n": 15,
+        "rule_correct": 2,
+        "coded_same": 14
+      }
+    },
+    "bcubed": {
+      "full_name": {
+        "n": 188,
+        "precision": 0.9947,
+        "recall": 1.0,
+        "f1": 0.9973
+      },
+      "trdizin_id": {
+        "n": 188,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6667
+      },
+      "id_rule": {
+        "n": 188,
+        "precision": 1.0,
+        "recall": 0.8511,
+        "f1": 0.9195
+      }
+    },
+    "bcubed_note": "Kısa ad bu örneklemde tam adla aynı kümeleri verir (aynı tam ad aynı kısa adı taşır); kısa adın ek birleştirmeleri kodlanmadığı için ayrıca puanlanmaz."
+  }
+}

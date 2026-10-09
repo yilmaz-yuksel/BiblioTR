@@ -1,0 +1,101 @@
+{
+  "publications": 967,
+  "before": {
+    "distinct_keywords": 1788,
+    "keywords_min_occurrence": 218,
+    "nodes": 100,
+    "edges": 983,
+    "clusters": 6,
+    "top10": [
+      [
+        "Physical activity",
+        309
+      ],
+      [
+        "Fiziksel Aktivite",
+        247
+      ],
+      [
+        "Exercise",
+        74
+      ],
+      [
+        "egzersiz",
+        57
+      ],
+      [
+        "Quality of life",
+        48
+      ],
+      [
+        "yaşam kalitesi",
+        43
+      ],
+      [
+        "COVID-19",
+        39
+      ],
+      [
+        "nutrition",
+        26
+      ],
+      [
+        "Obesity",
+        23
+      ],
+      [
+        "Obezite",
+        21
+      ]
+    ]
+  },
+  "after": {
+    "distinct_keywords": 1517,
+    "keywords_min_occurrence": 140,
+    "nodes": 100,
+    "edges": 657,
+    "clusters": 4,
+    "top10": [
+      [
+        "Physical activity",
+        369
+      ],
+      [
+        "Exercise",
+        81
+      ],
+      [
+        "Quality of life",
+        56
+      ],
+      [
+        "COVID-19",
+        41
+      ],
+      [
+        "Obesity",
+        28
+      ],
+      [
+        "Nutrition",
+        27
+      ],
+      [
+        "Pain",
+        21
+      ],
+      [
+        "Child",
+        20
+      ],
+      [
+        "Depression",
+        20
+      ],
+      [
+        "Anxiety",
+        19
+      ]
+    ]
+  }
+}

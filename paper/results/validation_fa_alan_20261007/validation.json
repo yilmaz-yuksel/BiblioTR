@@ -1,0 +1,294 @@
+{
+  "run_at_utc": "2026-10-07T15:26:10+00:00",
+  "db": "paper/data/fa_alan_frozen_20261002_reindex_20261007.db",
+  "dataset": "fa_alan",
+  "max_year": 2025,
+  "papers_only": true,
+  "python": "3.13.15",
+  "A_reindex_determinism": {
+    "records_reindexed": 1003,
+    "seconds": 3.04,
+    "tables": {
+      "publications": {
+        "rows": 1003,
+        "unchanged": true,
+        "idempotent": true
+      },
+      "publication_authors": {
+        "rows": 3232,
+        "unchanged": true,
+        "idempotent": true
+      },
+      "publication_keywords": {
+        "rows": 4023,
+        "unchanged": true,
+        "idempotent": true
+      },
+      "publication_subjects": {
+        "rows": 2688,
+        "unchanged": true,
+        "idempotent": true
+      },
+      "publication_references": {
+        "rows": 37624,
+        "unchanged": true,
+        "idempotent": true
+      },
+      "publication_citing": {
+        "rows": 1762,
+        "unchanged": true,
+        "idempotent": true
+      },
+      "dataset_publications": {
+        "rows": 2786,
+        "unchanged": true,
+        "idempotent": true
+      }
+    },
+    "all_unchanged": true,
+    "all_idempotent": true
+  },
+  "B_dataset_audit": {
+    "records": 967,
+    "document_types": {
+      "PAPER": 967
+    },
+    "languages": {
+      "TUR": 486,
+      "ENG": 479,
+      "OTH": 2
+    },
+    "years": {
+      "min": 1997,
+      "max": 2025,
+      "missing": 0,
+      "per_year": {
+        "1997": 1,
+        "1998": 2,
+        "2000": 1,
+        "2001": 3,
+        "2002": 3,
+        "2003": 1,
+        "2004": 7,
+        "2005": 2,
+        "2006": 3,
+        "2007": 6,
+        "2008": 6,
+        "2009": 3,
+        "2010": 7,
+        "2011": 17,
+        "2012": 10,
+        "2013": 20,
+        "2014": 24,
+        "2015": 19,
+        "2016": 22,
+        "2017": 22,
+        "2018": 51,
+        "2019": 60,
+        "2020": 65,
+        "2021": 112,
+        "2022": 111,
+        "2023": 130,
+        "2024": 133,
+        "2025": 126
+      }
+    },
+    "doi_coverage_pct": 72.8,
+    "duplicate_doi_groups": 0,
+    "duplicate_title_year_groups": 0,
+    "records_without_authors": 0,
+    "author_slots": 3082,
+    "author_slots_with_trdizin_id_pct": 100.0,
+    "author_slots_with_orcid_pct": 81.1,
+    "orcid_slots_by_status": {
+      "valid": 2487,
+      "bad_checksum": 8,
+      "bad_format": 3
+    },
+    "orcid_distinct": 2006,
+    "orcid_distinct_by_status": {
+      "valid": 1999,
+      "bad_checksum": 6,
+      "bad_format": 1
+    },
+    "author_keys_with_several_valid_orcids": 0,
+    "author_slots_without_institution": 17,
+    "country_spellings": {
+      "Türkiye": 2763,
+      "İran": 27,
+      "Amerika Birleşik Devletleri": 17,
+      "Nijerya": 12,
+      "Kuzey Kıbrıs Türk Cumhuriyeti": 11,
+      "Turkey": 10,
+      "Bosna-Hersek": 9,
+      "Rusya": 9,
+      "Pakistan": 8,
+      "Uganda": 8,
+      "China": 8,
+      "TÜRKİYE": 6,
+      "Iran": 6,
+      "Litvanya": 6,
+      "Brezilya": 5
+    },
+    "country_case_variants": {
+      "turkiye": [
+        "Turkiye",
+        "TÜRKİYE",
+        "Türkiye"
+      ],
+      "iran": [
+        "Iran",
+        "İran"
+      ]
+    },
+    "trnc_addresses_by_written_country": {
+      "NORTH CYPRUS": 14,
+      "TURKEY": 9,
+      "CYPRUS": 8
+    },
+    "trnc_addresses_reassigned": 17,
+    "records_with_references_pct": 99.3,
+    "references": 34808,
+    "references_with_year_pct": 99.6,
+    "references_with_doi_pct": 19.6,
+    "references_with_trdizin_target_pct": 6.9,
+    "citation_count_equals_citing_list": 967,
+    "external_counts_available": 704
+  },
+  "C_author_identity": {
+    "distinct_author_keys": 2535,
+    "distinct_short_names": 2377,
+    "distinct_full_names": 2460,
+    "homonymy": {
+      "short_names_shared_by_several_keys": 153,
+      "keys_in_those_groups": 328,
+      "group_size_distribution": {
+        "2": 135,
+        "3": 14,
+        "4": 4
+      },
+      "largest_groups": [
+        [
+          "yildirim, a",
+          4
+        ],
+        [
+          "arslan, m",
+          4
+        ],
+        [
+          "celik, a",
+          4
+        ],
+        [
+          "yilmaz, a",
+          4
+        ],
+        [
+          "varol, f",
+          3
+        ],
+        [
+          "sahin, a",
+          3
+        ],
+        [
+          "gursan, in",
+          3
+        ],
+        [
+          "arslan, s",
+          3
+        ],
+        [
+          "kutukcu, ec",
+          3
+        ],
+        [
+          "aytar, a",
+          3
+        ]
+      ]
+    },
+    "splitting": {
+      "full_names_with_several_keys": 94,
+      "orcid_relation": {
+        "orcid_missing_on_one_side": 78,
+        "shared_orcid": 1,
+        "different_orcids": 15
+      },
+      "share_an_institution": 75,
+      "orcid_with_several_keys": 1,
+      "keys_with_several_spellings": 21
+    }
+  },
+  "D_citation_links": {
+    "edges_from_citing_lists": 645,
+    "edges_from_reference_target_ids": 645,
+    "edges_from_reference_dois": 6,
+    "target_id_edges_not_in_citing_lists": 0,
+    "citing_list_edges_not_in_references": 0,
+    "agreement_citing_vs_target_id_jaccard": 1.0,
+    "doi_only_edges_added": 6,
+    "union_edges": 651,
+    "time_inconsistent_edges": 0,
+    "tool_local_citations_total": 651,
+    "tool_documents_locally_cited": 236
+  },
+  "E_independent_parsers": {
+    "wosfile": {
+      "records": 967,
+      "distinct_AU": 2535,
+      "records_with_CR": 960,
+      "CR_total": 34706
+    },
+    "metaknowledge": {
+      "records": 967,
+      "bad_records": 0
+    }
+  },
+  "F_bibliometrix": {
+    "documents_compared": 961,
+    "bibliometrix_lcs_total": 649,
+    "tool_lcs_total": 648,
+    "exact_agreement": 0.999,
+    "exact_agreement_with_doi": 1.0,
+    "exact_agreement_without_doi": 0.9962,
+    "bibliometrix_lcs_exceeds_total_citations": 4,
+    "bibliometrix_summary": {
+      "bibliometrix_version": "5.5.0.9000 (source)",
+      "documents": "967",
+      "timespan": "1997-2025",
+      "sources": "287",
+      "authors": "2535",
+      "single_authored_documents": "105",
+      "authors_per_document": "3.19",
+      "total_citations": "1760",
+      "mean_citations": "1.82",
+      "author_keywords": "1760",
+      "cited_references": "34706",
+      "annual_growth_rate": "18.85",
+      "documents_with_country": "958",
+      "local_citations_total": "652",
+      "documents_locally_cited": "236",
+      "duplicated_SR_labels": "0"
+    },
+    "tool_summary": {
+      "Yayın sayısı": 967,
+      "Zaman aralığı": "1997-2025",
+      "Dergi sayısı": 287,
+      "Yazar sayısı": 2535,
+      "Anahtar kelime sayısı": 1788,
+      "Toplam atıf": 1760,
+      "Yayın başına ortalama atıf": 1.82,
+      "Yayın başına ortalama yazar": 3.19,
+      "Tek yazarlı yayın oranı (%)": 10.9,
+      "İşbirliği indeksi": 3.45,
+      "Açık erişim oranı (%)": 95.2,
+      "Yıllık büyüme oranı (%)": 18.85,
+      "Kaynakçası olan yayın (%)": 99.3,
+      "Yayın başına ortalama kaynak": 36.3
+    }
+  },
+  "total_seconds": 7.79
+}

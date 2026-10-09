@@ -1,0 +1,101 @@
+{
+  "publications": 926,
+  "before": {
+    "distinct_keywords": 1654,
+    "keywords_min_occurrence": 201,
+    "nodes": 100,
+    "edges": 966,
+    "clusters": 6,
+    "top10": [
+      [
+        "Physical activity",
+        290
+      ],
+      [
+        "Fiziksel Aktivite",
+        234
+      ],
+      [
+        "Exercise",
+        73
+      ],
+      [
+        "egzersiz",
+        56
+      ],
+      [
+        "Quality of life",
+        47
+      ],
+      [
+        "yaşam kalitesi",
+        42
+      ],
+      [
+        "COVID-19",
+        38
+      ],
+      [
+        "nutrition",
+        25
+      ],
+      [
+        "Obesity",
+        21
+      ],
+      [
+        "Ağrı",
+        19
+      ]
+    ]
+  },
+  "after": {
+    "distinct_keywords": 1402,
+    "keywords_min_occurrence": 128,
+    "nodes": 100,
+    "edges": 653,
+    "clusters": 5,
+    "top10": [
+      [
+        "Physical activity",
+        343
+      ],
+      [
+        "Exercise",
+        80
+      ],
+      [
+        "Quality of life",
+        55
+      ],
+      [
+        "COVID-19",
+        40
+      ],
+      [
+        "Nutrition",
+        26
+      ],
+      [
+        "Obesity",
+        26
+      ],
+      [
+        "Pain",
+        21
+      ],
+      [
+        "Child",
+        19
+      ],
+      [
+        "Older adults",
+        19
+      ],
+      [
+        "Student",
+        19
+      ]
+    ]
+  }
+}

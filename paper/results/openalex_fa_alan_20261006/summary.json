@@ -1,0 +1,63 @@
+{
+  "queried_at_utc": "2026-10-05T23:06:48+00:00",
+  "db": "fa_alan_frozen_20261002_openalex.db",
+  "dataset": "fa_alan",
+  "source": "stored matches",
+  "n_records": 967,
+  "with_doi": 704,
+  "without_doi": 263,
+  "found_in_openalex": 695,
+  "found_pct_of_doi": 98.7,
+  "found_pct_of_all": 71.9,
+  "found_by": {
+    "doi": 680,
+    "title": 196
+  },
+  "found_total": 876,
+  "found_pct_total": 90.6,
+  "without_doi_found_by_title": 181,
+  "reported_vs_direct": {
+    "n": 695,
+    "reported_lower": 446,
+    "equal": 249,
+    "reported_higher": 0,
+    "reported_zero_direct_positive": 446
+  },
+  "cited_records": {
+    "openalex_direct": 562,
+    "trdizin_reported_openalex": 5,
+    "crossref": 412,
+    "trdizin": 367
+  },
+  "total_citations": {
+    "openalex_direct": 2977,
+    "trdizin_reported_openalex": 19,
+    "crossref": 1681,
+    "opencitations": 1496,
+    "trdizin": 1447
+  },
+  "spearman_with_openalex_direct": {
+    "trdizin": {
+      "n": 876,
+      "rho": 0.568
+    },
+    "crossref": {
+      "n": 695,
+      "rho": 0.917
+    },
+    "opencitations": {
+      "n": 695,
+      "rho": 0.84
+    },
+    "trdizin_reported_openalex": {
+      "n": 695,
+      "rho": 0.065
+    }
+  },
+  "year_mismatch": {
+    "n": 874,
+    "mismatched": 59,
+    "trdizin_later": 45,
+    "trdizin_earlier": 14
+  }
+}

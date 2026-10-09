@@ -1,0 +1,253 @@
+{
+  "computed_at_utc": "2026-10-07T15:24:41+00:00",
+  "db": "fa_alan_frozen_20261002_reindex_20261007.db",
+  "frozen_check": {
+    "freeze_record": null,
+    "sha256_ok": null
+  },
+  "dataset": "fa_alan",
+  "max_year": 2025,
+  "n_records": 987,
+  "document_types_in_dataset": {
+    "PAPER": 967,
+    "PROJECT": 20
+  },
+  "document_type_filter": [
+    "PAPER"
+  ],
+  "n_publications": 926,
+  "relevant_filter": {
+    "ids": 926,
+    "before": 967,
+    "after": 926
+  },
+  "author_merge_effect": {
+    "rule": "orcid+institution",
+    "identities_merged": 65,
+    "authors_by_id": 2429,
+    "authors_after_rule": 2364,
+    "top_n": 20,
+    "top_overlap": 17,
+    "top_spearman": 0.4457,
+    "lotka_mle_by_id": 3.291,
+    "lotka_mle_after_rule": 3.165
+  },
+  "author_merge": "none",
+  "summary": {
+    "Yayın sayısı": 926,
+    "Zaman aralığı": "1997-2025",
+    "Dergi sayısı": 269,
+    "Yazar sayısı": 2429,
+    "Anahtar kelime sayısı": 1654,
+    "Toplam atıf": 1696,
+    "Yayın başına ortalama atıf": 1.83,
+    "Yayın başına ortalama yazar": 3.18,
+    "Tek yazarlı yayın oranı (%)": 10.7,
+    "İşbirliği indeksi": 3.44,
+    "Açık erişim oranı (%)": 95.4,
+    "Yıllık büyüme oranı (%)": 18.65,
+    "Kaynakçası olan yayın (%)": 99.4,
+    "Yayın başına ortalama kaynak": 36.3
+  },
+  "lotka": {
+    "Yazar sayısı": 2429,
+    "Tahmini üs (n)": 3.702,
+    "Tahmini C": 1.1711,
+    "MLE üs (n)": 3.291,
+    "KS D (MLE)": 0.0104,
+    "KS kritik değer (0,01)": 0.0331
+  },
+  "bradford_zones": [
+    {
+      "Bölge": 1,
+      "journals": 17,
+      "articles": 314
+    },
+    {
+      "Bölge": 2,
+      "journals": 49,
+      "articles": 305
+    },
+    {
+      "Bölge": 3,
+      "journals": 203,
+      "articles": 307
+    }
+  ],
+  "networks": {
+    "author": {
+      "nodes": 100,
+      "edges": 77,
+      "clusters": 51,
+      "min_occurrence": 2
+    },
+    "institution": {
+      "nodes": 100,
+      "edges": 437,
+      "clusters": 6,
+      "min_occurrence": 2
+    },
+    "city": {
+      "nodes": 100,
+      "edges": 289,
+      "clusters": 16,
+      "min_occurrence": 1
+    },
+    "keyword": {
+      "nodes": 100,
+      "edges": 966,
+      "clusters": 6,
+      "min_occurrence": 3
+    },
+    "coupling": {
+      "nodes": 100,
+      "edges": 465
+    },
+    "citation": {
+      "nodes": 494,
+      "edges": 647
+    }
+  },
+  "local_citations": {
+    "records_cited_locally": 232,
+    "total": 647
+  },
+  "d5_citation_sources": {
+    "n_records": 926,
+    "with_doi": 681,
+    "coverage": [
+      {
+        "source": "TR Dizin",
+        "records_with_data": 926,
+        "records_with_data_pct": 100.0,
+        "total_citations": 1696,
+        "cited_records": 402,
+        "mean_citations": 1.832
+      },
+      {
+        "source": "CrossRef",
+        "records_with_data": 681,
+        "records_with_data_pct": 73.5,
+        "total_citations": 1664,
+        "cited_records": 403,
+        "mean_citations": 2.443
+      },
+      {
+        "source": "OpenAlex (TR Dizin)",
+        "records_with_data": 681,
+        "records_with_data_pct": 73.5,
+        "total_citations": 19,
+        "cited_records": 5,
+        "mean_citations": 0.028
+      },
+      {
+        "source": "OpenCitations",
+        "records_with_data": 681,
+        "records_with_data_pct": 73.5,
+        "total_citations": 1481,
+        "cited_records": 347,
+        "mean_citations": 2.175
+      }
+    ],
+    "pairs": [
+      {
+        "source_a": "TR Dizin",
+        "source_b": "CrossRef",
+        "n": 681,
+        "spearman_rho": 0.608,
+        "a_greater": 56,
+        "equal": 294,
+        "b_greater": 331
+      },
+      {
+        "source_a": "TR Dizin",
+        "source_b": "OpenAlex (TR Dizin)",
+        "n": 681,
+        "spearman_rho": 0.045,
+        "a_greater": 242,
+        "equal": 434,
+        "b_greater": 5
+      },
+      {
+        "source_a": "TR Dizin",
+        "source_b": "OpenCitations",
+        "n": 681,
+        "spearman_rho": 0.604,
+        "a_greater": 66,
+        "equal": 338,
+        "b_greater": 277
+      },
+      {
+        "source_a": "CrossRef",
+        "source_b": "OpenAlex (TR Dizin)",
+        "n": 681,
+        "spearman_rho": 0.076,
+        "a_greater": 399,
+        "equal": 281,
+        "b_greater": 1
+      },
+      {
+        "source_a": "CrossRef",
+        "source_b": "OpenCitations",
+        "n": 681,
+        "spearman_rho": 0.866,
+        "a_greater": 176,
+        "equal": 423,
+        "b_greater": 82
+      },
+      {
+        "source_a": "OpenAlex (TR Dizin)",
+        "source_b": "OpenCitations",
+        "n": 681,
+        "spearman_rho": 0.04,
+        "a_greater": 3,
+        "equal": 333,
+        "b_greater": 345
+      }
+    ]
+  },
+  "timings_s": {
+    "load": 1.368,
+    "author_merge_effect": 0.127,
+    "summary": 0.016,
+    "per_year": 0.014,
+    "t_top_journals": 0.011,
+    "t_top_institutions": 0.017,
+    "t_top_cities": 0.009,
+    "t_top_keywords": 0.019,
+    "t_top_subjects": 0.024,
+    "t_languages": 0.004,
+    "t_document_types": 0.004,
+    "t_institution_types": 0.004,
+    "author_metrics": 0.042,
+    "most_cited": 0.041,
+    "top_references": 4.473,
+    "lotka": 0.014,
+    "bradford": 0.006,
+    "network_author": 0.02,
+    "network_table_author": 0.007,
+    "vosviewer_author": 0.003,
+    "network_institution": 0.011,
+    "network_table_institution": 0.027,
+    "vosviewer_institution": 0.005,
+    "network_city": 0.007,
+    "network_table_city": 0.018,
+    "vosviewer_city": 0.004,
+    "network_keyword": 0.03,
+    "network_table_keyword": 0.036,
+    "vosviewer_keyword": 0.009,
+    "network_coupling": 0.812,
+    "network_citation": 0.067,
+    "local_citations": 0.032,
+    "thematic_keyword": 0.338,
+    "d5": 0.018,
+    "citation_sources": 0.002,
+    "export_wos": 6.934,
+    "export_ris": 0.094,
+    "export_bibtex": 0.11,
+    "export_excel": 5.003,
+    "fig_annual": 0.359,
+    "fig_lotka": 0.21
+  },
+  "errors": {}
+}

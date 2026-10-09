@@ -1,0 +1,7 @@
+Alan içinde VEYA: 518 ve 838 -> 862 (birleşim; VEYA çalışıyor).
+İç parantez: 862 (aynı).
+Ekli biçim: 'fiziksel aktivite' 518, 'fiziksel aktivitenin' 49, VEYA 566: temel ifade ekli biçimi eşleştirmiyor (tam sözcük).
+Alanlar '|' ile: başlık 518, anahtar kelime 325 -> 0 (hiç kayıt yok: alanlar tek sorguda birleştirilemiyor).
+Alanlar 'OR' ile: başlık 518, anahtar kelime 325 -> 0 (hiç kayıt yok: alanlar tek sorguda birleştirilemiyor).
+Varsayılan arama 'fiziksel aktivite': 3060 (alan aramasında başlık 518).
+Varsayılan arama 'gamify': 26698.

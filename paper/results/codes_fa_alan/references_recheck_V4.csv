@@ -1,0 +1,40 @@
+sheet,row,field,style,first_code,code
+kodlama_kaynakca_ek,26,Kaynak adı,vancouver,0,1
+kodlama_kaynakca_ek,29,DOI,vancouver,0,1
+kodlama_kaynakca_ek,58,DOI,vancouver,0,1
+kodlama_kaynakca_ek,64,Kaynak adı,vancouver,0,1
+kodlama_kaynakca_ek,65,İlk yazar,vancouver,0,1
+kodlama_kaynakca_ek,79,Kaynak adı,vancouver,0,1
+kodlama_kaynakca_ek,87,Sayfa,apa,0,1
+kodlama_kaynakca_ek,102,Cilt,apa,0,0
+kodlama_kaynakca_ek,113,DOI,apa,0,1
+kodlama_kaynakca_ek,124,İlk yazar,apa,0,1
+kodlama_kaynakca_ek,124,Kaynak adı,apa,1,
+kodlama_kaynakca_ek,133,İlk yazar,apa,0,1
+kodlama_kaynakca_ek,135,Kaynak adı,apa,0,1
+kodlama_kaynakca_ek,138,İlk yazar,apa,0,1
+kodlama_kaynakca_ek,140,İlk yazar,apa,0,1
+kodlama_kaynakca_ek,161,İlk yazar,other,0,1
+kodlama_kaynakca_ek,162,Yıl,other,0,1
+kodlama_kaynakca_ek,165,İlk yazar,other,0,1
+kodlama_kaynakca_ek,167,İlk yazar,other,0,1
+kodlama_kaynakca_ek,167,Kaynak adı,other,0,0
+kodlama_kaynakca_ek,170,İlk yazar,other,0,1
+kodlama_kaynakca_ek,172,İlk yazar,other,0,1
+kodlama_kaynakca_ek,175,İlk yazar,other,0,1
+kodlama_kaynakca_ek,178,İlk yazar,other,0,1
+kodlama_kaynakca_ek,180,İlk yazar,other,0,1
+kodlama_kaynakca_ek,183,İlk yazar,other,1,1
+kodlama_kaynakca_ek,185,Kaynak adı,other,0,1
+kodlama_kaynakca_ek,189,Yıl,other,0,1
+kodlama_kaynakca_ek,190,İlk yazar,other,0,1
+kodlama_kaynakca_ek,191,Yıl,other,0,1
+kodlama_kaynakca_ek,191,Kaynak adı,other,NA,0
+kodlama_kaynakca_ek,191,Sayfa,other,0,1
+kodlama_kaynakca_ek,192,İlk yazar,other,0,1
+kodlama_kaynakca_ek,193,İlk yazar,other,0,1
+kodlama_kaynakca_ek,200,İlk yazar,other,0,NA
+kodlama_kaynakca_ek,200,Yıl,other,0,1
+kodlama_kaynakca_ek2,102,Cilt,apa,0,1
+kodlama_kaynakca_ek2,102,Sayfa,apa,0,1
+kodlama_kaynakca_ek2,124,Kaynak adı,apa,0,1

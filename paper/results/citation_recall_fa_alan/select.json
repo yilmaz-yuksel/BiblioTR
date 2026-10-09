@@ -1,0 +1,12 @@
+{
+  "pool": 2193,
+  "sample": 200,
+  "seed": 20261009,
+  "by_direction": {
+    "cited": 1276,
+    "citing": 879,
+    "both": 38
+  },
+  "relevant_linked_inside": 493,
+  "relevant": 926
+}

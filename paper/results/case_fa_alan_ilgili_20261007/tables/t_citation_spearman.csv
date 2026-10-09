@@ -1,0 +1,7 @@
+﻿source_a,source_b,n,spearman_rho,a_greater,equal,b_greater
+TR Dizin,CrossRef,681,0.608,56,294,331
+TR Dizin,OpenAlex (TR Dizin),681,0.045,242,434,5
+TR Dizin,OpenCitations,681,0.604,66,338,277
+CrossRef,OpenAlex (TR Dizin),681,0.076,399,281,1
+CrossRef,OpenCitations,681,0.866,176,423,82
+OpenAlex (TR Dizin),OpenCitations,681,0.04,3,333,345

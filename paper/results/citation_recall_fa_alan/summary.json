@@ -1,0 +1,95 @@
+{
+  "scored_at_utc": "2026-10-09T18:58:38+00:00",
+  "complete": true,
+  "pool": 2193,
+  "sample": 200,
+  "fetched": 200,
+  "eligible_articles": 191,
+  "coded": 191,
+  "relevant": 22,
+  "relevant_share": 0.1152,
+  "relevant_share_ci95": [
+    0.0773,
+    0.1682
+  ],
+  "missed_relevant_in_pool": 241.2,
+  "missed_relevant_in_pool_ci95": [
+    161.9,
+    352.3
+  ],
+  "relevant_linked_inside": 493,
+  "recall_among_linked": 0.6715,
+  "recall_among_linked_ci95": [
+    0.5832,
+    0.7528
+  ],
+  "relevant_by_direction": {
+    "atıf alan": 9,
+    "atıf veren": 12,
+    "ikisi de": 1
+  },
+  "vocabulary": {
+    "relevant": {
+      "records": 22,
+      "physical inactivity": {
+        "title_or_keyword": 2,
+        "abstract_only": 0
+      },
+      "physical activity": {
+        "title_or_keyword": 0,
+        "abstract_only": 12
+      },
+      "exercise": {
+        "title_or_keyword": 4,
+        "abstract_only": 5
+      },
+      "sport": {
+        "title_or_keyword": 2,
+        "abstract_only": 1
+      },
+      "walking or steps": {
+        "title_or_keyword": 1,
+        "abstract_only": 0
+      },
+      "healthy lifestyle": {
+        "title_or_keyword": 4,
+        "abstract_only": 0
+      },
+      "running": {
+        "title_or_keyword": 2,
+        "abstract_only": 0
+      }
+    },
+    "not_relevant": {
+      "records": 169,
+      "physical inactivity": {
+        "title_or_keyword": 0,
+        "abstract_only": 0
+      },
+      "physical activity": {
+        "title_or_keyword": 0,
+        "abstract_only": 5
+      },
+      "exercise": {
+        "title_or_keyword": 8,
+        "abstract_only": 9
+      },
+      "sport": {
+        "title_or_keyword": 12,
+        "abstract_only": 14
+      },
+      "walking or steps": {
+        "title_or_keyword": 0,
+        "abstract_only": 3
+      },
+      "healthy lifestyle": {
+        "title_or_keyword": 2,
+        "abstract_only": 1
+      },
+      "running": {
+        "title_or_keyword": 1,
+        "abstract_only": 2
+      }
+    }
+  }
+}

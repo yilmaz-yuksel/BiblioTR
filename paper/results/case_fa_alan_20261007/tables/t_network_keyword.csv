@@ -1,0 +1,101 @@
+﻿Düğüm,Belge,Derece,Bağlantı gücü,Arasındalık,Küme
+Physical activity,309,91,799,0.1921,1
+Fiziksel Aktivite,247,90,702,0.1961,1
+Exercise,74,60,225,0.0511,6
+egzersiz,57,56,190,0.0441,6
+Quality of life,48,51,188,0.0368,1
+yaşam kalitesi,43,51,178,0.0379,1
+COVID-19,39,38,116,0.0166,3
+nutrition,26,38,107,0.0238,2
+Beslenme,20,34,94,0.0168,2
+Obesity,23,32,92,0.0075,2
+Obezite,21,36,89,0.0119,2
+Depression,20,31,89,0.0071,3
+Ağrı,19,25,86,0.0039,1
+pain,18,25,81,0.0043,1
+Anxiety,18,28,76,0.0079,3
+Depresyon,15,28,72,0.0055,3
+sleep quality,17,22,54,0.0044,1
+Spor,10,27,50,0.0102,4
+Çocuk,11,20,48,0.0019,2
+pregnancy,11,18,47,0.002,6
+Child,10,23,46,0.006,2
+Anksiyete,8,19,46,0.0018,3
+Sports,9,26,45,0.0086,4
+Body Mass Index,10,27,44,0.006,2
+Physical activity level,10,26,43,0.0125,4
+fiziksel aktiviteler,17,20,42,0.0047,4
+gebelik,9,17,42,0.0014,6
+Fiziksel aktivite düzeyi,11,23,40,0.0093,4
+Motivation,12,16,39,0.0032,1
+Adolescent,11,22,38,0.0042,2
+Fatigue,11,19,38,0.0027,1
+Motivasyon,11,16,38,0.0028,1
+Uyku,8,20,38,0.0026,3
+Uyku kalitesi,9,14,37,0.0009,1
+sleep,8,21,36,0.0038,3
+kinesiophobia,10,18,35,0.0026,6
+University students,10,16,33,0.0015,5
+physical activities,12,15,32,0.0026,4
+Sağlık,9,19,32,0.0016,2
+Body composition,8,18,32,0.0022,5
+Motor Activity,8,21,32,0.0027,2
+Motor aktivite,8,21,32,0.0027,2
+Vücut kompozisyonu,7,18,32,0.0022,5
+Student,9,17,31,0.0028,3
+Üniversite Öğrencileri,9,15,31,0.0019,5
+sedentary behavior,11,21,30,0.0035,5
+physical fitness,10,19,30,0.0025,5
+Health literacy,9,14,30,0.0011,6
+Health,8,18,30,0.0012,2
+denge,10,12,29,0.0009,1
+Fiziksel uygunluk,7,18,28,0.0019,5
+stres,6,17,28,0.0014,3
+Kinezyofobi,6,16,27,0.0011,6
+spor aktiviteleri,5,13,27,0.0008,4
+sports activities,5,13,27,0.0008,4
+Students,9,16,26,0.0017,5
+sağlık okuryazarlığı,7,12,26,0.0006,6
+Vücut kitle indeksi,6,19,25,0.0013,2
+öğrenci,6,14,25,0.0016,3
+balance,8,11,24,0.0007,1
+Anket,6,12,24,0.0019,4
+Yorgunluk,5,12,23,0.0006,1
+geriatri,5,17,23,0.0021,1
+pandemi,8,16,22,0.0019,3
+nutritional status,6,17,22,0.0024,2
+Questionnaire,5,10,22,0.0014,4
+geriatrics,5,11,22,0.0004,1
+hemşirelik,5,13,22,0.0013,1
+public health,5,18,22,0.0046,4
+Questionnaires,6,17,21,0.0012,2
+adolescents,6,15,21,0.0034,1
+pandemic,7,9,20,0.0003,3
+yaşlı,7,14,20,0.0021,2
+Mediterranean diet,6,11,20,0.0015,1
+beslenme durumu,6,17,20,0.0022,2
+Nursing,5,11,20,0.0003,1
+diabetes,5,15,20,0.0015,1
+children,7,11,19,0.0007,1
+self-efficacy,6,11,19,0.0012,1
+Öğrenciler,6,14,19,0.0005,5
+Elderly,7,10,18,0.001,1
+women,6,11,17,0.0002,5
+Adult,5,13,17,0.0003,2
+Adölesan,5,9,17,0.0001,2
+Bel Ağrısı,5,10,17,0.0003,3
+low back pain,5,12,17,0.0011,3
+Social support,6,10,15,0.0006,1
+smoking,6,8,15,0.0001,1
+smartphone,5,11,15,0.0008,1
+constipation,6,8,14,0.0,6
+uzaktan eğitim,5,9,14,0.0008,1
+older adults,6,9,13,0.0008,1
+Life satisfaction,5,10,13,0.0003,4
+Physical Literacy,5,7,13,0.0004,1
+Well-being,5,7,13,0.0,6
+beden kütle indeksi,5,8,13,0.0002,2
+Posture,5,8,11,0.0002,3
+physical education,6,4,9,0.0001,1
+physical activity.,7,7,8,0.0005,3
+Sağlıklı beslenme,5,3,7,0.0,1

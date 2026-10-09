@@ -1,0 +1,94 @@
+{
+  "_comment": "Gercek bir TR Dizin yanitinin yapisi (kisaltilmis; api/defaultSearch/publication/?order=publicationYear-DESC&page=1&limit=20&facet-subject=Fen > Tıp > Spor Bilimleri&facet-documentType=PAPER); tum bibliyografik ve kisisel icerik kurgusaldir",
+  "_shards": {"failed": 0, "skipped": 0, "successful": 3, "total": 3},
+  "aggregations": {
+    "facet-accessType": {"buckets": [{"doc_count": 6206, "key": "OPEN"}, {"doc_count": 369, "key": "CLOSED"}], "doc_count_error_upper_bound": 0, "sum_other_doc_count": 0},
+    "facet-authorName": {"doc_count": 18673, "values": {"buckets": [{"doc_count": 45, "key": "nermin oktay"}, {"doc_count": 41, "key": "Halil Sezer"}, {"doc_count": 38, "key": "Tuğba Kocabey"}], "doc_count_error_upper_bound": 3, "sum_other_doc_count": 12337}},
+    "facet-database": {"buckets": [{"doc_count": 4875, "key": "SCIENCE"}, {"doc_count": 4054, "key": "SOCIAL"}], "doc_count_error_upper_bound": 0, "sum_other_doc_count": 0},
+    "facet-facetAuthorCity": {"buckets": [{"doc_count": 2096, "key": "ANKARA"}, {"doc_count": 880, "key": "İSTANBUL"}, {"doc_count": 759, "key": ""}, {"doc_count": 434, "key": "KONYA"}], "doc_count_error_upper_bound": 0, "sum_other_doc_count": 0},
+    "facet-facetAuthorInstitution": {"buckets": [{"doc_count": 549, "key": "GAZİ ÜNİVERSİTESİ"}, {"doc_count": 394, "key": "Yabancı Kurumlar"}, {"doc_count": 356, "key": "ANKARA ÜNİVERSİTESİ"}, {"doc_count": 292, "key": "Tanımlanmamış Kurum"}], "doc_count_error_upper_bound": 0, "sum_other_doc_count": 0},
+    "facet-journalName": {"doc_count": 6575, "values": {"buckets": [{"doc_count": 766, "key": "PERFORMANS BEDEN EĞİTİMİ VE SPOR BİLİMLERİ DERGİSİ"}, {"doc_count": 529, "key": "Anadolu Spor ve Hareket Dergisi"}], "doc_count_error_upper_bound": 0, "sum_other_doc_count": 0}},
+    "facet-projectGroup": {"buckets": [], "doc_count_error_upper_bound": 0, "sum_other_doc_count": 0},
+    "facet-publication_year": {"doc_count": 6575, "values": {"buckets": [{"doc_count": 603, "key": "2023"}, {"doc_count": 590, "key": "2025"}, {"doc_count": 574, "key": "2024"}, {"doc_count": 8, "key": "1997"}], "doc_count_error_upper_bound": 0, "sum_other_doc_count": 0}}
+  },
+  "hits": {
+    "hits": [
+      {
+        "_id": "1458729", "_index": "publication", "_score": null,
+        "_source": {
+          "abstracts": [
+            {"abstract": "Purpose: To evaluate return-to-play duration...", "id": 1488230,
+             "keywords": ["recurrence", "ultrasonography", "basketball", "calf muscles", "return to play", "athletic injuries"],
+             "language": "ENG", "title": "Return-to-Play Timelines and Early Recurrence After Grade I Calf Strains in Amateur Basketball Players"},
+            {"abstract": "Amaç: Amatör basketbolcularda...", "id": 1491638,
+             "keywords": ["Baldır Kasları", "Atletik Yaralanmalar", "Basketbol", "Oyuna Dönüş", "Nüks", "Ultrasonografik Görüntüleme."],
+             "language": "TUR", "title": ""}
+          ],
+          "accessType": "OPEN", "attachments": null,
+          "authors": [
+            {"authorId": 804845, "duty": "AUTHOR", "inPublicationName": "Mustafa Selim Akyar",
+             "institution": {"city": ["ANKARA", "İSTANBUL"], "code": ["MzkxNzU2", "Mzg2MDYy"], "country": ["", ""],
+                             "fullTitle": ["T.C. SAĞLIK BAKANLIĞI", "İSTANBUL ÜNİVERSİTESİ > CERRAHPAŞA TIP FAKÜLTESİ > TEMEL TIP BİLİMLERİ BÖLÜMÜ > ANATOMİ ANABİLİM DALI"],
+                             "rootCode": ["MzkxNzU2", "Mzc4NjE1"], "rootTitle": ["T.C. SAĞLIK BAKANLIĞI", "İSTANBUL ÜNİVERSİTESİ"],
+                             "status": ["KAMU", "KAMU"], "title": ["T.C. SAĞLIK BAKANLIĞI", "ANATOMİ ANABİLİM DALI"], "type": ["KAMUKURULUS", ""]},
+             "institutionName": ["Rehabilitation Training and Research Hospital, Department of Sports Medicine, Istanbul, Türkiye",
+                                 "Istanbul University-Cerrahpasa, Institute of Graduate Studies, Cerrahpasa Faculty of Medicine, Department of Physiology, Istanbul, Türkiye"],
+             "isVerified": false, "name": "MUSTAFA SELIM AKYAR", "orcid": "0000-0002-3544-1100", "order": 2, "relationId": 3794829, "userId": ""},
+            {"authorId": 925932, "duty": "AUTHOR", "inPublicationName": "Volkan İnal",
+             "institution": {"city": ["İSTANBUL"], "code": ["NjQzODE0"], "country": [""], "fullTitle": ["T.C. SAĞLIK BAKANLIĞI > Acıbadem Sağlık Grubu"],
+                             "rootCode": ["MzkxNzU2"], "rootTitle": ["T.C. SAĞLIK BAKANLIĞI"], "status": ["OZEL"], "title": ["Acıbadem Sağlık Grubu"], "type": ["OZELHASTANE"]},
+             "institutionName": ["Acibadem Maslak Hospital, Department of Sports Medicine, Istanbul, Türkiye"],
+             "isVerified": false, "name": "B. Volkan Inal", "orcid": "0000-0002-1456-4072", "order": 1, "relationId": 3794828, "userId": ""}
+          ],
+          "citedReferences": null, "databases": ["SCIENCE"], "docType": "PAPER", "doi": "10.5555/kmusaglik.1951374",
+          "downloadCount": 0, "endPage": "0", "id": 1458729,
+          "issue": {"id": 97696, "isSpecial": false, "month": null, "number": "July, August, September 2026", "publishDate": "2026-09-01T00:00:00", "volume": "17", "year": "2026"},
+          "journal": {"eissn": "1309-1441", "id": "960", "issn": "1309-808X", "name": "Kuzey Marmara Üniversitesi Sağlık Bilimleri Dergisi"},
+          "language": "ENG", "orderCitationCount": 0,
+          "orderTitle": "Returnto-Play Timelines and Early Recurrence After Grade I Calf Strains in Amateur Basketball Players",
+          "otherCitations": null, "publicationType": "RESEARCH", "publicationYear": 2026,
+          "references": [
+            {"authors": null, "context": "1. Lindqvist J, Bergman H, Ström M, et al. Calf strain rates have increased during recent seasons and now constitute 18% of all injuries in men’s amateur basketball: The Nordic Club Injury Study from 2001/02 to 2021/22. Nord J Court Sports. 2022;57:292-8. DOI:10.5555/njcs-2021-105407", "id": 28869086, "journalCode": "", "order": 1, "targetPublication": 0, "year": ""},
+            {"authors": null, "context": "2. Lindqvist J, Hägström M and Ström M. Epidemiology of muscle injuries in amateur basketball (club level). Nord J Court Sports. 2011;39:1226-32. DOI:10.5555/0363546511402218", "id": 28869087, "journalCode": "", "order": 2, "targetPublication": 0, "year": ""},
+            {"authors": null, "context": "14. Vermeulen P. Sonography of tendons. Eur J Imaging. 2002;12:35-43.", "id": 28869099, "journalCode": "", "order": 14, "targetPublication": 0, "year": ""}
+          ],
+          "startPage": "0",
+          "subjects": [{"autoLabel": true, "fullName": "Fen > Tıp > Spor Bilimleri", "id": 181, "name": "Spor Bilimleri", "rootId": 1, "rootName": "Fen"},
+                       {"autoLabel": true, "fullName": "Fen > Tıp > Ortopedi", "id": 157, "name": "Ortopedi", "rootId": 1, "rootName": "Fen"}],
+          "viewCount": 0
+        },
+        "sort": [2026, "1458729"]
+      },
+      {
+        "_id": "1447828", "_index": "publication", "_score": null,
+        "_source": {
+          "abstracts": [{"abstract": "This study explores the place of traditional games...", "id": 1470497,
+                         "keywords": ["intangible heritage", "folk games"], "language": "ENG",
+                         "title": "The Place of Traditional Games and Folk Sports in Kyrgyzstan's School Curriculum"}],
+          "accessType": "OPEN",
+          "authors": [
+            {"authorId": 458691, "inPublicationName": "Tarık Erdem ÜNLÜ",
+             "institution": {"city": [""], "code": ["NjQzMjI2"], "country": ["Kırgızistan"], "fullTitle": ["Yabancı Kurumlar > KIRGIZİSTAN"],
+                             "rootCode": ["NjQyMzc5"], "rootTitle": ["Yabancı Kurumlar"], "status": ["DIGER"], "title": ["KIRGIZİSTAN"], "type": [""]},
+             "institutionName": ["Kyrgyz - Turkish Manas University, Bishkek, Kyrgyzstan"], "orcid": "0000-0002-6268-8088", "order": 2},
+            {"authorId": 1121515, "inPublicationName": "Selami BAYIR",
+             "institution": {"city": ["HAKKARİ"], "code": ["NDAwOTYy"], "country": [""], "fullTitle": ["HAKKARİ ÜNİVERSİTESİ"],
+                             "rootCode": ["NDAwOTYy"], "rootTitle": ["HAKKARİ ÜNİVERSİTESİ"], "status": ["KAMU"], "title": ["HAKKARİ ÜNİVERSİTESİ"], "type": ["DEVLETUNIVERSITE"]},
+             "institutionName": ["Hakkari University, Hakkari, Türkiye"], "orcid": "0000-0002-6293-1850", "order": 1}
+          ],
+          "citedReferences": null, "databases": ["SOCIAL"], "docType": "PAPER", "doi": "10.5555/jpcer.1871035",
+          "id": 1447828, "language": "ENG", "orderCitationCount": 3, "publicationType": "RESEARCH", "publicationYear": 2026,
+          "journal": {"eissn": "2148-9262", "id": "1791", "issn": "", "name": "Journal of Physical Culture and Education Research"},
+          "references": [
+            {"authors": null, "context": "Corbin, V., & Lane, V. (2006). Using thematic coding in sport pedagogy. Qualitative Research in Sport Pedagogy, 3(2), 77–101. https://doi.org/10.5555/1478088706qs071oa", "id": 28411770, "order": 6, "targetPublication": 0, "year": ""}
+          ],
+          "subjects": [{"fullName": "Fen > Tıp > Spor Bilimleri"}]
+        }
+      }
+    ],
+    "max_score": null,
+    "total": {"relation": "eq", "value": 6575}
+  },
+  "timed_out": false,
+  "took": 120
+}

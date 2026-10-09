@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+data/
+*.db
+exports/
+.streamlit/secrets.toml
+.coverage
+htmlcov/
+
+# Kayıt içeriği taşıyan çıktılar (TR Dizin kayıtları yeniden dağıtılmaz; betikler yeniden üretir)
+paper/results/**/wos_export.txt
+paper/results/**/bx_index.csv
+paper/results/**/bx_histdata.csv
+paper/results/**/doi_only_links.csv
+paper/results/**/author_fullname_collisions.csv
+paper/results/**/author_shortname_groups.csv
+paper/results/**/t_top_references.csv

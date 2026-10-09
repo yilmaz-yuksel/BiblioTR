@@ -1,0 +1,7 @@
+﻿strategy,records,relative_recall_pct
+"seeds only, title",849,86.0
+"seeds + discovered, title",867,87.8
+"seeds only, keyword",414,41.9
+"seeds + discovered, keyword",415,42.0
+"seeds only, all fields",971,98.4
+"seeds + discovered, all fields",987,100.0

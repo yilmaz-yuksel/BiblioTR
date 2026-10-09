@@ -1,0 +1,75 @@
+{
+  "_comment": "SENTETIK test verisi. Gercek TR Dizin yaniti degildir; Elasticsearch bicimini taklit eder.",
+  "hits": {
+    "total": {"value": 3, "relation": "eq"},
+    "hits": [
+      {
+        "_id": "1001",
+        "_source": {
+          "id": 1001,
+          "title": "Türkiye'de bibliyometrik çalışmalar: Bir inceleme",
+          "publicationYear": 2019,
+          "doi": "https://doi.org/10.1234/ABC.2019.1",
+          "orderCitationCount": 12,
+          "language": "TUR",
+          "documentType": "PAPER",
+          "publicationType": "RESEARCH",
+          "accessType": "OPEN",
+          "database": "SOCIAL",
+          "journal": {"id": 55, "name": "Bilgi Dünyası", "issn": "1302-1111", "eissn": "2148-2222"},
+          "issue": {"volume": "20", "number": "1", "year": 2019},
+          "startPage": "1",
+          "endPage": "20",
+          "authors": [
+            {"authorId": 11, "inPublicationName": "Ali YILDIZ", "orcid": "0000-0001-0000-0001",
+             "institutionName": ["Hacettepe Üniversitesi"], "city": "ANKARA", "country": "Türkiye"},
+            {"authorId": 12, "inPublicationName": "Ayşe Kaya",
+             "institutionName": ["Ankara Üniversitesi"], "city": "ANKARA", "country": "Türkiye"}
+          ],
+          "abstracts": [
+            {"language": "TUR", "abstract": "Bu çalışmada...", "keywords": ["Bibliyometri", "Atıf analizi"]},
+            {"language": "ENG", "abstract": "In this study...", "keywords": ["Bibliometrics", "citation analysis"]}
+          ],
+          "subjects": [{"fullName": "Sosyal > Bilgi ve Belge Yönetimi"}]
+        }
+      },
+      {
+        "_id": "1002",
+        "_source": {
+          "id": 1002,
+          "title": "Atıf ağları ve işbirliği",
+          "publicationYear": 2021,
+          "orderCitationCount": 3,
+          "language": "ENG",
+          "publicationType": "COMPILATION",
+          "accessType": "CLOSE",
+          "database": "SOCIAL",
+          "journal": {"name": "BİLGİ DÜNYASI"},
+          "authors": [
+            {"authorId": 11, "inPublicationName": "Ali Yıldız", "institutionName": ["Hacettepe Üniversitesi"],
+             "city": "ANKARA", "country": "Türkiye"},
+            {"inPublicationName": "Mehmet Demir", "institutionName": "İstanbul Üniversitesi",
+             "city": "İSTANBUL", "country": "Türkiye"}
+          ],
+          "keywords": ["bibliyometri", "Ağ analizi"],
+          "subjects": ["Sosyal > Bilgi ve Belge Yönetimi"]
+        }
+      },
+      {
+        "_id": "1003",
+        "_source": {
+          "id": 1003,
+          "orderTitle": "Tek yazarlı bir çalışma",
+          "publicationYear": "2021",
+          "language": "TUR",
+          "journal": {"name": "Türk Kütüphaneciliği"},
+          "authorNames": ["Zeynep Şahin"]
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "publicationYear": {"buckets": [{"key": 2021, "doc_count": 2}, {"key": 2019, "doc_count": 1}]},
+    "language": {"filtered": {"buckets": [{"key": "TUR", "doc_count": 2}]}}
+  }
+}

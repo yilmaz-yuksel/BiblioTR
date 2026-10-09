@@ -1,0 +1,605 @@
+{
+  "scored_at_utc": "2026-10-08T14:28:55+00:00",
+  "links": {
+    "DOI ile": {
+      "rows": 6,
+      "correct": 5,
+      "incorrect": 1,
+      "na": 0,
+      "n": 6,
+      "accuracy": 0.8333,
+      "ci95": [
+        0.4365,
+        0.9699
+      ]
+    },
+    "TR Dizin": {
+      "rows": 50,
+      "correct": 50,
+      "incorrect": 0,
+      "na": 0,
+      "n": 50,
+      "accuracy": 1.0,
+      "ci95": [
+        0.9286,
+        1.0
+      ]
+    }
+  },
+  "references": {
+    "rows": 200,
+    "fields": {
+      "İlk yazar": {
+        "correct": 182,
+        "incorrect": 18,
+        "na": 0,
+        "n": 200,
+        "accuracy": 0.91,
+        "ci95": [
+          0.8622,
+          0.9423
+        ]
+      },
+      "Yıl": {
+        "correct": 192,
+        "incorrect": 5,
+        "na": 3,
+        "n": 197,
+        "accuracy": 0.9746,
+        "ci95": [
+          0.942,
+          0.9891
+        ]
+      },
+      "Kaynak adı": {
+        "correct": 154,
+        "incorrect": 24,
+        "na": 22,
+        "n": 178,
+        "accuracy": 0.8652,
+        "ci95": [
+          0.8072,
+          0.9077
+        ]
+      },
+      "Cilt": {
+        "correct": 155,
+        "incorrect": 2,
+        "na": 43,
+        "n": 157,
+        "accuracy": 0.9873,
+        "ci95": [
+          0.9547,
+          0.9965
+        ]
+      },
+      "Sayfa": {
+        "correct": 155,
+        "incorrect": 10,
+        "na": 35,
+        "n": 165,
+        "accuracy": 0.9394,
+        "ci95": [
+          0.892,
+          0.9668
+        ]
+      },
+      "DOI": {
+        "correct": 37,
+        "incorrect": 5,
+        "na": 158,
+        "n": 42,
+        "accuracy": 0.881,
+        "ci95": [
+          0.75,
+          0.9481
+        ]
+      }
+    },
+    "by_stratum": {
+      "vancouver": {
+        "İlk yazar": {
+          "correct": 79,
+          "incorrect": 1,
+          "na": 0,
+          "n": 80,
+          "accuracy": 0.9875,
+          "ci95": [
+            0.9325,
+            0.9978
+          ]
+        },
+        "Yıl": {
+          "correct": 80,
+          "incorrect": 0,
+          "na": 0,
+          "n": 80,
+          "accuracy": 1.0,
+          "ci95": [
+            0.9542,
+            1.0
+          ]
+        },
+        "Kaynak adı": {
+          "correct": 76,
+          "incorrect": 4,
+          "na": 0,
+          "n": 80,
+          "accuracy": 0.95,
+          "ci95": [
+            0.8784,
+            0.9804
+          ]
+        },
+        "Cilt": {
+          "correct": 79,
+          "incorrect": 0,
+          "na": 1,
+          "n": 79,
+          "accuracy": 1.0,
+          "ci95": [
+            0.9536,
+            1.0
+          ]
+        },
+        "Sayfa": {
+          "correct": 78,
+          "incorrect": 2,
+          "na": 0,
+          "n": 80,
+          "accuracy": 0.975,
+          "ci95": [
+            0.9134,
+            0.9931
+          ]
+        },
+        "DOI": {
+          "correct": 12,
+          "incorrect": 3,
+          "na": 65,
+          "n": 15,
+          "accuracy": 0.8,
+          "ci95": [
+            0.5481,
+            0.9295
+          ]
+        }
+      },
+      "apa": {
+        "İlk yazar": {
+          "correct": 76,
+          "incorrect": 4,
+          "na": 0,
+          "n": 80,
+          "accuracy": 0.95,
+          "ci95": [
+            0.8784,
+            0.9804
+          ]
+        },
+        "Yıl": {
+          "correct": 80,
+          "incorrect": 0,
+          "na": 0,
+          "n": 80,
+          "accuracy": 1.0,
+          "ci95": [
+            0.9542,
+            1.0
+          ]
+        },
+        "Kaynak adı": {
+          "correct": 65,
+          "incorrect": 10,
+          "na": 5,
+          "n": 75,
+          "accuracy": 0.8667,
+          "ci95": [
+            0.7717,
+            0.9259
+          ]
+        },
+        "Cilt": {
+          "correct": 66,
+          "incorrect": 1,
+          "na": 13,
+          "n": 67,
+          "accuracy": 0.9851,
+          "ci95": [
+            0.9202,
+            0.9974
+          ]
+        },
+        "Sayfa": {
+          "correct": 66,
+          "incorrect": 3,
+          "na": 11,
+          "n": 69,
+          "accuracy": 0.9565,
+          "ci95": [
+            0.8798,
+            0.9851
+          ]
+        },
+        "DOI": {
+          "correct": 22,
+          "incorrect": 1,
+          "na": 57,
+          "n": 23,
+          "accuracy": 0.9565,
+          "ci95": [
+            0.7901,
+            0.9923
+          ]
+        }
+      },
+      "other": {
+        "İlk yazar": {
+          "correct": 27,
+          "incorrect": 13,
+          "na": 0,
+          "n": 40,
+          "accuracy": 0.675,
+          "ci95": [
+            0.5202,
+            0.7992
+          ]
+        },
+        "Yıl": {
+          "correct": 32,
+          "incorrect": 5,
+          "na": 3,
+          "n": 37,
+          "accuracy": 0.8649,
+          "ci95": [
+            0.7202,
+            0.9409
+          ]
+        },
+        "Kaynak adı": {
+          "correct": 13,
+          "incorrect": 10,
+          "na": 17,
+          "n": 23,
+          "accuracy": 0.5652,
+          "ci95": [
+            0.3681,
+            0.7437
+          ]
+        },
+        "Cilt": {
+          "correct": 10,
+          "incorrect": 1,
+          "na": 29,
+          "n": 11,
+          "accuracy": 0.9091,
+          "ci95": [
+            0.6226,
+            0.9838
+          ]
+        },
+        "Sayfa": {
+          "correct": 11,
+          "incorrect": 5,
+          "na": 24,
+          "n": 16,
+          "accuracy": 0.6875,
+          "ci95": [
+            0.444,
+            0.8584
+          ]
+        },
+        "DOI": {
+          "correct": 3,
+          "incorrect": 1,
+          "na": 36,
+          "n": 4,
+          "accuracy": 0.75,
+          "ci95": [
+            0.3006,
+            0.9544
+          ]
+        }
+      }
+    }
+  },
+  "references_after_fix_in_sample": {
+    "complete": true,
+    "changed_cells": 37,
+    "fields": {
+      "İlk yazar": {
+        "correct": 198,
+        "incorrect": 1,
+        "na": 1,
+        "n": 199,
+        "accuracy": 0.995,
+        "ci95": [
+          0.9721,
+          0.9991
+        ]
+      },
+      "Yıl": {
+        "correct": 196,
+        "incorrect": 1,
+        "na": 3,
+        "n": 197,
+        "accuracy": 0.9949,
+        "ci95": [
+          0.9718,
+          0.9991
+        ]
+      },
+      "Kaynak adı": {
+        "correct": 160,
+        "incorrect": 19,
+        "na": 21,
+        "n": 179,
+        "accuracy": 0.8939,
+        "ci95": [
+          0.8402,
+          0.931
+        ]
+      },
+      "Cilt": {
+        "correct": 156,
+        "incorrect": 1,
+        "na": 43,
+        "n": 157,
+        "accuracy": 0.9936,
+        "ci95": [
+          0.9648,
+          0.9989
+        ]
+      },
+      "Sayfa": {
+        "correct": 158,
+        "incorrect": 7,
+        "na": 35,
+        "n": 165,
+        "accuracy": 0.9576,
+        "ci95": [
+          0.915,
+          0.9793
+        ]
+      },
+      "DOI": {
+        "correct": 40,
+        "incorrect": 2,
+        "na": 158,
+        "n": 42,
+        "accuracy": 0.9524,
+        "ci95": [
+          0.8421,
+          0.9868
+        ]
+      }
+    },
+    "by_stratum": {
+      "vancouver": {
+        "İlk yazar": {
+          "correct": 80,
+          "incorrect": 0,
+          "na": 0,
+          "n": 80,
+          "accuracy": 1.0,
+          "ci95": [
+            0.9542,
+            1.0
+          ]
+        },
+        "Yıl": {
+          "correct": 80,
+          "incorrect": 0,
+          "na": 0,
+          "n": 80,
+          "accuracy": 1.0,
+          "ci95": [
+            0.9542,
+            1.0
+          ]
+        },
+        "Kaynak adı": {
+          "correct": 79,
+          "incorrect": 1,
+          "na": 0,
+          "n": 80,
+          "accuracy": 0.9875,
+          "ci95": [
+            0.9325,
+            0.9978
+          ]
+        },
+        "Cilt": {
+          "correct": 79,
+          "incorrect": 0,
+          "na": 1,
+          "n": 79,
+          "accuracy": 1.0,
+          "ci95": [
+            0.9536,
+            1.0
+          ]
+        },
+        "Sayfa": {
+          "correct": 78,
+          "incorrect": 2,
+          "na": 0,
+          "n": 80,
+          "accuracy": 0.975,
+          "ci95": [
+            0.9134,
+            0.9931
+          ]
+        },
+        "DOI": {
+          "correct": 14,
+          "incorrect": 1,
+          "na": 65,
+          "n": 15,
+          "accuracy": 0.9333,
+          "ci95": [
+            0.7018,
+            0.9881
+          ]
+        }
+      },
+      "apa": {
+        "İlk yazar": {
+          "correct": 80,
+          "incorrect": 0,
+          "na": 0,
+          "n": 80,
+          "accuracy": 1.0,
+          "ci95": [
+            0.9542,
+            1.0
+          ]
+        },
+        "Yıl": {
+          "correct": 80,
+          "incorrect": 0,
+          "na": 0,
+          "n": 80,
+          "accuracy": 1.0,
+          "ci95": [
+            0.9542,
+            1.0
+          ]
+        },
+        "Kaynak adı": {
+          "correct": 67,
+          "incorrect": 8,
+          "na": 5,
+          "n": 75,
+          "accuracy": 0.8933,
+          "ci95": [
+            0.8034,
+            0.945
+          ]
+        },
+        "Cilt": {
+          "correct": 67,
+          "incorrect": 0,
+          "na": 13,
+          "n": 67,
+          "accuracy": 1.0,
+          "ci95": [
+            0.9458,
+            1.0
+          ]
+        },
+        "Sayfa": {
+          "correct": 68,
+          "incorrect": 1,
+          "na": 11,
+          "n": 69,
+          "accuracy": 0.9855,
+          "ci95": [
+            0.9224,
+            0.9974
+          ]
+        },
+        "DOI": {
+          "correct": 23,
+          "incorrect": 0,
+          "na": 57,
+          "n": 23,
+          "accuracy": 1.0,
+          "ci95": [
+            0.8569,
+            1.0
+          ]
+        }
+      },
+      "other": {
+        "İlk yazar": {
+          "correct": 38,
+          "incorrect": 1,
+          "na": 1,
+          "n": 39,
+          "accuracy": 0.9744,
+          "ci95": [
+            0.8682,
+            0.9955
+          ]
+        },
+        "Yıl": {
+          "correct": 36,
+          "incorrect": 1,
+          "na": 3,
+          "n": 37,
+          "accuracy": 0.973,
+          "ci95": [
+            0.8618,
+            0.9952
+          ]
+        },
+        "Kaynak adı": {
+          "correct": 14,
+          "incorrect": 10,
+          "na": 16,
+          "n": 24,
+          "accuracy": 0.5833,
+          "ci95": [
+            0.3883,
+            0.7553
+          ]
+        },
+        "Cilt": {
+          "correct": 10,
+          "incorrect": 1,
+          "na": 29,
+          "n": 11,
+          "accuracy": 0.9091,
+          "ci95": [
+            0.6226,
+            0.9838
+          ]
+        },
+        "Sayfa": {
+          "correct": 12,
+          "incorrect": 4,
+          "na": 24,
+          "n": 16,
+          "accuracy": 0.75,
+          "ci95": [
+            0.505,
+            0.8982
+          ]
+        },
+        "DOI": {
+          "correct": 3,
+          "incorrect": 1,
+          "na": 36,
+          "n": 4,
+          "accuracy": 0.75,
+          "ci95": [
+            0.3006,
+            0.9544
+          ]
+        }
+      }
+    }
+  },
+  "doi_links_after_fix": {
+    "complete": true,
+    "missing": [],
+    "links": 6,
+    "new_links": 1,
+    "removed": [
+      {
+        "link": "1314703->1221077",
+        "first_code": "0"
+      }
+    ],
+    "correct": 6,
+    "incorrect": 0,
+    "na": 0,
+    "n": 6,
+    "accuracy": 1.0,
+    "ci95": [
+      0.6097,
+      1.0
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "BiblioTR"
+version = "1.0.0"
+description = "Harvesting and bibliometric analysis toolkit for TR Dizin, Türkiye's national citation index"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["bibliometrics", "scientometrics", "TR Dizin", "citation index", "VOSviewer", "bibliometrix"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "requests>=2.31",
+    "pandas>=2.2.2",
+    "networkx>=3.0",
+    "plotly>=5.19",
+    "streamlit>=1.55",
+    "openpyxl>=3.1.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "matplotlib>=3.8.4"]
+paper = ["matplotlib>=3.8.4"]
+
+[project.urls]
+Repository = "https://github.com/yilmaz-yuksel/BiblioTR"
+
+[project.scripts]
+bibliotr = "bibliotr.cli:main"
+
+[tool.setuptools]
+packages = ["bibliotr"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

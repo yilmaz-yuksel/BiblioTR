@@ -1,0 +1,319 @@
+{
+  "db": "fa_alan_frozen_20261002_reindex_20261007.db",
+  "dataset": "fa_alan",
+  "max_year": 2025,
+  "relevant_file": "relevant_ids.txt",
+  "emulation_check": {
+    "seeds_title": 834,
+    "seeds_title_keyword": 954,
+    "single": 487
+  },
+  "strategy_recall": {
+    "all_articles": [
+      {
+        "strategy": "single",
+        "articles": 487,
+        "relative_recall_pct": 50.4
+      },
+      {
+        "strategy": "seeds_title",
+        "articles": 834,
+        "relative_recall_pct": 86.2
+      },
+      {
+        "strategy": "seeds_title_keyword",
+        "articles": 954,
+        "relative_recall_pct": 98.7
+      },
+      {
+        "strategy": "all",
+        "articles": 967,
+        "relative_recall_pct": 100.0
+      }
+    ],
+    "relevant_articles": [
+      {
+        "strategy": "single",
+        "articles": 483,
+        "relative_recall_pct": 52.2
+      },
+      {
+        "strategy": "seeds_title",
+        "articles": 821,
+        "relative_recall_pct": 88.7
+      },
+      {
+        "strategy": "seeds_title_keyword",
+        "articles": 916,
+        "relative_recall_pct": 98.9
+      },
+      {
+        "strategy": "all",
+        "articles": 926,
+        "relative_recall_pct": 100.0
+      }
+    ]
+  },
+  "single_vs_full": {
+    "all_articles": {
+      "single": {
+        "articles": 487,
+        "share_not_turkish_pct": 37.2,
+        "annual_growth_pct": 15.92,
+        "lotka_mle": 3.571
+      },
+      "full": {
+        "articles": 967,
+        "share_not_turkish_pct": 49.7,
+        "annual_growth_pct": 18.85,
+        "lotka_mle": 3.265
+      },
+      "top20": {
+        "journal": {
+          "common": 15,
+          "top": 20,
+          "spearman": 0.53
+        },
+        "keyword": {
+          "common": 13,
+          "top": 20,
+          "spearman": 0.25
+        },
+        "institution": {
+          "common": 19,
+          "top": 20,
+          "spearman": 0.82
+        }
+      }
+    },
+    "relevant_articles": {
+      "single": {
+        "articles": 483,
+        "share_not_turkish_pct": 37.1,
+        "annual_growth_pct": 15.92,
+        "lotka_mle": 3.558
+      },
+      "full": {
+        "articles": 926,
+        "share_not_turkish_pct": 50.1,
+        "annual_growth_pct": 18.65,
+        "lotka_mle": 3.291
+      },
+      "top20": {
+        "journal": {
+          "common": 14,
+          "top": 20,
+          "spearman": 0.5
+        },
+        "keyword": {
+          "common": 14,
+          "top": 20,
+          "spearman": 0.24
+        },
+        "institution": {
+          "common": 19,
+          "top": 20,
+          "spearman": 0.83
+        }
+      }
+    }
+  },
+  "per_year_language_relevant": [
+    {
+      "year": 1997,
+      "turkish": 1,
+      "english_or_other": 0
+    },
+    {
+      "year": 1998,
+      "turkish": 2,
+      "english_or_other": 0
+    },
+    {
+      "year": 2000,
+      "turkish": 1,
+      "english_or_other": 0
+    },
+    {
+      "year": 2001,
+      "turkish": 2,
+      "english_or_other": 0
+    },
+    {
+      "year": 2002,
+      "turkish": 1,
+      "english_or_other": 0
+    },
+    {
+      "year": 2003,
+      "turkish": 1,
+      "english_or_other": 0
+    },
+    {
+      "year": 2004,
+      "turkish": 6,
+      "english_or_other": 0
+    },
+    {
+      "year": 2005,
+      "turkish": 2,
+      "english_or_other": 0
+    },
+    {
+      "year": 2006,
+      "turkish": 2,
+      "english_or_other": 0
+    },
+    {
+      "year": 2007,
+      "turkish": 6,
+      "english_or_other": 0
+    },
+    {
+      "year": 2008,
+      "turkish": 5,
+      "english_or_other": 0
+    },
+    {
+      "year": 2009,
+      "turkish": 2,
+      "english_or_other": 1
+    },
+    {
+      "year": 2010,
+      "turkish": 7,
+      "english_or_other": 0
+    },
+    {
+      "year": 2011,
+      "turkish": 15,
+      "english_or_other": 0
+    },
+    {
+      "year": 2012,
+      "turkish": 10,
+      "english_or_other": 0
+    },
+    {
+      "year": 2013,
+      "turkish": 12,
+      "english_or_other": 7
+    },
+    {
+      "year": 2014,
+      "turkish": 17,
+      "english_or_other": 6
+    },
+    {
+      "year": 2015,
+      "turkish": 15,
+      "english_or_other": 4
+    },
+    {
+      "year": 2016,
+      "turkish": 18,
+      "english_or_other": 1
+    },
+    {
+      "year": 2017,
+      "turkish": 15,
+      "english_or_other": 7
+    },
+    {
+      "year": 2018,
+      "turkish": 29,
+      "english_or_other": 22
+    },
+    {
+      "year": 2019,
+      "turkish": 34,
+      "english_or_other": 24
+    },
+    {
+      "year": 2020,
+      "turkish": 34,
+      "english_or_other": 28
+    },
+    {
+      "year": 2021,
+      "turkish": 58,
+      "english_or_other": 49
+    },
+    {
+      "year": 2022,
+      "turkish": 47,
+      "english_or_other": 62
+    },
+    {
+      "year": 2023,
+      "turkish": 48,
+      "english_or_other": 79
+    },
+    {
+      "year": 2024,
+      "turkish": 34,
+      "english_or_other": 92
+    },
+    {
+      "year": 2025,
+      "turkish": 38,
+      "english_or_other": 82
+    }
+  ],
+  "author_merge": {
+    "all_articles": {
+      "rule": {
+        "rule": "orcid+institution",
+        "identities_merged": 66,
+        "authors_by_id": 2535,
+        "authors_after_rule": 2469,
+        "top_n": 20,
+        "top_overlap": 17,
+        "top_spearman": 0.413,
+        "lotka_mle_by_id": 3.265,
+        "lotka_mle_after_rule": 3.146
+      },
+      "full_name": {
+        "rule": "full_name",
+        "identities_merged": 96,
+        "authors_by_id": 2535,
+        "authors_after_rule": 2439,
+        "top_n": 20,
+        "top_overlap": 15,
+        "top_spearman": 0.3954,
+        "lotka_mle_by_id": 3.265,
+        "lotka_mle_after_rule": 3.096
+      }
+    },
+    "relevant_articles": {
+      "rule": {
+        "rule": "orcid+institution",
+        "identities_merged": 65,
+        "authors_by_id": 2429,
+        "authors_after_rule": 2364,
+        "top_n": 20,
+        "top_overlap": 17,
+        "top_spearman": 0.4457,
+        "lotka_mle_by_id": 3.291,
+        "lotka_mle_after_rule": 3.165
+      },
+      "full_name": {
+        "rule": "full_name",
+        "identities_merged": 94,
+        "authors_by_id": 2429,
+        "authors_after_rule": 2335,
+        "top_n": 20,
+        "top_overlap": 16,
+        "top_spearman": 0.4296,
+        "lotka_mle_by_id": 3.291,
+        "lotka_mle_after_rule": 3.113
+      }
+    }
+  },
+  "not_relevant_by_strategy": {
+    "single": 4,
+    "seeds_title": 13,
+    "seeds_title_keyword": 38,
+    "all": 41
+  }
+}

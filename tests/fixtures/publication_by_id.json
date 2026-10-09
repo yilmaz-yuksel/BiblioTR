@@ -1,0 +1,138 @@
+{
+  "_comment": "Gercek bir TR Dizin yanitinin yapisi (api/publicationById/1163868; references ve citedReferences kisaltildi); tum bibliyografik ve kisisel icerik kurgusaldir",
+  "_shards": {"failed": 0, "skipped": 0, "successful": 3, "total": 3},
+  "hits": {
+    "hits": [
+      {
+        "_id": "1163868",
+        "_index": "publication",
+        "_score": 12.044432,
+        "_source": {
+          "abstracts": [
+            {
+              "abstract": "Bu çalışma rekreasyon yönetimi alanındaki nitel verileri ve üretim süreçlerini incelemek amacıyla sıkça kullanılan içerik analizi yöntemine ilişkin giriş seviyesinde bilgi vermeyi amaçlamaktadır.",
+              "id": 993771,
+              "keywords": ["içerik analizi", "nitel araştırma", "araştırma yöntemleri", "rekreasyon yönetimi"],
+              "language": "TUR",
+              "title": "BİR SPOR BİLİMLERİ ARAŞTIRMA YAKLAŞIMI OLARAK İÇERİK ANALİZİ: REKREASYON YÖNETİMİ ÖRNEĞİ"
+            },
+            {
+              "abstract": "This study aims to introduce content analysis methods which are commonly used to analyze qualitative data in recreation management research.",
+              "id": 993772,
+              "keywords": ["Content analysis", "Qualitative research", "Research methods", "Recreation management"],
+              "language": "ENG",
+              "title": "CONTENT ANALYSIS AS A RESEARCH APPROACH IN SPORT SCIENCES: THE EXAMPLE OF RECREATION MANAGEMENT"
+            }
+          ],
+          "accessType": "OPEN",
+          "attachments": null,
+          "authors": [
+            {
+              "authorId": 844093, "duty": "AUTHOR", "inPublicationName": "Kaan E. İLGEN",
+              "institution": {
+                "city": [""], "code": ["ascd"], "country": ["Diğer"], "fullTitle": ["Tanımlanmamış Kurum"],
+                "rootCode": ["ascd"], "rootTitle": ["Tanımlanmamış Kurum"], "status": ["DIGER"],
+                "title": ["Tanımlanmamış Kurum"], "type": [""]
+              },
+              "institutionName": ["Özyeğin Üniversitesi, Spor Bilimleri Fakültesi, Rekreasyon Bölümü, İstanbul, Türkiye"],
+              "isVerified": false, "name": "Kaan E. Ilgen", "orcid": "0000-0002-5304-5654",
+              "order": 3, "relationId": 2737640, "userId": ""
+            },
+            {
+              "authorId": 950624, "duty": "AUTHOR", "inPublicationName": "SERHAT KEREM KARAOGLU",
+              "institution": {
+                "city": [""], "code": ["ascd"], "country": ["Diğer"], "fullTitle": ["Tanımlanmamış Kurum"],
+                "rootCode": ["ascd"], "rootTitle": ["Tanımlanmamış Kurum"], "status": ["DIGER"],
+                "title": ["Tanımlanmamış Kurum"], "type": [""]
+              },
+              "institutionName": ["Orta Doğu Teknik Üniversitesi, Eğitim Fakültesi, Beden Eğitimi ve Spor Bölümü, Ankara, Türkiye"],
+              "isVerified": false, "name": "SERHAT KEREM KARAOGLU", "orcid": "0000-0002-5422-6705",
+              "order": 2, "relationId": 2737639, "userId": ""
+            },
+            {
+              "authorId": 962038, "duty": "AUTHOR", "inPublicationName": "Ömer Kemal ÖZGEN",
+              "institution": {
+                "city": ["ANKARA"], "code": ["MzU1NTQ0"], "country": ["Türkiye"],
+                "fullTitle": ["ORTA DOĞU TEKNİK ÜNİVERSİTESİ"], "rootCode": ["MzU1NTQ0"],
+                "rootTitle": ["ORTA DOĞU TEKNİK ÜNİVERSİTESİ"], "status": ["KAMU"],
+                "title": ["ORTA DOĞU TEKNİK ÜNİVERSİTESİ"], "type": ["DEVLETUNIVERSITE"]
+              },
+              "institutionName": ["ORTA DOĞU TEKNİK ÜNİVERSİTESİ"],
+              "isVerified": false, "name": "Ömer Kemal Özgen", "orcid": "0000-0002-9845-7927",
+              "order": 1, "relationId": 2737641, "userId": ""
+            }
+          ],
+          "citedReferences": [
+            {"authors": [{"id": 774812, "name": "Fatma Seçil TUNALI"}], "docType": "PAPER", "id": 21599209,
+             "journalCode": "1035", "sourceId": 1228999, "year": "2023"},
+            {"authors": [{"id": 747183, "name": "Mehmet Tarık Çınar"}, {"id": 786140, "name": "Cengiz Tan"}],
+             "docType": "PAPER", "id": 21762859, "journalCode": "1878", "sourceId": 1272030, "year": "2024"},
+            {"authors": [{"id": 782751, "name": "Onur ÇAVUŞOĞLU"}], "docType": "PAPER", "id": 25107351,
+             "journalCode": "1710", "sourceId": 1362149, "year": "2025"}
+          ],
+          "createdBy": "f6fada38-3911-4601-af87-8cbccb27bb0b",
+          "databases": ["SOCIAL"],
+          "docType": "PAPER",
+          "doi": "10.5555/yusbed.1187342",
+          "downloadCount": 11,
+          "endDate": null,
+          "endPage": "258",
+          "facetAuthorCity": ["ANKARA", ""],
+          "facetAuthorCountry": ["Diğer", "Türkiye"],
+          "facetAuthorInstitution": ["ORTA DOĞU TEKNİK ÜNİVERSİTESİ", "Tanımlanmamış Kurum"],
+          "firstIndexDate": "2023-05-31T09:46:20.139958Z",
+          "id": 1163868,
+          "indexDate": "2026-09-28T17:41:00.415644Z",
+          "indexType": "PROD",
+          "indexedBy": "indexer",
+          "issue": {"id": 71206, "isSpecial": false, "month": ["3"], "number": "55",
+                    "publishDate": "2023-03-03T00:00:00", "volume": "", "year": "2023"},
+          "journal": {"eissn": "2147-6284", "id": "876", "issn": "1308-6790",
+                      "name": "Yeşilırmak Üniversitesi Sosyal Bilimler Enstitüsü Dergisi"},
+          "language": "TUR",
+          "orderCitationCount": 6,
+          "orderTitle": "BİRSPOR BİLİMLERİ ARAŞTIRMA YAKLAŞIMI OLARAK İÇERİK ANALİZİ: REKREASYON YÖNETİMİ ÖRNEĞİ",
+          "otherCitations": [
+            {"count": 16, "origin": "CrossRef"},
+            {"count": 0, "origin": "OpenAlex"},
+            {"count": 11, "origin": "OpenCitations"}
+          ],
+          "pdf": "8c61a95d-c5bd-4fcb-a1ec-d59e658857db",
+          "projectGroup": null,
+          "projectnumber": null,
+          "publicationProduct": null,
+          "publicationType": "RESEARCH",
+          "publicationYear": 2023,
+          "references": [
+            {"authors": null, "context": "Barlow, A. (2001). Borders Of Disciplines. Chicago: University of Chicago Press.",
+             "id": 16194203, "journalCode": "", "order": 1, "targetPublication": 0, "year": ""},
+            {"authors": null, "context": "Rossi, M. ve Fabbri, C. (2017). “scimapr: An R-tool for comprehensive field mapping analysis”, Journal of Research Metrics, 11(4), 959-975.",
+             "id": 16194205, "journalCode": "", "order": 3, "targetPublication": 0, "year": ""},
+            {"authors": null, "context": "Hartley, B. J. (1926). “The seasonal distribution of athletic performance”, Journal of the Cumberland Academy of Sciences, 16(12), 317-323.",
+             "id": 16194239, "journalCode": "", "order": 37, "targetPublication": 0, "year": ""},
+            {"authors": [{"id": 462345, "name": "Deniz ÖZKAYA SARIGÜL"}],
+             "context": "Sarıgül, D. Ö. (2015). “Avrupa Birliği Beyaz-Kitap ilkeleri ve Türk hukukunda sporcu sözleşmelerinin feshine ilişkin bir değerlendirme”, Bozkır Üniversitesi Hukuk Fakültesi Dergisi, 64(2), 405-434.",
+             "id": 16194241, "journalCode": "656", "order": 39, "targetPublication": 184334, "year": "2015"},
+            {"authors": null, "context": "Jansen, H.P.F. ve Van Dijk, A.F.J. 1993. \"Co-term-based Field Maps of Sport Management. Part I: Representations by Direct Multidimensional Scaling”, Policy Research Review, 22(1), 23–45.",
+             "id": 16194245, "journalCode": "", "order": 43, "targetPublication": 0, "year": ""}
+          ],
+          "retreat": false,
+          "startPage": "235",
+          "startedDate": null,
+          "subjects": [
+            {"autoLabel": false, "fullName": "Sosyal > Sosyal > Eğitim, Eğitim Araştırmaları", "id": 55,
+             "name": "Eğitim, Eğitim Araştırmaları", "rootId": 2, "rootName": "Sosyal"},
+            {"autoLabel": false, "fullName": "Sosyal > Sosyal > Sosyoloji", "id": 179,
+             "name": "Sosyoloji", "rootId": 2, "rootName": "Sosyal"}
+          ],
+          "viewCount": 32
+        }
+      }
+    ],
+    "max_score": 12.044432,
+    "total": {"relation": "eq", "value": 1}
+  },
+  "timed_out": false,
+  "took": 2,
+  "trdizinAddress": "https://search.trdizin.gov.tr/tr/yayin/detay/1163868/BİR-SPOR-BİLİMLERİ-ARAŞTIRMA-YAKLAŞIMI-OLARAK-İÇERİK-ANALİZİ:-REKREASYON-YÖNETİMİ-ÖRNEĞİ"
+}

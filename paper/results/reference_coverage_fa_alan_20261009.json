@@ -1,0 +1,118 @@
+{
+  "computed_at_utc": "2026-10-09T19:21:27+00:00",
+  "db": "paper/data/fa_alan_frozen_20261002_reindex_20261007.db",
+  "dataset": "fa_alan",
+  "articles": 967,
+  "articles_with_references": 960,
+  "coverage_current": {
+    "references": 34808,
+    "with_author_pct": 100.0,
+    "with_year_pct": 99.6,
+    "with_source_pct": 86.3,
+    "with_volume_pct": 79.3,
+    "with_page_pct": 79.7,
+    "with_doi_pct": 19.6,
+    "tuning_tenth": {
+      "references": 3396,
+      "with_source_pct": 86.4
+    },
+    "rest": {
+      "references": 31412,
+      "with_source_pct": 86.2
+    }
+  },
+  "coverage_current_without_generic_rule": {
+    "references": 34808,
+    "with_author_pct": 100.0,
+    "with_year_pct": 99.6,
+    "with_source_pct": 72.8,
+    "with_volume_pct": 72.6,
+    "with_page_pct": 72.8,
+    "with_doi_pct": 19.6,
+    "tuning_tenth": {
+      "references": 3396,
+      "with_source_pct": 72.9
+    },
+    "rest": {
+      "references": 31412,
+      "with_source_pct": 72.8
+    }
+  },
+  "coverage_before_revision": {
+    "references": 34808,
+    "with_author_pct": 100.0,
+    "with_year_pct": 99.5,
+    "with_source_pct": 86.1,
+    "with_volume_pct": 79.4,
+    "with_page_pct": 79.6,
+    "with_doi_pct": 19.0,
+    "tuning_tenth": {
+      "references": 3396,
+      "with_source_pct": 86.2
+    },
+    "rest": {
+      "references": 31412,
+      "with_source_pct": 86.1
+    }
+  },
+  "coverage_before_revision_without_generic_rule": {
+    "references": 34808,
+    "with_author_pct": 100.0,
+    "with_year_pct": 99.5,
+    "with_source_pct": 72.7,
+    "with_volume_pct": 72.7,
+    "with_page_pct": 72.7,
+    "with_doi_pct": 19.0,
+    "tuning_tenth": {
+      "references": 3396,
+      "with_source_pct": 72.8
+    },
+    "rest": {
+      "references": 31412,
+      "with_source_pct": 72.7
+    }
+  },
+  "with_trdizin_link_pct": 6.9,
+  "wos_export": {
+    "references": 34808,
+    "cr_lines": 34706,
+    "repeated_within_list": 102,
+    "cr_with_hyphen_cut_doi": 0
+  },
+  "wos_export_before_split_doi_fix": {
+    "version": "b9391ef",
+    "cr_lines": 34680,
+    "cr_with_hyphen_cut_doi": 128
+  },
+  "sample_strata": {
+    "pool": {
+      "other": 3390,
+      "vancouver": 15141,
+      "apa": 12758
+    },
+    "share_pct": {
+      "other": 10.8,
+      "vancouver": 48.4,
+      "apa": 40.8
+    },
+    "weighted_accuracy_pct": {
+      "İlk yazar": 93.8,
+      "Yıl": 98.5
+    }
+  },
+  "parser_revision": {
+    "before": "bc38686",
+    "after": "29bb81f",
+    "compared": 34808,
+    "changed": 2262,
+    "changed_pct": 6.5,
+    "by_field": {
+      "author": 1794,
+      "doi": 287,
+      "source": 118,
+      "page": 96,
+      "volume": 31,
+      "year": 14
+    }
+  }
+}

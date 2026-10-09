@@ -1,0 +1,411 @@
+{
+ "_comment": "Gercek bir TR Dizin yanitinin yapisi (api/journalById/488, kisaltilmis: journalYear 25 yildan 6'ya, konular 15'ten 4-5'e indirildi); tum bibliyografik ve kisisel icerik kurgusaldir",
+ "_shards": {
+  "failed": 0,
+  "skipped": 0,
+  "successful": 1,
+  "total": 1
+ },
+ "hits": {
+  "hits": [
+   {
+    "_id": "488",
+    "_index": "journal_2024",
+    "_score": 7.1546917,
+    "_source": {
+     "applicationDate": "2008-09-25T20:20:27Z",
+     "coverPath": "9023e89f-9153-4c9f-a421-e062b7d538c9",
+     "eissn": "2667-4009",
+     "firstIndexDate": "2026-09-29T09:18:48.019064Z",
+     "firstPublishYear": 1991,
+     "id": 488,
+     "indexDate": "2026-09-29T09:18:48.019064Z",
+     "indexedBy": "indexer",
+     "isActive": true,
+     "issn": null,
+     "journalDatabase": [
+      "SCIENCE",
+      "SOCIAL"
+     ],
+     "journalYear": [
+      {
+       "databases": [
+        "SCIENCE",
+        "SOCIAL"
+       ],
+       "expertWarningCount": 0,
+       "missingIssueCount": 3,
+       "missingRefereeReportCount": 1,
+       "periods": [
+        "3",
+        "6",
+        "9",
+        "12"
+       ],
+       "subjects": [
+        {
+         "autoLabel": false,
+         "fullName": "Fen > Tıp > Biyokimya ve Moleküler Biyoloji",
+         "id": 37,
+         "name": "Biyokimya ve Moleküler Biyoloji",
+         "rootId": 1,
+         "rootName": "Fen"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Fen > Tıp > Spor Bilimleri",
+         "id": 181,
+         "name": "Spor Bilimleri",
+         "rootId": 1,
+         "rootName": "Fen"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Ergonomi",
+         "id": 63,
+         "name": "Ergonomi",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Psikoloji",
+         "id": 167,
+         "name": "Psikoloji",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Tarih",
+         "id": 185,
+         "name": "Tarih",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        }
+       ],
+       "year": 2024
+      },
+      {
+       "databases": [
+        "SCIENCE",
+        "SOCIAL"
+       ],
+       "expertWarningCount": 0,
+       "missingIssueCount": 0,
+       "missingRefereeReportCount": 0,
+       "periods": [
+        "1",
+        "3",
+        "6",
+        "12",
+        "9"
+       ],
+       "subjects": [
+        {
+         "autoLabel": false,
+         "fullName": "Fen > Tıp > Biyokimya ve Moleküler Biyoloji",
+         "id": 37,
+         "name": "Biyokimya ve Moleküler Biyoloji",
+         "rootId": 1,
+         "rootName": "Fen"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Fen > Tıp > Spor Bilimleri",
+         "id": 181,
+         "name": "Spor Bilimleri",
+         "rootId": 1,
+         "rootName": "Fen"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Ergonomi",
+         "id": 63,
+         "name": "Ergonomi",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Psikoloji",
+         "id": 167,
+         "name": "Psikoloji",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        }
+       ],
+       "year": 2004
+      },
+      {
+       "databases": [
+        "SCIENCE",
+        "SOCIAL"
+       ],
+       "expertWarningCount": 0,
+       "missingIssueCount": 0,
+       "missingRefereeReportCount": 0,
+       "periods": [
+        "1",
+        "6",
+        "3",
+        "9",
+        "12"
+       ],
+       "subjects": [
+        {
+         "autoLabel": false,
+         "fullName": "Fen > Tıp > Biyokimya ve Moleküler Biyoloji",
+         "id": 37,
+         "name": "Biyokimya ve Moleküler Biyoloji",
+         "rootId": 1,
+         "rootName": "Fen"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Fen > Tıp > Spor Bilimleri",
+         "id": 181,
+         "name": "Spor Bilimleri",
+         "rootId": 1,
+         "rootName": "Fen"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Ergonomi",
+         "id": 63,
+         "name": "Ergonomi",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Psikoloji",
+         "id": 167,
+         "name": "Psikoloji",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        }
+       ],
+       "year": 2003
+      },
+      {
+       "databases": [
+        "SCIENCE",
+        "SOCIAL"
+       ],
+       "expertWarningCount": 0,
+       "missingIssueCount": 4,
+       "missingRefereeReportCount": 0,
+       "periods": [
+        "6",
+        "9",
+        "12",
+        "3"
+       ],
+       "subjects": [
+        {
+         "autoLabel": false,
+         "fullName": "Fen > Tıp > Biyokimya ve Moleküler Biyoloji",
+         "id": 37,
+         "name": "Biyokimya ve Moleküler Biyoloji",
+         "rootId": 1,
+         "rootName": "Fen"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Fen > Tıp > Spor Bilimleri",
+         "id": 181,
+         "name": "Spor Bilimleri",
+         "rootId": 1,
+         "rootName": "Fen"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Ergonomi",
+         "id": 63,
+         "name": "Ergonomi",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Psikoloji",
+         "id": 167,
+         "name": "Psikoloji",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Tarih",
+         "id": 185,
+         "name": "Tarih",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        }
+       ],
+       "year": 2019
+      },
+      {
+       "databases": [
+        "SCIENCE",
+        "SOCIAL"
+       ],
+       "expertWarningCount": 1,
+       "missingIssueCount": 3,
+       "missingRefereeReportCount": 0,
+       "periods": [
+        "3",
+        "12",
+        "9",
+        "6"
+       ],
+       "subjects": [
+        {
+         "autoLabel": false,
+         "fullName": "Fen > Tıp > Biyokimya ve Moleküler Biyoloji",
+         "id": 37,
+         "name": "Biyokimya ve Moleküler Biyoloji",
+         "rootId": 1,
+         "rootName": "Fen"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Fen > Tıp > Spor Bilimleri",
+         "id": 181,
+         "name": "Spor Bilimleri",
+         "rootId": 1,
+         "rootName": "Fen"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Ergonomi",
+         "id": 63,
+         "name": "Ergonomi",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Psikoloji",
+         "id": 167,
+         "name": "Psikoloji",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Tarih",
+         "id": 185,
+         "name": "Tarih",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        }
+       ],
+       "year": 2022
+      },
+      {
+       "databases": [
+        "SCIENCE",
+        "SOCIAL"
+       ],
+       "expertWarningCount": 0,
+       "missingIssueCount": 0,
+       "missingRefereeReportCount": 0,
+       "periods": [
+        "3",
+        "6",
+        "9",
+        "12"
+       ],
+       "subjects": [
+        {
+         "autoLabel": false,
+         "fullName": "Fen > Tıp > Biyokimya ve Moleküler Biyoloji",
+         "id": 37,
+         "name": "Biyokimya ve Moleküler Biyoloji",
+         "rootId": 1,
+         "rootName": "Fen"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Fen > Tıp > Spor Bilimleri",
+         "id": 181,
+         "name": "Spor Bilimleri",
+         "rootId": 1,
+         "rootName": "Fen"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Ergonomi",
+         "id": 63,
+         "name": "Ergonomi",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        },
+        {
+         "autoLabel": false,
+         "fullName": "Sosyal > Sosyal > Psikoloji",
+         "id": 167,
+         "name": "Psikoloji",
+         "rootId": 2,
+         "rootName": "Sosyal"
+        }
+       ],
+       "year": 2009
+      }
+     ],
+     "lastYearList": null,
+     "newJournal": null,
+     "oldJournal": null,
+     "orderCitationCount": 989,
+     "orderTitle": "Hareket ve Antrenman Bilimleri Dergisi",
+     "otherTitle": "Anatolian Journal of Movement and Training Sciences",
+     "person": [
+      {
+       "name": "Prof. Dr. Nilgün Aksoy",
+       "type": "EDITOR"
+      }
+     ],
+     "publicationFormats": "ELECTRONIC",
+     "publicationLanguage": [
+      "TUR",
+      "ENG"
+     ],
+     "registrationDate": "2008-09-25T20:20:27Z",
+     "rejectYearList": [
+      {
+       "id": 9149,
+       "year": 2008
+      },
+      {
+       "id": 8396,
+       "year": 2007
+      },
+      {
+       "id": 8395,
+       "year": 2006
+      },
+      {
+       "id": 8711,
+       "year": 2005
+      },
+      {
+       "id": 8522,
+       "year": 2002
+      }
+     ],
+     "title": "Hareket ve Antrenman Bilimleri Dergisi",
+     "webAddress": "https://habd.example.org"
+    }
+   }
+  ],
+  "max_score": 7.1546917,
+  "total": {
+   "relation": "eq",
+   "value": 1
+  }
+ },
+ "timed_out": false,
+ "took": 1
+}
