@@ -7,13 +7,14 @@ from __future__ import annotations
 
 import json
 import math
+from pathlib import Path
 
 import networkx as nx
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-from bibliotr import analysis, export, subjects
+from bibliotr import __version__, analysis, export, subjects
 from bibliotr import query as tq
 from bibliotr import thesaurus as th
 from bibliotr.client import AGGREGATION_LABELS, FACETS, MAX_RESULT_WINDOW, ORDERS, TRDizinClient, TRDizinError
@@ -44,7 +45,26 @@ FACET_LABELS = {
     "facet-subject": "Konu (ör. Fen > Tıp > Onkoloji)",
 }
 
-st.set_page_config(page_title="BiblioTR", page_icon="📚", layout="wide")
+ASSETS = Path(__file__).resolve().parent / "assets"
+ICON = ASSETS / "bibliotr-icon-tile-512.png"
+REPO = "https://github.com/yilmaz-yuksel/BiblioTR"
+DEVELOPER = "Yılmaz YÜKSEL"
+ABOUT = (f"**BiblioTR {__version__}**: TR Dizin için bibliyometrik veri toplama ve analiz aracı.\n\n"
+         f"Geliştirici: {DEVELOPER}, Karabük Üniversitesi\n\n"
+         f"Kaynak kod ve atıf bilgisi: {REPO} · MIT lisansı\n\n"
+         f"Soru ve hata bildirimi: {REPO}/issues")
+st.set_page_config(page_title="BiblioTR", page_icon=str(ICON) if ICON.exists() else "📚", layout="wide",
+                   menu_items={"About": ABOUT, "Get help": REPO, "Report a bug": f"{REPO}/issues"})
+
+
+def sidebar_logo() -> None:
+    """Kenar çubuğunun başında logo; koyu temada açık renkli sürüm. Dosya yoksa düz başlık."""
+    dark = getattr(getattr(st.context, "theme", None), "type", None) == "dark"
+    logo = ASSETS / ("bibliotr-logo-dark.png" if dark else "bibliotr-logo-transparent.png")
+    if logo.exists():
+        st.sidebar.image(str(logo), width="stretch")
+    else:
+        st.sidebar.title("BiblioTR")
 
 
 @st.cache_resource
@@ -132,7 +152,7 @@ def network_figure(g: nx.Graph, title: str) -> go.Figure:
 # ---- kenar çubuğu ------------------------------------------------------------
 
 store = get_store()
-st.sidebar.title("📚 BiblioTR")
+sidebar_logo()
 datasets = store.list_datasets()
 names = [d["name"] for d in datasets]
 selected = st.sidebar.selectbox("Veri seti", names, index=0 if names else None,
@@ -148,6 +168,9 @@ use_thes = st.sidebar.checkbox(
          "uygulanır. Ham veri değişmez. Sözlüğü **Eşanlamlılar** sekmesinden yönetin.")
 min_interval = st.sidebar.number_input("İstekler arası bekleme (sn)", 0.2, 10.0, 1.0, 0.1,
                                        help="TR Dizin sunucusunu yormamak için")
+st.sidebar.divider()
+st.sidebar.caption(f"BiblioTR {__version__} · [GitHub]({REPO})  \n"
+                   f"Geliştirici: {DEVELOPER}  \n[Soru ve hata bildirimi]({REPO}/issues)")
 
 (tab_collect, tab_overview, tab_actors, tab_cites, tab_laws, tab_network, tab_trend, tab_thes, tab_export,
  tab_raw) = st.tabs(

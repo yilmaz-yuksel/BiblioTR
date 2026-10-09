@@ -1,4 +1,9 @@
-# BiblioTR
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/bibliotr-logo-dark.png">
+    <img src="assets/bibliotr-logo-transparent.png" alt="BiblioTR: TR Dizin bibliyometri araç takımı ve web arayüzü" width="560">
+  </picture>
+</p>
 
 Türkiye'nin ulusal atıf dizini TR Dizin'den kayıt çekme, denetleme ve bibliyometrik analiz için dışa aktarma aracı.
 

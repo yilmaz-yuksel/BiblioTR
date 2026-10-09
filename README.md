@@ -1,4 +1,9 @@
-# BiblioTR
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/bibliotr-logo-dark.png">
+    <img src="assets/bibliotr-logo-transparent.png" alt="BiblioTR: TR Dizin bibliometric toolkit and web interface" width="560">
+  </picture>
+</p>
 
 Harvesting, validating and exporting records from TR Dizin, Türkiye's national citation index, for bibliometric analysis.
 
