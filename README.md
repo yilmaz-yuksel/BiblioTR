@@ -11,6 +11,7 @@ Harvesting, validating and exporting records from TR Dizin, Türkiye's national 
 
 [![tests](https://github.com/yilmaz-yuksel/BiblioTR/actions/workflows/tests.yml/badge.svg)](https://github.com/yilmaz-yuksel/BiblioTR/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/1410751450.svg)](https://doi.org/10.5281/zenodo.23271563)
 
 A Python toolkit and web interface for harvesting publication records from
 [TR Dizin](https://search.trdizin.gov.tr), Türkiye's national citation index operated by
@@ -281,14 +282,15 @@ tests/          pytest tests
 pytest
 ```
 
-`tests/fixtures/publication_by_id.json` and `tests/fixtures/search_subject.json` are real
-(shortened) TR Dizin responses. `tests/fixtures/publication_search.json` is a synthetic example
+`tests/fixtures/publication_by_id.json` and `tests/fixtures/search_subject.json` keep the structure
+of real (shortened) TR Dizin responses, but all bibliographic and personal content in them is fictional. `tests/fixtures/publication_search.json` is a synthetic example
 used to exercise fallback field names.
 
 ## Citation
 
 If you use this software in your research, please cite it. Citation metadata is provided in
-[`CITATION.cff`](CITATION.cff); GitHub shows it under "Cite this repository".
+[`CITATION.cff`](CITATION.cff); GitHub shows it under "Cite this repository". Version 1.0.0 is archived
+on Zenodo: https://doi.org/10.5281/zenodo.23271564 (all versions: https://doi.org/10.5281/zenodo.23271563).
 
 ## License
 

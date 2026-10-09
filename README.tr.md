@@ -9,6 +9,10 @@ Türkiye'nin ulusal atıf dizini TR Dizin'den kayıt çekme, denetleme ve bibliy
 
 [English](README.md) | **Türkçe**
 
+[![tests](https://github.com/yilmaz-yuksel/BiblioTR/actions/workflows/tests.yml/badge.svg)](https://github.com/yilmaz-yuksel/BiblioTR/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/1410751450.svg)](https://doi.org/10.5281/zenodo.23271563)
+
 [TR Dizin](https://search.trdizin.gov.tr) arama API'sinden anahtar kelimeye ve filtrelere göre yayın
 verisi toplayan, SQLite'ta saklayan, bibliyometrik analizler yapan ve verileri VOSviewer,
 Bibliometrix/Biblioshiny, Zotero gibi araçlara aktaran bir Python aracı ve web arayüzü.
@@ -263,6 +267,17 @@ tests/          pytest testleri (sentetik örnek yanıtla)
 pytest
 ```
 
-`tests/fixtures/publication_by_id.json` ve `tests/fixtures/search_subject.json` gerçek TR Dizin
-yanıtlarıdır (kısaltılmış).
+`tests/fixtures/publication_by_id.json` ve `tests/fixtures/search_subject.json` gerçek (kısaltılmış) TR Dizin
+yanıtlarının yapısını korur; içlerindeki tüm bibliyografik ve kişisel bilgiler kurgusaldır.
 `tests/fixtures/publication_search.json` ise yedek alan adlarını sınamak için sentetik bir örnektir.
+
+## Atıf
+
+Bu aracı araştırmanızda kullanırsanız lütfen atıf yapın. Atıf bilgileri [`CITATION.cff`](CITATION.cff)
+dosyasındadır; GitHub bunu "Cite this repository" altında gösterir. 1.0.0 sürümü Zenodo'da arşivlenmiştir:
+https://doi.org/10.5281/zenodo.23271564 (tüm sürümler: https://doi.org/10.5281/zenodo.23271563).
+
+## Lisans
+
+[MIT Lisansı](LICENSE) ile yayımlanmıştır. TR Dizin'den alınan veriler TR Dizin / ULAKBİM kullanım
+koşullarına tabidir.

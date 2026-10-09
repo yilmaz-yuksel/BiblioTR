@@ -15,6 +15,15 @@ authors:
 repository-code: "https://github.com/yilmaz-yuksel/BiblioTR"
 license: MIT
 version: 1.0.0
+doi: 10.5281/zenodo.23271563
+date-released: 2026-10-10
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23271563
+    description: All versions (concept DOI)
+  - type: doi
+    value: 10.5281/zenodo.23271564
+    description: Version 1.0.0
 keywords:
   - bibliometrics
   - scientometrics
