@@ -18,11 +18,14 @@ keeps the old name.
 |---|---|---|
 | 2026-10-02 03:12 | Frozen set written (987 records, 967 journal articles) | `paper/data/fa_alan_frozen_20261002.db`, SHA-256 348363d7…3e8d8; `paper/results/freeze_fa_alan_20261002/freeze.json` |
 | 2026-10-02 03:25 | Blank relevance and field coding sheets (K1, K2, D1) created | file dates of the blank sheets |
+| 2026-10-02, before 15:01 | Blank author identity sheet created | listed as already present (`coding_kept`) in `freeze.json`; a blank copy was saved at 23:50 |
+| 2026-10-02 15:01 | Script 04 run again to add the author-identity groups; `freeze.json` rewritten (its `frozen_at_utc` is 12:01 UTC, the time of this run). The database was not changed (same SHA-256) and no coding sheet was overwritten (`coding_written` empty; K1, K2, D1 and the author sheet in `coding_kept`) | `freeze.json` |
 | 2026-10-02 | Validation design and thresholds written into the draft (revision 6) | this file |
-| 2026-10-02 23:50 | Blank author identity sheet created | file date of the blank sheet |
 | 2026-10-06 01:53 to 02:32 | Relevance (K1, K2) and field (D1) coding completed | file dates of the coded sheets |
 | 2026-10-06 14:01 | OpenAlex title-match check completed | file date of the coded sheet |
 | 2026-10-07 15:31 to 15:43 | Reference and keyword-thesaurus coding completed | file dates of the coded sheets |
+| 2026-10-12 | Use-case figures and automatic checks rerun with release 1.0.0 on a fresh rebuild of the frozen database: every table and number identical, Web of Science export byte-identical | `paper/results/rerun_v1.0.0_20261012/rerun_check.json` |
+| 2026-11-17 | The same rerun with release 1.1.0, which follows TR Dizin's updated API rules: every table and number identical, Web of Science export byte-identical | `paper/results/rerun_v1.1.0_20261117/rerun_check.json` |
 
 The draft revisions carry no independent time stamp; the date of revision 6 comes from its own Table 5
 caption and agrees with the file dates above.

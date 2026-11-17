@@ -1,0 +1,35 @@
+{
+ "run_at": "2026-11-17",
+ "purpose": "Check that release 1.1.0 (TR Dizin API update: request limits, publisher search, new codes) reproduces the results reported in the paper.",
+ "code": "BiblioTR 1.1.0 (Zenodo 10.5281/zenodo.24301966)",
+ "python": "3.13, Linux",
+ "input": {
+  "frozen_db": "fa_alan_frozen_20261002.db",
+  "sha256": "348363d74bcf942501802ed0fc3dd08a921ce5ebe8c2d0fdd0b15f837543e8d8",
+  "rebuilt_copy": "reindexed with release 1.1.0"
+ },
+ "runs": [
+  {
+   "script": "06_case_analysis.py --dataset fa_alan --max-year 2025 --relevant results/agreement_fa_alan_20261007/relevant_ids.txt",
+   "compared_with": "case_fa_alan_ilgili_20261007/summary.json",
+   "result": "identical except timings"
+  },
+  {
+   "script": "09_validation_audit.py --dataset fa_alan --max-year 2025 --papers-only",
+   "compared_with": "validation_fa_alan_20261007/validation.json",
+   "result": "identical except timings and section F (bibliometrix not run)"
+  },
+  {
+   "script": "14_relevance_effects.py --dataset fa_alan --max-year 2025 --relevant results/agreement_fa_alan_20261007/relevant_ids.txt",
+   "compared_with": "relevance_effects_fa_alan_20261008/summary.json",
+   "result": "identical"
+  }
+ ],
+ "wos_export_sha256": {
+  "20261007": "de812905308d59b934837ecd1604ad74c2ea1723a1f8698edbfba12591892040",
+  "release_1.1.0": "de812905308d59b934837ecd1604ad74c2ea1723a1f8698edbfba12591892040",
+  "identical": true
+ },
+ "tests": "216 passed (Linux, Python 3.13; Windows 11, Python 3.12); coverage 93% of statements, 90% with branches",
+ "conclusion": "Release 1.1.0 changes only how TR Dizin is queried; every result reported in the paper is reproduced, and the Web of Science export is byte-identical."
+}

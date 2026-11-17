@@ -282,8 +282,9 @@ yanıtlarının yapısını korur; içlerindeki tüm bibliyografik ve kişisel b
 ## Atıf
 
 Bu aracı araştırmanızda kullanırsanız lütfen atıf yapın. Atıf bilgileri [`CITATION.cff`](CITATION.cff)
-dosyasındadır; GitHub bunu "Cite this repository" altında gösterir. 1.0.0 sürümü Zenodo'da arşivlenmiştir:
-https://doi.org/10.5281/zenodo.23271564 (tüm sürümler: https://doi.org/10.5281/zenodo.23271563).
+dosyasındadır; GitHub bunu "Cite this repository" altında gösterir. 1.1.0 sürümü Zenodo'da arşivlenmiştir:
+https://doi.org/10.5281/zenodo.24301966 (1.0.0 sürümü: https://doi.org/10.5281/zenodo.23271564; tüm sürümler:
+https://doi.org/10.5281/zenodo.23271563).
 
 ## Lisans
 

@@ -299,8 +299,9 @@ used to exercise fallback field names.
 ## Citation
 
 If you use this software in your research, please cite it. Citation metadata is provided in
-[`CITATION.cff`](CITATION.cff); GitHub shows it under "Cite this repository". Version 1.0.0 is archived
-on Zenodo: https://doi.org/10.5281/zenodo.23271564 (all versions: https://doi.org/10.5281/zenodo.23271563).
+[`CITATION.cff`](CITATION.cff); GitHub shows it under "Cite this repository". Version 1.1.0 is archived
+on Zenodo: https://doi.org/10.5281/zenodo.24301966 (version 1.0.0: https://doi.org/10.5281/zenodo.23271564; all
+versions: https://doi.org/10.5281/zenodo.23271563).
 
 ## License
 
