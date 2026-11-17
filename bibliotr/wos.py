@@ -584,7 +584,8 @@ def canonical_references(pubs: Sequence[Publication], opts: WosOptions) -> dict[
 
 LANGUAGE_NAMES = {
     "TUR": "Turkish", "ENG": "English", "GER": "German", "FRE": "French", "ARA": "Arabic",
-    "RUS": "Russian", "ITA": "Italian", "SPA": "Spanish", "OTH": "Other",
+    "RUS": "Russian", "ITA": "Italian", "SPA": "Spanish", "KUR": "Kurdish", "AZE": "Azerbaijani",
+    "KAZ": "Kazakh", "OTH": "Other",
 }
 
 

@@ -26,7 +26,15 @@ from pathlib import Path
 from . import analysis, export, subjects
 import requests
 
-from .client import AGGREGATION_LABELS, ENTITIES, TRDizinClient, TRDizinError, extract_records
+from .client import (
+    AGGREGATION_LABELS,
+    DEFAULT_PER_MINUTE,
+    ENTITIES,
+    MAX_PER_MINUTE,
+    TRDizinClient,
+    TRDizinError,
+    extract_records,
+)
 from .normalize import key_tree, normalize_publication
 from .storage import DatasetNotFound, Store
 
@@ -100,7 +108,7 @@ def parse_years(spec: str | None) -> list[int] | None:
 
 
 def _client(args: argparse.Namespace) -> TRDizinClient:
-    return TRDizinClient(min_interval=args.delay)
+    return TRDizinClient(per_minute=args.per_minute, min_interval=args.delay)
 
 
 def cmd_search(args: argparse.Namespace) -> None:
@@ -512,7 +520,12 @@ def cmd_reindex(args: argparse.Namespace) -> None:
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="bibliotr", description="TR Dizin veri toplama ve bibliyometrik analiz aracı")
     p.add_argument("--db", default=DEFAULT_DB, help=f"SQLite veritabanı yolu (varsayılan: {DEFAULT_DB})")
-    p.add_argument("--delay", type=float, default=1.0, help="İstekler arası en az bekleme süresi, saniye")
+    p.add_argument("--per-minute", type=int, default=None,
+                   help=f"Dakikada en fazla TR Dizin isteği (varsayılan {DEFAULT_PER_MINUTE}, en fazla "
+                        f"{MAX_PER_MINUTE}). TR Dizin limiti IP başına dakikada 300 (Türkiye) / 60 (Türkiye dışı) "
+                        "istektir; kurum ağında çıkış IP'si ortak sayılır, aşımda IP engellenir.")
+    p.add_argument("--delay", type=float, default=None,
+                   help="İstekler arası en az bekleme, saniye (eski seçenek; --per-minute verilirse yok sayılır)")
     p.add_argument("-v", "--verbose", action="store_true")
     sub = p.add_subparsers(dest="command", required=True)
 

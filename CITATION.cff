@@ -14,9 +14,9 @@ authors:
     orcid: "https://orcid.org/0000-0003-1816-2916"
 repository-code: "https://github.com/yilmaz-yuksel/BiblioTR"
 license: MIT
-version: 1.0.0
+version: 1.1.0
 doi: 10.5281/zenodo.23271563
-date-released: 2026-10-10
+date-released: 2026-11-17
 identifiers:
   - type: doi
     value: 10.5281/zenodo.23271563

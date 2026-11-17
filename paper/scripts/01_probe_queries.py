@@ -137,7 +137,7 @@ def main(argv: list[str] | None = None) -> None:
     ap.add_argument("--set", choices=("fa_alan",), default="fa_alan",
                     help="Yoklama kümesi: fiziksel aktivite alan araması (tek seçenek; uyumluluk için)")
     ap.add_argument("--out", default=None)
-    ap.add_argument("--delay", type=float, default=1.0, help="İstekler arası bekleme (saniye), düşürmeyin")
+    ap.add_argument("--delay", type=float, default=1.2, help="İstekler arası bekleme, saniye (1.2 sn = dakikada 50 istek; TR Dizin limiti dakikada 60/300 istek)")
     args = ap.parse_args(argv)
     client = TRDizinClient(min_interval=args.delay)
     run_field(client, Path(args.out or ROOT / "paper" / "results" / f"probe_fa_alan_{date.today():%Y%m%d}"))

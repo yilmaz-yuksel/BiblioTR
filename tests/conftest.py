@@ -8,6 +8,19 @@ from bibliotr.client import extract_records
 FIXTURES = Path(__file__).parent / "fixtures"
 
 
+@pytest.fixture(autouse=True)
+def _no_rate_wait():
+    """Testlerde TR Dizin hız sınırlayıcısı gerçekten beklemesin; her test boş pencereyle başlasın."""
+    from bibliotr.client import SHARED_LIMITER
+
+    SHARED_LIMITER.reset()
+    old = SHARED_LIMITER.sleep
+    SHARED_LIMITER.sleep = lambda s: None
+    yield
+    SHARED_LIMITER.sleep = old
+    SHARED_LIMITER.reset()
+
+
 @pytest.fixture
 def search_response():
     return json.loads((FIXTURES / "publication_search.json").read_text(encoding="utf-8"))

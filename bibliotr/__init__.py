@@ -5,4 +5,4 @@ from .normalize import Author, Publication, normalize_publication
 from .storage import Store
 
 __all__ = ["TRDizinClient", "TRDizinError", "Author", "Publication", "normalize_publication", "Store"]
-__version__ = "1.0.0"
+__version__ = "1.1.0"

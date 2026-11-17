@@ -201,14 +201,14 @@ kadar bulunanlar saklanır; yeniden çalıştırınca yalnızca kalanlar aranır
 
 | Uç nokta | İçerik |
 |---|---|
-| `api/defaultSearch/publication/?q=...` | Arama sonuçları (sayfalı) |
+| `api/defaultSearch/{publication,journal,author,institution,publisher}/?q=...` | Arama sonuçları (sayfalı); `order`, `page` ve `limit` zorunludur, her veri tipi için izin verilen sıralama ve facet değerleri istek gönderilmeden denetlenir |
 | `api/publicationById/{id}` | Tek yayının tam kaydı: kaynakça (`references`), bu yayına atıf yapan TR Dizin yayınları (`citedReferences`), CrossRef / OpenAlex / OpenCitations atıf sayıları (`otherCitations`) |
 | `api/journalById/{id}` | Dergi kaydı: ad, diğer ad, ISSN, editör, dizinlendiği yıllar (`journalYear`: yayın ayları, konular, eksik sayı/hakem raporu), reddedildiği yıllar. Yayınları içermez; derginin yayınları dergi adıyla (`facet-journalName`) aranıp `journal.id` ile süzülür |
-| `api/public/yayin/doi`, `yazar/orcid`, `dergi/issn` | DOI / ORCID / ISSN ile doğrudan kayıt |
+| `api/public/yayin/doi/?doi=`, `yazar/orcid/?orcid=`, `dergi/issn/?issn=` | DOI / ORCID / ISSN ile doğrudan kayıt |
 
 Arama yanıtı kaynakçayı (`references`) içerir, ancak yayına atıf yapan TR Dizin yayınları
 (`citedReferences`) `null` gelir. Bu yüzden `--details auto` (varsayılan) yalnızca atıf almış
-yayınlar için `publicationById` isteği atar (her biri yaklaşık 1 saniye).
+yayınlar için `publicationById` isteği atar (her biri bir istek; dakikalık sınır içinde).
 
 Arama yanıtındaki `aggregations` alanı, tüm sonuç kümesinin facet dağılımlarını verir.
 `bibliotr profile` ve arayüzdeki "Hızlı profil" bunu kullanır: veri çekmeden binlerce yayının
@@ -237,8 +237,16 @@ yeniden veri çekmek gerekmez.
 
 ## Sorumlu kullanım
 
-- İstekler arasında varsayılan olarak 1 saniye beklenir (`--delay`), 429/5xx hatalarında üstel
-  geri çekilmeyle yeniden denenir. Bu değeri düşürmeyin.
+- TR Dizin, IP adresi başına dakikada en fazla 300 (Türkiye IP adreslerinden) ve 60 (Türkiye dışından)
+  isteğe izin verir. Kurumların çıkış IP adresi ortak sayılır; aynı ağdaki herkes bu sınırı paylaşır
+  ve sınırı aşan IP adresi engellenir ([kullanım limitleri](https://development.trdizin.gov.tr/)).
+- Bu yüzden BiblioTR varsayılan olarak dakikada en fazla 50 istek gönderir (`--per-minute` ya da
+  arayüzün yan menüsündeki ayar) ve hiçbir ayarda 240'ı aşmaz; süreçteki bütün istekler, yeniden
+  denemeler dahil, sayılır. 60'ın üstünü yalnızca Türkiye IP adresinden ve ağınızdaki başkaları
+  TR Dizin'i yoğun kullanmıyorsa seçin.
+- HTTP 429 (limit aşıldı) yanıtında istemci bekler, hızını yarıya indirir ve bir kez yeniden dener;
+  ikinci 429'da çalışma durur. HTTP 403 IP engeli olabilir ve yeniden denenmez. Sunucu hataları
+  (5xx) üstel geri çekilmeyle yeniden denenir.
 - Toplu veri çekmeden önce TR Dizin / ULAKBİM kullanım koşullarını kontrol edin ve
   yayınlarınızda veri kaynağını belirtin.
 - Çok geniş sorgularda `--years` ile yıllara bölmek hem derin sayfalama sınırlarını aşmayı

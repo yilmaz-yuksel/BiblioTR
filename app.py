@@ -17,7 +17,16 @@ import streamlit as st
 from bibliotr import __version__, analysis, export, subjects
 from bibliotr import query as tq
 from bibliotr import thesaurus as th
-from bibliotr.client import AGGREGATION_LABELS, FACETS, MAX_RESULT_WINDOW, ORDERS, TRDizinClient, TRDizinError
+from bibliotr.client import (
+    AGGREGATION_LABELS,
+    DEFAULT_PER_MINUTE,
+    FACETS,
+    MAX_PER_MINUTE,
+    MAX_RESULT_WINDOW,
+    ORDERS,
+    TRDizinClient,
+    TRDizinError,
+)
 from bibliotr.journals import years_frame
 from bibliotr.normalize import key_tree, normalize_publication
 from bibliotr.storage import Store
@@ -166,8 +175,15 @@ use_thes = st.sidebar.checkbox(
     f"Eşanlamlılar sözlüğünü uygula ({thes_count} girdi)", value=True,
     help="Onayladığınız yazar, kurum ve anahtar kelime birleştirmeleri tüm analizlere ve dışa aktarımlara "
          "uygulanır. Ham veri değişmez. Sözlüğü **Eşanlamlılar** sekmesinden yönetin.")
-min_interval = st.sidebar.number_input("İstekler arası bekleme (sn)", 0.2, 10.0, 1.0, 0.1,
-                                       help="TR Dizin sunucusunu yormamak için")
+per_minute = st.sidebar.number_input(
+    "Dakikadaki en fazla istek", 1, MAX_PER_MINUTE, DEFAULT_PER_MINUTE, 5,
+    help="TR Dizin, IP adresi başına dakikada en fazla 300 (Türkiye) / 60 (Türkiye dışı) isteğe izin verir. "
+         "Kurum ağında çıkış IP adresi ortak sayılır ve limit aşılırsa IP adresi engellenir. "
+         f"Varsayılan {DEFAULT_PER_MINUTE}; 60'ın üstünü yalnızca Türkiye'den ve ağı paylaştığınız kişiler "
+         "TR Dizin'i yoğun kullanmıyorsa seçin.")
+if per_minute > 60:
+    st.sidebar.warning("Dakikada 60'tan fazla istek yalnızca Türkiye IP adreslerinden izinlidir.")
+min_interval = 60 / per_minute
 st.sidebar.divider()
 st.sidebar.caption(f"BiblioTR {__version__} · [GitHub]({REPO})  \n"
                    f"Geliştirici: {DEVELOPER}  \n[Soru ve hata bildirimi]({REPO}/issues)")
@@ -278,7 +294,7 @@ with tab_collect:
                                help="TR Dizin dergi sayfasının adresindeki numara: .../tr/dergi/detay/488")
     if j2.button("Dergiyi getir", disabled=not journal_id.strip()):
         try:
-            found = TRDizinClient(min_interval=min_interval).journal_by_id(journal_id.strip())
+            found = TRDizinClient(per_minute=per_minute).journal_by_id(journal_id.strip())
             if found is None:
                 st.error(f"{journal_id} kimlikli dergi bulunamadı.")
             st.session_state["journal"] = found
@@ -326,7 +342,7 @@ with tab_collect:
     if st.button("Önizle ve profil çıkar", disabled=not can_search,
                  help="Tek istekle ilk 20 kaydı ve TÜM sonuç kümesinin dağılımlarını getirir."):
         try:
-            client = TRDizinClient(min_interval=min_interval)
+            client = TRDizinClient(per_minute=per_minute)
             pages = [(lab, q, client.search("publication", q, order, 1, 20, facets + year_facets))
                      for lab, q in queries]
             sp = pages[0][2]
@@ -404,7 +420,7 @@ with tab_collect:
              "(her biri ~1 sn). Veri seti içi atıf ağı ve yerel atıf için gereklidir.",
     )
     if st.button("Veriyi çek", type="primary", disabled=not (can_search and ds_name)):
-        client = TRDizinClient(min_interval=min_interval)
+        client = TRDizinClient(per_minute=per_minute)
         years = selected_years
         status = st.status("Veri çekiliyor...", expanded=True)
         fetched = {"n": 0}
@@ -473,7 +489,7 @@ with tab_collect:
         with st.expander("Eksik kaynakça/atıf ayrıntılarını tamamla"):
             to_enrich = st.selectbox("Veri seti", names, key="enrich")
             if st.button("Tamamla", key="enrich_btn"):
-                client = TRDizinClient(min_interval=min_interval)
+                client = TRDizinClient(per_minute=per_minute)
                 recs = store.raw_records(to_enrich)
                 bar = st.progress(0.0)
                 n_done = client.enrich(recs, on_progress=lambda i, t: bar.progress(i / t, text=f"{i}/{t}"))

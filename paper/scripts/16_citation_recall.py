@@ -143,7 +143,7 @@ def select(name: str, db: Path, dataset: str, relevant: Path, n: int = N_SAMPLE,
             "relevant_linked_inside": linked_inside(rel), "relevant": len(rel)}
 
 
-def fetch(name: str, delay: float = 1.0) -> dict:
+def fetch(name: str, delay: float = 1.2) -> dict:
     """Örneklemdeki kayıtları TR Dizin'den çeker (yalnız TR Dizin'e erişen bilgisayarda)."""
     from bibliotr.client import TRDizinClient
 
@@ -301,7 +301,7 @@ def main(argv: list[str] | None = None) -> None:
     ap.add_argument("--db", default=None, help="İlgili makalelerin veritabanı (varsayılan: en yeni yeniden dizinlenmiş kopya)")
     ap.add_argument("--relevant", default=None)
     ap.add_argument("--n", type=int, default=N_SAMPLE)
-    ap.add_argument("--delay", type=float, default=1.0)
+    ap.add_argument("--delay", type=float, default=1.2, help="İstekler arası bekleme, saniye (1.2 sn = dakikada 50 istek; TR Dizin limiti dakikada 60/300 istek)")
     for step in ("select", "fetch", "build", "score"):
         ap.add_argument(f"--{step}", action="store_true")
     args = ap.parse_args(argv)

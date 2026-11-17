@@ -33,7 +33,8 @@ API documentation: <https://development.trdizin.gov.tr/>
 ## Features
 
 - **Harvesting**: keyword and facet search, automatic pagination, year-by-year splitting to get
-  past the 10,000-record paging limit, rate limiting with exponential back-off
+  past the 10,000-record paging limit, a per-minute request limit that keeps within TR Dizin's usage
+  limits, and back-off on server errors
 - **Subject index**: browse the TR Dizin subject tree; subject filters accept full values, subject
   names or whole groups, with suggestions for misspelled names
 - **Enrichment**: reference lists, citing TR Dizin publications, and citation counts from
@@ -215,14 +216,14 @@ only the rest.
 
 | Endpoint | Contents |
 |---|---|
-| `api/defaultSearch/publication/?q=...` | Search results (paged) |
+| `api/defaultSearch/{publication,journal,author,institution,publisher}/?q=...` | Search results (paged); `order`, `page` and `limit` are required, and the order and facet values allowed for each data type are checked before a request is sent |
 | `api/publicationById/{id}` | Full record: references (`references`), citing TR Dizin publications (`citedReferences`), CrossRef / OpenAlex / OpenCitations citation counts (`otherCitations`) |
 | `api/journalById/{id}` | Journal record: title, other title, ISSN, editor, indexed years (`journalYear`: issue months, subjects, missing issues / referee reports) and rejected years. It holds no publications; a journal's publications are searched by name (`facet-journalName`) and filtered by `journal.id` |
-| `api/public/yayin/doi`, `yazar/orcid`, `dergi/issn` | Direct lookup by DOI / ORCID / ISSN |
+| `api/public/yayin/doi/?doi=`, `yazar/orcid/?orcid=`, `dergi/issn/?issn=` | Direct lookup by DOI / ORCID / ISSN |
 
 Search responses include reference lists, but the citing publications (`citedReferences`) are
 `null`. With `--details auto` (the default), a `publicationById` request is therefore sent only
-for publications that have received citations (about one second each).
+for publications that have received citations (one request each, within the per-minute limit).
 
 The `aggregations` field of a search response gives facet distributions for the entire result set.
 `bibliotr profile` and the "quick profile" in the interface use it to show the year, journal,
@@ -253,8 +254,17 @@ so no re-harvesting is needed.
 
 ## Responsible use
 
-- By default the client waits one second between requests (`--delay`) and retries with
-  exponential back-off on 429/5xx errors. Please do not lower this value.
+- TR Dizin allows at most 300 requests per minute per IP address from Türkiye and 60 from other
+  countries. An institution's outgoing IP address counts as one, so everyone on the same network
+  shares the limit, and an IP address that exceeds it is blocked
+  ([usage limits](https://development.trdizin.gov.tr/)).
+- BiblioTR therefore sends at most 50 requests per minute by default (`--per-minute`, or the
+  setting in the sidebar of the interface) and never more than 240, counting every request of the
+  process, retries included. Choose more than 60 only from a Turkish IP address and when others on
+  your network are not using TR Dizin heavily.
+- On HTTP 429 (limit exceeded) the client waits, halves its rate and retries once; a second 429
+  stops the run. HTTP 403 may mean the IP address has been blocked and is not retried. Server
+  errors (5xx) are retried with exponential back-off.
 - Check the TR Dizin / ULAKBİM terms of use before bulk harvesting, and cite the data source in
   your publications.
 - Splitting broad queries by year with `--years` both avoids deep-paging limits and makes it easier

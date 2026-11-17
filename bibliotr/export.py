@@ -20,7 +20,8 @@ from .normalize import Publication
 
 LANGUAGE_NAMES = {
     "TUR": "Turkish", "ENG": "English", "GER": "German", "FRE": "French", "ARA": "Arabic",
-    "RUS": "Russian", "ITA": "Italian", "SPA": "Spanish", "OTH": "Other",
+    "RUS": "Russian", "ITA": "Italian", "SPA": "Spanish", "KUR": "Kurdish", "AZE": "Azerbaijani",
+    "KAZ": "Kazakh", "OTH": "Other",
 }
 
 # TR Dizin yayın türü -> WoS doküman tipi
@@ -38,6 +39,7 @@ DOC_TYPES = {
     "SHORT_REPORT": "Article",
     "TRANSLATION": "Article",
     "RETRACTED": "Retracted Publication",
+    "NOTE": "Note",
     "OTHER": "Article",
 }
 

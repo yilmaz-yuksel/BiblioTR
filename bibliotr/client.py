@@ -7,12 +7,19 @@ Arama uç noktası:
 
 `order`, `page` ve `limit` her istekte zorunludur. Facet parametreleri aynı
 anahtarla birden fazla kez gönderilerek çoklu seçim yapılabilir.
+
+Kullanım limitleri (Kasım 2026'dan beri): IP adresi başına dakikada en fazla 300 istek
+(Türkiye IP adresleri) ya da 60 istek (Türkiye dışı). Kurumların çıkış IP adresi ortak sayılır;
+limit aşılırsa IP adresi engellenir. İstemci bu yüzden varsayılan olarak dakikada 50 istekle
+sınırlıdır ve hiçbir ayarda dakikada 240 isteği aşmaz (bkz. `RateLimiter`).
 """
 
 from __future__ import annotations
 
 import logging
+import threading
 import time
+from collections import deque
 from dataclasses import dataclass, field
 from typing import Any, Callable, Iterable, Iterator, Mapping, Sequence
 
@@ -22,13 +29,14 @@ log = logging.getLogger(__name__)
 
 BASE_URL = "https://search.trdizin.gov.tr"
 SEARCH_PATH = "/api/defaultSearch/{entity}/"
-PUBLIC_PATH = "/api/public/{entity}/{query}"
+# Tanımlı JSON adresleri: /api/public/{veriTipi}/{sorgu}/?{sorgu}={değer} (sondaki / zorunlu)
+PUBLIC_PATH = "/api/public/{entity}/{query}/"
 # Yayının tüm ayrıntıları (kaynakça, atıf yapanlar, diğer atıf kaynakları)
 PUBLICATION_BY_ID_PATH = "/api/publicationById/{id}"
 # Dergi kimlik bilgileri (dizinlendiği yıllar, konular, editör...)
 JOURNAL_BY_ID_PATH = "/api/journalById/{id}"
 
-ENTITIES = ("publication", "journal", "author", "institution")
+ENTITIES = ("publication", "journal", "author", "institution", "publisher")
 ALLOWED_LIMITS = (10, 20, 50, 100)
 MAX_LIMIT = 100
 
@@ -54,25 +62,34 @@ ORDERS: dict[str, tuple[str, ...]] = {
         "orderPublicationCount-ASC",
     ),
     "institution": ("relevance-DESC", "title-ASC", "title-DESC"),
+    "publisher": (
+        "relevance-DESC",
+        "title-ASC",
+        "title-DESC",
+        "orderJournalCount-DESC",
+        "orderJournalCount-ASC",
+    ),
 }
+
+# Yayın dili kodları (dokümandaki sırayla)
+LANGUAGES = ("TUR", "ENG", "GER", "FRE", "ARA", "RUS", "ITA", "SPA", "KUR", "AZE", "KAZ", "OTH")
 
 # Veri tipine göre desteklenen facet parametreleri ve (varsa) sabit değerleri.
 FACETS: dict[str, dict[str, tuple[str, ...] | None]] = {
     "publication": {
         "facet-documentType": ("PAPER", "PROJECT"),
         "facet-database": ("SOCIAL", "SCIENCE"),
-        # Doküman "CLOSE" der, ancak API "CLOSED" döndürür.
         "facet-accessType": ("OPEN", "CLOSED"),
         "facet-authorName": None,
         "facet-publication_year": None,
-        "facet-publicationLanguage": ("ENG", "TUR", "GER", "FRE", "ARA", "OTH", "RUS", "ITA", "SPA"),
+        "facet-publicationLanguage": LANGUAGES,
         "facet-journalName": None,
         "facet-publicationType": (
             "RESEARCH", "COMPILATION", "FACT_PRESENTATION", "OTHER", "BOOK_PRESENTATION",
             "CORRECTION", "EDITORIAL", "LETTER", "LETTER_TO_EDITOR", "MEETING_SUMMARY",
             "REPORT", "SHORT_REPORT", "TRANSLATION", "RETRACTED", "NOTE",
         ),
-        "facet-projectGroup": None,
+        "facet-projectGroup": ("MAG", "TOVAG", "SOBAG"),
         "facet-facetAuthorInstitution": None,
         "facet-facetAuthorCountry": None,
         "facet-facetAuthorCity": None,
@@ -80,7 +97,7 @@ FACETS: dict[str, dict[str, tuple[str, ...] | None]] = {
     },
     "journal": {
         "facet-year": None,
-        "facet-publicationLanguage": ("ENG", "TUR", "GER", "FRE", "ARA", "OTH", "RUS", "ITA", "SPA"),
+        "facet-publicationLanguage": LANGUAGES,
         "facet-subject": None,
     },
     "author": {
@@ -88,9 +105,13 @@ FACETS: dict[str, dict[str, tuple[str, ...] | None]] = {
     },
     "institution": {
         "facet-type": ("DEVLETUNIVERSITE", "VAKIFUNIVERSITE", "KAMUKURULUS", "DIGER", "KURUMKURULUS", "ASKERI", "VOD"),
-        "facet-status": ("OZEL", "KAMU", "DIGER", "YABANCI", "STK"),
+        "facet-status": ("OZEL", "KAMU", "DIGER", "YABANCI", "STK", "KISI"),
         "facet-country": None,
         "facet-city": None,
+    },
+    "publisher": {
+        # "UNIVERSTY" servisteki yazımıdır (dokümandaki not).
+        "facet-personType": ("PERSON", "SOCIETY", "UNIVERSTY", "COMPANY", "STATE_AGENCY"),
     },
 }
 
@@ -115,9 +136,78 @@ AGGREGATION_LABELS = {
     "facet-database": "Veritabanı",
     "facet-accessType": "Erişim",
     "facet-projectGroup": "Proje grubu",
+    "facet-personType": "Yayıncı tipi",
 }
 
+# ---- kullanım limitleri ------------------------------------------------------
+# https://development.trdizin.gov.tr/ "Erişim Kısıtlamaları ve Kullanım Limitleri":
+# IP adresi başına dakikada en fazla 300 istek (Türkiye) / 60 istek (Türkiye dışı).
+RATE_LIMITS = {"tr": 300, "intl": 60}
+RATE_WINDOW = 60.0
+# Varsayılan: Türkiye dışı sınırın altında ve aynı çıkış IP'sini paylaşanlara pay bırakan hız.
+DEFAULT_PER_MINUTE = 50
+# Kullanıcı ne isterse istesin aşılmayan üst sınır: Türkiye sınırının %80'i.
+MAX_PER_MINUTE = 240
+
 FacetInput = Mapping[str, str | int | Sequence[str | int]] | Sequence[tuple[str, str | int]] | None
+
+
+class RateLimiter:
+    """Kayan pencereli istek sınırlayıcı.
+
+    Son `RATE_WINDOW` saniyedeki istekleri sayar; yeni istek ancak hem en az `60 / per_minute`
+    saniye ara verildiğinde hem de penceredeki istek sayısı `per_minute`ın altındaysa gider.
+    Aynı süreçteki tüm istemciler (arayüzde her işlem yeni istemci açar) tek sınırlayıcıyı paylaşır;
+    başarısız denemeler de sayılır, çünkü TR Dizin her isteği sayar.
+    """
+
+    def __init__(self, clock: Callable[[], float] = time.monotonic, sleep: Callable[[float], None] | None = None):
+        self.clock = clock
+        self.sleep = sleep
+        self._times: deque[float] = deque()
+        self._lock = threading.Lock()
+
+    def reset(self) -> None:
+        with self._lock:
+            self._times.clear()
+
+    def wait(self, per_minute: int) -> float:
+        """Gerekirse bekler, isteği kaydeder ve beklenen süreyi döndürür."""
+        with self._lock:
+            now = self.clock()
+            while self._times and now - self._times[0] >= RATE_WINDOW:
+                self._times.popleft()
+            wait = 0.0
+            if self._times:
+                wait = max(wait, self._times[-1] + RATE_WINDOW / per_minute - now)
+            if len(self._times) >= per_minute:
+                wait = max(wait, self._times[len(self._times) - per_minute] + RATE_WINDOW - now)
+            if wait > 0:
+                (self.sleep or time.sleep)(wait)
+            self._times.append(max(self.clock(), now + max(wait, 0.0)))
+            return max(wait, 0.0)
+
+
+# Süreç genelinde paylaşılan sınırlayıcı
+SHARED_LIMITER = RateLimiter()
+
+
+def resolve_rate(per_minute: int | float | None = None, min_interval: float | None = None) -> int:
+    """İstenen hızı dakikadaki istek sayısına çevirir ve izin verilen aralığa çeker.
+
+    `min_interval` (saniye) eski arayüzle uyumluluk içindir: 1.0 sn = dakikada 60 istek.
+    """
+    if per_minute is None:
+        per_minute = RATE_WINDOW / min_interval if min_interval and min_interval > 0 else (
+            MAX_PER_MINUTE if min_interval is not None else DEFAULT_PER_MINUTE)
+    rate = max(1, min(int(per_minute), MAX_PER_MINUTE))
+    if per_minute > MAX_PER_MINUTE:
+        log.warning("Dakikada %s istek istendi; TR Dizin limitleri nedeniyle %d ile sınırlandı.",
+                    per_minute, MAX_PER_MINUTE)
+    if rate > RATE_LIMITS["intl"]:
+        log.warning("Dakikada %d istek yalnızca Türkiye IP adreslerinden izinlidir (Türkiye dışı sınır: %d). "
+                    "Kurum ağında çıkış IP adresi ortak sayılır.", rate, RATE_LIMITS["intl"])
+    return rate
 
 
 class TRDizinError(RuntimeError):
@@ -154,6 +244,25 @@ def facet_pairs(facets: FacetInput) -> list[tuple[str, str]]:
                 continue
             pairs.append((key, str(v).strip()))
     return pairs
+
+
+def validate_request(entity: str, order: str, facets: Sequence[tuple[str, str]]) -> None:
+    """Veri tipi, sıralama ve facet parametrelerini dokümandaki kurallara göre denetler.
+
+    Adresler ve değerler büyük/küçük harf duyarlıdır; geçersiz bir değer sessizce boş sonuç
+    döndürmesin diye istek gönderilmeden hata verilir.
+    """
+    if entity not in ENTITIES:
+        raise ValueError(f"entity şu değerlerden biri olmalı: {ENTITIES}")
+    if order not in ORDERS[entity]:
+        raise ValueError(f"{entity} için order şu değerlerden biri olmalı: {ORDERS[entity]}")
+    allowed = FACETS[entity]
+    for key, value in facets:
+        if key not in allowed:
+            raise ValueError(f"{key} {entity} aramasında desteklenmiyor; geçerli facet'ler: {tuple(allowed)}")
+        values = allowed[key]
+        if values is not None and value not in values:
+            raise ValueError(f"{key} için geçersiz değer {value!r}; geçerli değerler: {values}")
 
 
 def extract_records(data: Any) -> list[dict[str, Any]]:
@@ -260,47 +369,61 @@ def extract_aggregations(data: Any) -> dict[str, list[tuple[str, int]]]:
 class TRDizinClient:
     """TR Dizin API istemcisi.
 
-    Sunucuyu yormamak için istekler arasında en az `min_interval` saniye beklenir,
-    429/5xx yanıtlarında üstel geri çekilme ile yeniden denenir.
+    İstekler dakikada `per_minute` ile sınırlıdır (varsayılan 50, en fazla 240; bkz. `RATE_LIMITS`).
+    429 yanıtı limit aşımı demektir: istemci bir pencere boyu bekler, hızını yarıya indirir ve
+    yalnızca bir kez yeniden dener. 403 yanıtı IP engeli olabilir ve yeniden denenmez.
+    5xx yanıtlarında üstel geri çekilme ile yeniden denenir.
     """
 
     def __init__(
         self,
         base_url: str = BASE_URL,
-        min_interval: float = 1.0,
+        min_interval: float | None = None,
         timeout: float = 30.0,
         max_retries: int = 4,
         session: requests.Session | None = None,
         user_agent: str = "BiblioTR/1.0 (akademik bibliyometrik arastirma)",
+        per_minute: int | None = None,
+        limiter: RateLimiter | None = None,
     ):
         self.base_url = base_url.rstrip("/")
-        self.min_interval = min_interval
+        self.per_minute = resolve_rate(per_minute, min_interval)
+        self.limiter = limiter or SHARED_LIMITER
         self.timeout = timeout
         self.max_retries = max_retries
         self.session = session or requests.Session()
         self.session.headers.setdefault("User-Agent", user_agent)
         self.session.headers.setdefault("Accept", "application/json")
-        self._last_request = 0.0
+
+    @property
+    def min_interval(self) -> float:
+        """İki istek arasındaki en kısa süre (saniye)."""
+        return RATE_WINDOW / self.per_minute
 
     # ---- düşük seviye -------------------------------------------------
 
     def _throttle(self) -> None:
-        wait = self.min_interval - (time.monotonic() - self._last_request)
-        if wait > 0:
-            time.sleep(wait)
+        self.limiter.wait(self.per_minute)
+
+    @staticmethod
+    def _retry_after(resp: Any) -> float:
+        value = (getattr(resp, "headers", None) or {}).get("Retry-After")
+        try:
+            return max(float(value), 1.0)
+        except (TypeError, ValueError):
+            return RATE_WINDOW
 
     def get_json(self, url: str, params: Sequence[tuple[str, str]] | Mapping[str, str] | None = None) -> Any:
         """Verilen URL'ye GET isteği atar ve JSON döndürür."""
         if not url.startswith("http"):
             url = self.base_url + url
         last_err: Exception | None = None
+        limited = 0
         for attempt in range(self.max_retries + 1):
             self._throttle()
             try:
                 resp = self.session.get(url, params=params, timeout=self.timeout)
-                self._last_request = time.monotonic()
             except requests.RequestException as e:
-                self._last_request = time.monotonic()
                 last_err = e
                 log.warning("İstek hatası (%s), deneme %d: %s", url, attempt + 1, e)
             else:
@@ -309,7 +432,24 @@ class TRDizinClient:
                         return resp.json()
                     except ValueError as e:
                         raise TRDizinError(f"JSON çözümlenemedi: {resp.url}") from e
-                if resp.status_code in (429, 500, 502, 503, 504):
+                if resp.status_code == 429:
+                    limited += 1
+                    if limited > 1:
+                        raise TRDizinError(
+                            "TR Dizin dakikalık istek limitinin aşıldığını bildirdi (HTTP 429). Limit aşımı IP "
+                            "adresinin engellenmesine yol açabilir; işlemi durdurun, aynı ağdan başka istek "
+                            "gönderilip gönderilmediğini kontrol edin ve dakikadaki istek sayısını düşürün.")
+                    wait = self._retry_after(resp)
+                    self.per_minute = max(1, self.per_minute // 2)
+                    log.warning("HTTP 429: %.0f sn bekleniyor, hız dakikada %d isteğe düşürüldü.",
+                                wait, self.per_minute)
+                    time.sleep(wait)
+                    continue
+                if resp.status_code == 403:
+                    raise TRDizinError(
+                        f"HTTP 403: {resp.url}\nErişim reddedildi. IP adresiniz limit aşımı nedeniyle "
+                        "engellenmiş olabilir; tekrar denemeden önce TR Dizin ile iletişime geçin.")
+                if resp.status_code in (500, 502, 503, 504):
                     last_err = TRDizinError(f"HTTP {resp.status_code}: {resp.url}")
                     log.warning("HTTP %s, deneme %d", resp.status_code, attempt + 1)
                 else:
@@ -347,8 +487,7 @@ class TRDizinClient:
         facets: FacetInput = None,
     ) -> dict[str, Any]:
         """Tek bir arama sayfasının ham JSON yanıtını döndürür."""
-        if entity not in ENTITIES:
-            raise ValueError(f"entity şu değerlerden biri olmalı: {ENTITIES}")
+        validate_request(entity, order, facet_pairs(facets))
         params = self.build_params(q, order, page, limit, facets)
         return self.get_json(SEARCH_PATH.format(entity=entity), params)
 
@@ -557,5 +696,6 @@ class TRDizinClient:
 
 def detail_url(entity: str, record_id: Any) -> str:
     """Arayüzdeki detay sayfasının adresi."""
-    slug = {"publication": "yayin", "journal": "dergi", "author": "yazar", "institution": "kurum"}[entity]
+    slug = {"publication": "yayin", "journal": "dergi", "author": "yazar", "institution": "kurum",
+            "publisher": "yayinci"}[entity]
     return f"{BASE_URL}/tr/{slug}/detay/{record_id}"

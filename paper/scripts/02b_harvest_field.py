@@ -264,7 +264,7 @@ def main(argv: list[str] | None = None) -> None:
                     help="Çekim yapmadan sözdizimi yoklaması: her biçimin toplam kayıt sayısını yazdırır")
     ap.add_argument("--db", default="data/trdizin.db")
     ap.add_argument("--out", default=None)
-    ap.add_argument("--delay", type=float, default=1.0)
+    ap.add_argument("--delay", type=float, default=1.2, help="İstekler arası bekleme, saniye (1.2 sn = dakikada 50 istek; TR Dizin limiti dakikada 60/300 istek)")
     ap.add_argument("--run", action="store_true", help="TR Dizin'e istek at (yoksa yalnızca plan)")
     ap.add_argument("--overwrite", action="store_true",
                     help="Aynı adlı veri setleri varsa üzerine yaz (varsayılan: başka bir ad istenir)")

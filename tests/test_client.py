@@ -92,5 +92,5 @@ def test_public_lookups(fake_session):
     s = fake_session([FakeResponse({"id": 1})] * 3)
     c = TRDizinClient(min_interval=0, session=s)
     c.by_doi("10.1/x"), c.by_orcid("0000"), c.by_issn("1234-5678")
-    assert [call[0].split("/api/public/")[1] for call in s.calls] == ["yayin/doi", "yazar/orcid", "dergi/issn"]
+    assert [call[0].split("/api/public/")[1] for call in s.calls] == ["yayin/doi/", "yazar/orcid/", "dergi/issn/"]
     assert s.calls[0][1] == [("doi", "10.1/x")]
